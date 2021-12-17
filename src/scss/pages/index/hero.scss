@@ -1,9 +1,85 @@
 .hero {
-	&__bg-img {
-		width: 500px;
-		height: 500px;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
+	padding-top: 14.4rem;
+	padding-bottom: 20rem;
+
+	&__img {
+		position: absolute;
+		top: 7rem;
+		right: 3.6rem;
+		width: 107.3rem;
+		height: 78.8rem;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__content-text {
+		p {
+			font-weight: 600;
+			font-size: 1.8rem;
+			line-height: 2.2rem;
+		}
+	}
+
+	&__rec {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		width: 113.6rem;
+		height: 86.3rem;
+	}
+
+	&__title {
+		max-width: 59.4rem;
+		font-weight: 800;
+		font-size: 4.2rem;
+		line-height: 4.9rem;
+		margin-bottom: 3.9rem;
+		letter-spacing: 0.02em;
+	}
+
+	&__btn {
+		margin-bottom: 16rem;
+	}
+
+	&__navifation {
+		display: flex;
+		align-items: center;
+		margin-right: 4rem;
+	}
+
+	&__navifation-dots {
+		display: flex;
+		align-items: center;
+		width: 9.8rem;
+		margin-right: 16.4rem;
+
+		._dot {
+			flex-shrink: 0;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			color: rgba($color: #2D3040, $alpha: 0.5);
+		}
+
+		._dots-line {
+			flex-grow: 1;
+			margin: 0 1.6rem;
+			height: 1px;
+			background-color: rgba($color: #2D3040, $alpha: 0.5);
+
+		}
+	}
+
+	&__slider-warpper {
+		display: flex;
+	}
+
+	&__slider-item {
+		p {
+			max-width: 51.8rem;
+		}
 	}
 }

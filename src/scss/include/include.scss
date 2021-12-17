@@ -78,3 +78,56 @@
 		color: #959FAB;
 	}
 }
+
+.section-name {
+	display: block;
+	font-weight: 600;
+	font-size: 2.4rem;
+	line-height: 2.9rem;
+	color: rgba(45, 48, 64, 0.4);
+}
+
+.site-second-title {
+	font-weight: 800;
+	font-size: 3.2rem;
+	line-height: 3.8rem;
+}
+
+.slider-nav {
+	width: 10.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__btn {
+		width: 4.4rem;
+		height: 4.4rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid rgba($color: #2D3040, $alpha: 0.1);
+		cursor: pointer;
+
+		&-icon {
+			display: block;
+			width: 2rem;
+			height: 2rem;
+			fill: var(--color-dark);
+		}
+	}
+}
+
+.button {
+	display: inline-block;
+	padding: 2.3rem 4.3rem;
+	border-radius: 1.5rem;
+	border: 2px solid var(--color-orange);
+	color: var(--color-orange);
+	font-weight: 900;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-align: center;
+	letter-spacing: 0.11em;
+	text-transform: uppercase;
+}
