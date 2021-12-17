@@ -1,0 +1,23 @@
+:root {
+	// Typography
+	--main-ff: "RFDewiExtended", sans-serif;
+
+	// colors
+	--color-dark: #2d3040;
+	--color-white: #fff;
+	--color-orange: #ef7d00;
+	--color-orange-light: #ffe9ce;
+	--color-purple-light: #f9f9ff;
+	--color-comet: #5C6073;
+	--color-dark-blue: #2E3458;
+	--color-darker-blue: #242945;
+	--color-grey: #C6C6C6;
+}
+
+$breakpoint-xxs: 480px;
+$breakpoint-xs: 575px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 991px;
+$breakpoint-lg: 1199px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1680px;
