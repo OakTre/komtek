@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="resourses/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="resourses/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resourses/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="resourses/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <title>Главная | Название сайта</title>
     <link rel="stylesheet" href="./css/vendor.min.css?v=0.0.0.0">
     <link rel="stylesheet" href="./css/style.min.css?v=0.0.0.0">
@@ -12,20 +17,60 @@
   <body class="page-home">
     <div class="page-wrapper">
       <header class="header">
-        <div class="site-container">
-          <h1>header</h1>
+        <div class="site-container header__container"><a class="logo header__logo" href="/"><img class="logo__img" src="img/logo-black.svg" alt="Логотип"></a>
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="/">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Команда</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Наши проекты</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Продукты</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="button-reset button-burger header__btn-burger"><span></span><span></span></button>
+          <div class="header__links tel"><a class="tel__link" href="tel:+78007750797">8 800 775 07 97</a><span class="tel__text">Бесплатно по России</span></div>
         </div>
       </header>
       <main class="page-main main">
         <section class="hero">
-          <div class="site-container">
-            <h1>Hero Heading</h1>
-          </div>
+          <div class="site-container"></div>
         </section>
       </main>
       <footer class="footer">
-        <div class="site-container">
-          <h1>footer</h1>
+        <div class="footer__top-block">
+          <div class="site-container">
+            <div class="footer__top-block-wrapper"><a class="logo footer__logo" href="/"><img class="logo__img" src="img/logo-white.svg" alt="Логотип"></a>
+              <button class="button-reset footer__btn-top"><span class="_icon-wrap">
+                  <svg class="icon icon-arrow-top footer__btn-top-icon" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                  </svg></span><span class="_name">наврех</span></button>
+            </div>
+            <div class="footer__top-block-info">
+              <div class="_block footer__content-text">
+                <p>	Будем рады обсудить проект для вашей организации</p>
+              </div>
+              <div class="_block">
+                <div class="tel footer__tel"><a class="tel__link" href="tel:+78007750797">8 800 775 07 97</a><span class="tel__text">Бесплатно по России</span></div>
+              </div>
+              <div class="_block"><a class="footer__mail-link" href="mailto:"> komtek@gmail.ru</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom-block">
+          <div class="site-container footer__bottom-block-content">
+            <div class="_block"><span class="footer__legend">Меню</span>
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Главная</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="/">О компании</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Команда</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Наши проекты</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Продукты</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="_block"><span class="footer__legend">Информация об организации</span><span class="footer__feautures">ООО “Переезд”</span><span class="footer__feautures">ИНН 0000000000</span><span class="footer__feautures">ОГРН 0000000000</span></div>
+            <div class="_block"><span class="footer__legend">Адрес</span><span class="footer__feautures">Россия, 600000, г. Москва ул. Светлого Будущего, 3</span><span class="footer__feautures _fw400">Пн-пт 08:00-22:00</span></div>
+          </div>
         </div>
       </footer>
     </div>

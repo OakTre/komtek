@@ -1,3 +1,19 @@
+- let nav_arr = ["О компании", "Команда", "Наши проекты", "Продукты", "Контакты"]
+
 header.header
-	.site-container
-		h1 header
+	.site-container.header__container
+		a.logo.header__logo(href="/")
+			img(src="img/logo-black.svg", alt="Логотип" class="logo__img")
+		nav.nav.header__nav
+			ul.nav__list
+				for item in nav_arr
+					li.nav__item
+						a.nav__link(href="/")=item
+		button.button-reset.button-burger.header__btn-burger
+			span
+			span
+		.header__links.tel
+			a.tel__link(href="tel:+78007750797")
+				| 8 800 775 07 97
+			span.tel__text
+				| Бесплатно по России

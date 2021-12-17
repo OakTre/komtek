@@ -1,3 +1,80 @@
 @import "mixins/media";
 @import "mixins/px-to-rem";
 @import "fonts";
+
+
+.button-reset {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+}
+
+.logo {
+	&__img {
+		display: block;
+		width: 30rem;
+	}
+}
+
+
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		margin-right: 2.8rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		font-size: 2rem;
+		line-height: 3.8rem;
+	}
+}
+
+.button-burger {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 6.5rem;
+	height: 6.5rem;
+	cursor: pointer;
+
+	span {
+		display: block;
+		margin-bottom: 1rem;
+		width: 5.7rem;
+		height: 2px;
+		background-color: var(--color-dark);
+
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.tel {
+	&__link {
+		display: inline-block;
+		font-weight: 800;
+		font-size: 2.2rem;
+		line-height: 3.6rem;
+	}
+
+	&__text {
+		display: block;
+		font-size: 1.3rem;
+		line-height: 1.6rem;
+		color: #959FAB;
+	}
+}

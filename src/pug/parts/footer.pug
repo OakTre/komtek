@@ -1,3 +1,51 @@
+- let foter_arr = ["Главная", "О компании", "Команда", "Наши проекты", "Продукты", "Контакты"]
+
 footer.footer
-	.site-container
-		h1 footer
+	.footer__top-block
+		.site-container
+			.footer__top-block-wrapper
+				a.logo.footer__logo(href="/")
+					img(src="img/logo-white.svg", alt="Логотип" class="logo__img")
+				button.button-reset.footer__btn-top
+					span._icon-wrap
+						+icon("arrow-top")(class="footer__btn-top-icon" width="27" height="27")
+					span._name
+						| наврех
+			.footer__top-block-info
+				._block.footer__content-text
+					p
+						|	Будем рады обсудить проект для вашей организации
+				._block
+					.tel.footer__tel
+						a.tel__link(href="tel:+78007750797")
+							| 8 800 775 07 97
+						span.tel__text
+							| Бесплатно по России
+				._block
+					a.footer__mail-link(href="mailto:")
+						|  komtek@gmail.ru
+	.footer__bottom-block
+		.site-container.footer__bottom-block-content
+			._block
+				span.footer__legend
+					| Меню
+				ul.footer__nav
+					for item in foter_arr
+						li.footer__nav-item
+							a.footer__nav-link(href="/")=item
+			._block
+				span.footer__legend
+					| Информация об организации
+				span.footer__feautures
+					| ООО “Переезд”
+				span.footer__feautures
+					| ИНН 0000000000
+				span.footer__feautures
+					| ОГРН 0000000000
+			._block
+				span.footer__legend
+					| Адрес
+				span.footer__feautures
+					| Россия, 600000, г. Москва ул. Светлого Будущего, 3
+				span.footer__feautures._fw400
+					| Пн-пт 08:00-22:00
