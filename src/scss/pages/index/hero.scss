@@ -2,12 +2,22 @@
 	padding-top: 14.4rem;
 	padding-bottom: 20rem;
 
-	&__img {
+	&__slider-img {
 		position: absolute;
 		top: 7rem;
 		right: 3.6rem;
 		width: 107.3rem;
 		height: 78.8rem;
+
+		@include mq(lg) {
+			width: 77.3rem;
+			height: 58.8rem;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
 	}
 
 	&__container {
@@ -30,6 +40,11 @@
 		z-index: -1;
 		width: 113.6rem;
 		height: 86.3rem;
+
+		@include mq(lg) {
+			width: 87.3rem;
+			height: 68.8rem;
+		}
 	}
 
 	&__title {
@@ -57,6 +72,25 @@
 		width: 9.8rem;
 		margin-right: 16.4rem;
 
+		._pagination-wrapper {
+			position: static;
+			bottom: auto;
+			left: auto;
+		}
+
+		._dots-container {
+			display: flex;
+			align-items: center;
+
+			._dot {
+				display: none;
+
+				&.current {
+					display: block;
+				}
+			}
+		}
+
 		._dot {
 			flex-shrink: 0;
 			font-size: 1.6rem;
@@ -64,8 +98,14 @@
 			color: rgba($color: #2D3040, $alpha: 0.5);
 		}
 
+		._count {
+			display: flex;
+			align-items: center;
+		}
+
 		._dots-line {
-			flex-grow: 1;
+			display: block;
+			width: 3rem;
 			margin: 0 1.6rem;
 			height: 1px;
 			background-color: rgba($color: #2D3040, $alpha: 0.5);

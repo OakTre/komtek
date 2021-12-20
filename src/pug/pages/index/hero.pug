@@ -1,6 +1,9 @@
 section.hero
 	img(src="img/hero-rec.svg", alt="" class="hero__rec")
-	img(src="img/hero-img.png", alt="" class="hero__img")
+	.swiper.hero__slider-img
+		.swiper-wrapper
+			img(src="img/hero-img.png", alt="" class="hero__img swiper-slide")
+			img(src="img/projects-img1.png", alt="" class="hero__img swiper-slide")
 	.site-container.hero__container
 		h1.hero__title
 			|	Разработка индивидуальных решений в сфере здравоохранения
@@ -9,19 +12,23 @@ section.hero
 		.hero__slider-warpper
 			.hero__navifation
 				.hero__navifation-dots
-					span._dot
-						|	01
-					span._dots-line
-					span._dot
-						|	02
-				.slider-nav
-					button.button-reset.slider-nav__btn
-						+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
-					button.button-reset.slider-nav__btn
-						+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
-			.hero__slider.hero__content-text
-				.hero__slider-item
-					p
-						|	Занимаемся автоматизацией медицинских учреждений с 2005 года. Ведущик российский поставщик высокотехнологичных IT-решений
+					.swiper-pagination._pagination-wrapper
+					._count
+						span._dots-line
+						span._dot
+							|	02
 
+				.slider-nav
+					button.button-reset.slider-nav__btn.js-swiper-button-prev
+						+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
+					button.button-reset.slider-nav__btn.js-swiper-button-next
+						+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
+			.hero__slider.hero__content-text.swiper
+				.swiper-wrapper
+					.hero__slider-item.swiper-slide
+						p
+							|	Занимаемся автоматизацией медицинских учреждений с 2005 года. Ведущик российский поставщик высокотехнологичных IT-решений
+					.hero__slider-item.swiper-slide
+						p
+							|	Тестовый текст, тестовый текст тестовый тестовый. Тестовый текст, тестовый текст тестовый тестовый.
 

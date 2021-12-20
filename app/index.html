@@ -32,28 +32,39 @@
         </div>
       </header>
       <main class="page-main main">
-        <section class="hero"><img class="hero__rec" src="img/hero-rec.svg" alt=""><img class="hero__img" src="img/hero-img.png" alt="">
+        <section class="hero"><img class="hero__rec" src="img/hero-rec.svg" alt="">
+          <div class="swiper hero__slider-img">
+            <div class="swiper-wrapper"><img class="hero__img swiper-slide" src="img/hero-img.png" alt=""><img class="hero__img swiper-slide" src="img/projects-img1.png" alt=""></div>
+          </div>
           <div class="site-container hero__container">
             <h1 class="hero__title">	Разработка индивидуальных решений в сфере здравоохранения</h1><a class="button hero__btn" href="/">	Наши продукты</a>
             <div class="hero__slider-warpper">
               <div class="hero__navifation">
-                <div class="hero__navifation-dots"><span class="_dot">	01</span><span class="_dots-line"></span><span class="_dot">	02</span></div>
+                <div class="hero__navifation-dots">
+                  <div class="swiper-pagination _pagination-wrapper"></div>
+                  <div class="_count"><span class="_dots-line"></span><span class="_dot">	02</span></div>
+                </div>
                 <div class="slider-nav">
-                  <button class="button-reset slider-nav__btn">
+                  <button class="button-reset slider-nav__btn js-swiper-button-prev">
                     <svg class="icon icon-arrow-left slider-nav__btn-icon" width="20" height="20">
                       <use xlink:href="img/sprite.svg#arrow-left"></use>
                     </svg>
                   </button>
-                  <button class="button-reset slider-nav__btn">
+                  <button class="button-reset slider-nav__btn js-swiper-button-next">
                     <svg class="icon icon-arrow-right slider-nav__btn-icon" width="20" height="20">
                       <use xlink:href="img/sprite.svg#arrow-right"></use>
                     </svg>
                   </button>
                 </div>
               </div>
-              <div class="hero__slider hero__content-text">
-                <div class="hero__slider-item">
-                  <p>	Занимаемся автоматизацией медицинских учреждений с 2005 года. Ведущик российский поставщик высокотехнологичных IT-решений</p>
+              <div class="hero__slider hero__content-text swiper">
+                <div class="swiper-wrapper">
+                  <div class="hero__slider-item swiper-slide">
+                    <p>	Занимаемся автоматизацией медицинских учреждений с 2005 года. Ведущик российский поставщик высокотехнологичных IT-решений</p>
+                  </div>
+                  <div class="hero__slider-item swiper-slide">
+                    <p>	Тестовый текст, тестовый текст тестовый тестовый. Тестовый текст, тестовый текст тестовый тестовый.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,12 +97,12 @@
           <div class="site-container projects__container">
             <div class="projects__heading-wrapper"><span class="section-name">	Реализованные проекты</span>
               <div class="slider-nav projects__slider-nav">
-                <button class="button-reset slider-nav__btn">
+                <button class="button-reset slider-nav__btn js-projects-slider-nav-prev">
                   <svg class="icon icon-arrow-left slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="button-reset slider-nav__btn">
+                <button class="button-reset slider-nav__btn js-projects-slider-nav-next">
                   <svg class="icon icon-arrow-right slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -103,23 +114,52 @@
                 <h2 class="projects__title site-second-title">	Более 1 500 000  пользователей продуктов<span>	КОМТЕК</span></h2><a class="button projects__button" href="/">	Все проекты</a>
               </div>
               <div class="_block">
-                <ul class="projects__slider projects-slider">
-                  <li class="projects-slider__item"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
-                      <div class="projects-slider__arrow">
-                        <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
-                          <use xlink:href="img/sprite.svg#arrow-right"></use>
-                        </svg>
-                      </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Установка интерактивных сенсорных терминалов для Областной клинической больницы №15</span>
-                      <div class="projects-slider__info"><span class="projects-slider__legend">	Функционал</span>
-                        <ul>
-                          <li>	Получение талона</li>
-                          <li>	Автоматизация очереди</li>
-                          <li>	справочная информация по талону</li>
-                          <li>	Информация о результатах анализов пациента</li>
-                          <li>	Запись на прием к врачу</li>
-                        </ul><span class="projects-slider__legend">	Итог</span>
-                        <p>	На 45% Снижение нагрузки работников регистратуры</p>
-                      </div></a></li>
+                <ul class="projects__slider projects-slider swiper">
+                  <div class="swiper-wrapper">
+                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
+                        <div class="projects-slider__arrow">
+                          <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                          </svg>
+                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Установка интерактивных сенсорных терминалов для Областной клинической больницы №15</span>
+                        <div class="projects-slider__info"><span class="projects-slider__legend">	Функционал</span>
+                          <ul>
+                            <li>	Получение талона</li>
+                            <li>	Автоматизация очереди</li>
+                            <li>	справочная информация по талону</li>
+                            <li>	Информация о результатах анализов пациента</li>
+                            <li>	Запись на прием к врачу</li>
+                          </ul><span class="projects-slider__legend">	Итог</span>
+                          <p>	На 45% Снижение нагрузки работников регистратуры</p>
+                        </div></a></li>
+                    <li class="projects-slider__item mod-small swiper-slide"><a class="projects-slider__content" href="">
+                        <div class="projects-slider__arrow">
+                          <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                          </svg>
+                        </div><span class="projects-slider__where">	Чукотский автономный округ</span><span class="projects-slider__heading">	CRM-система для стоматологии УльтраДент</span></a><a class="projects-slider__content" href="">
+                        <div class="projects-slider__arrow">
+                          <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                          </svg>
+                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Система УДКОН в офтальмологическом центре</span></a></li>
+                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
+                        <div class="projects-slider__arrow">
+                          <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                          </svg>
+                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Установка интерактивных сенсорных терминалов для Областной клинической больницы №15</span>
+                        <div class="projects-slider__info"><span class="projects-slider__legend">	Функционал</span>
+                          <ul>
+                            <li>	Получение талона</li>
+                            <li>	Автоматизация очереди</li>
+                            <li>	справочная информация по талону</li>
+                            <li>	Информация о результатах анализов пациента</li>
+                            <li>	Запись на прием к врачу</li>
+                          </ul><span class="projects-slider__legend">	Итог</span>
+                          <p>	На 45% Снижение нагрузки работников регистратуры</p>
+                        </div></a></li>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -147,34 +187,40 @@
             <div class="our-team__info"><span class="section-name">	Сотрудники компании</span>
               <h2 class="site-second-title our-team__title">	Профессионалы с&nbsp;большим опытом работы в отрасли медицины и IT</h2><a class="our-team__link" href="/">	 Вся команда</a>
               <div class="slider-nav our-team__slider-nav">
-                <button class="button-reset slider-nav__btn">
+                <button class="button-reset slider-nav__btn js-team-slider-nav-prev">
                   <svg class="icon icon-arrow-left slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="button-reset slider-nav__btn">
+                <button class="button-reset slider-nav__btn js-team-slider-nav-next">
                   <svg class="icon icon-arrow-right slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="our-team__slider">
-              <div class="our-team-item">
-                <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person0.jpg" alt="Григорий Анатольевич Чернухин"></div>
-                <div class="our-team-item__bottom"><span class="our-team-item__name">Григорий Анатольевич Чернухин</span><span class="our-team-item__position">Учредитель компании</span></div>
-              </div>
-              <div class="our-team-item">
-                <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person1.jpg" alt="Александр Чернышов"></div>
-                <div class="our-team-item__bottom"><span class="our-team-item__name">Александр Чернышов</span><span class="our-team-item__position">Коммерческий директор</span></div>
-              </div>
-              <div class="our-team-item">
-                <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person2.jpg" alt="Андрей Мутохляев"></div>
-                <div class="our-team-item__bottom"><span class="our-team-item__name">Андрей Мутохляев</span><span class="our-team-item__position">Директор офиса в Уфе</span></div>
-              </div>
-              <div class="our-team-item">
-                <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person3.jpg" alt="Оксана Мезитова"></div>
-                <div class="our-team-item__bottom"><span class="our-team-item__name">Оксана Мезитова</span><span class="our-team-item__position">Директор ООО 'КОМТЕК' и главный бухгалтер</span></div>
+            <div class="our-team__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="our-team-item swiper-slide">
+                  <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person0.jpg" alt="Григорий Анатольевич Чернухин"></div>
+                  <div class="our-team-item__bottom"><span class="our-team-item__name">Григорий Анатольевич Чернухин</span><span class="our-team-item__position">Учредитель компании</span></div>
+                </div>
+                <div class="our-team-item swiper-slide">
+                  <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person1.jpg" alt="Александр Чернышов"></div>
+                  <div class="our-team-item__bottom"><span class="our-team-item__name">Александр Чернышов</span><span class="our-team-item__position">Коммерческий директор</span></div>
+                </div>
+                <div class="our-team-item swiper-slide">
+                  <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person2.jpg" alt="Андрей Мутохляев"></div>
+                  <div class="our-team-item__bottom"><span class="our-team-item__name">Андрей Мутохляев</span><span class="our-team-item__position">Директор офиса в Уфе</span></div>
+                </div>
+                <div class="our-team-item swiper-slide">
+                  <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person3.jpg" alt="Оксана Мезитова"></div>
+                  <div class="our-team-item__bottom"><span class="our-team-item__name">Оксана Мезитова</span><span class="our-team-item__position">Директор ООО 'КОМТЕК' и главный бухгалтер</span></div>
+                </div>
+                <div class="our-team-item swiper-slide">
+                  <div class="our-team-item__img-wrap"><img class="our-team-item__img" src="img/our-team/person4.jpg" alt="Оксана Мезитова"></div>
+                  <div class="our-team-item__bottom"><span class="our-team-item__name">Оксана Мезитова</span><span class="our-team-item__position">Директор ООО 'КОМТЕК' и главный бухгалтер</span></div>
+                </div>
               </div>
             </div>
           </div>

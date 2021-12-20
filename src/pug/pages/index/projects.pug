@@ -4,9 +4,9 @@ section.projects
 			span.section-name
 				|	Реализованные проекты
 			.slider-nav.projects__slider-nav
-				button.button-reset.slider-nav__btn
+				button.button-reset.slider-nav__btn.js-projects-slider-nav-prev
 					+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
-				button.button-reset.slider-nav__btn
+				button.button-reset.slider-nav__btn.js-projects-slider-nav-next
 					+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
 		.projects__content
 			._block
@@ -17,31 +17,74 @@ section.projects
 				a.button.projects__button(href="/")
 					|	Все проекты
 			._block
-				ul.projects__slider.projects-slider
-					li.projects-slider__item
-						a.projects-slider__content(href="/")
-							img(src="img/funny-img.png", alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15" class="projects-slider__img")
-							.projects-slider__arrow
-								+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")
-							span.projects-slider__where
-								|	Тюменская область
-							span.projects-slider__heading
-								|	Установка интерактивных сенсорных терминалов для Областной клинической больницы №15
-							.projects-slider__info
-								span.projects-slider__legend
-									|	Функционал
-								ul
-									li
-										|	Получение талона
-									li
-										|	Автоматизация очереди
-									li
-										|	справочная информация по талону
-									li
-										|	Информация о результатах анализов пациента
-									li
-										|	Запись на прием к врачу
-								span.projects-slider__legend
-									|	Итог
-								p
-									|	На 45% Снижение нагрузки работников регистратуры
+				ul.projects__slider.projects-slider.swiper
+					.swiper-wrapper
+						li.projects-slider__item.swiper-slide
+							a.projects-slider__content(href="/")
+								img(src="img/funny-img.png", alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15" class="projects-slider__img")
+								.projects-slider__arrow
+									+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")
+								span.projects-slider__where
+									|	Тюменская область
+								span.projects-slider__heading
+									|	Установка интерактивных сенсорных терминалов для Областной клинической больницы №15
+								.projects-slider__info
+									span.projects-slider__legend
+										|	Функционал
+									ul
+										li
+											|	Получение талона
+										li
+											|	Автоматизация очереди
+										li
+											|	справочная информация по талону
+										li
+											|	Информация о результатах анализов пациента
+										li
+											|	Запись на прием к врачу
+									span.projects-slider__legend
+										|	Итог
+									p
+										|	На 45% Снижение нагрузки работников регистратуры
+						li.projects-slider__item.mod-small.swiper-slide
+							a.projects-slider__content(href="")
+								.projects-slider__arrow
+									+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")
+								span.projects-slider__where
+									|	Чукотский автономный округ
+								span.projects-slider__heading
+									|	CRM-система для стоматологии УльтраДент
+							a.projects-slider__content(href="")
+								.projects-slider__arrow
+									+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")
+								span.projects-slider__where
+									|	Тюменская область
+								span.projects-slider__heading
+									|	Система УДКОН в офтальмологическом центре
+						li.projects-slider__item.swiper-slide
+							a.projects-slider__content(href="/")
+								img(src="img/funny-img.png", alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15" class="projects-slider__img")
+								.projects-slider__arrow
+									+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")
+								span.projects-slider__where
+									|	Тюменская область
+								span.projects-slider__heading
+									|	Установка интерактивных сенсорных терминалов для Областной клинической больницы №15
+								.projects-slider__info
+									span.projects-slider__legend
+										|	Функционал
+									ul
+										li
+											|	Получение талона
+										li
+											|	Автоматизация очереди
+										li
+											|	справочная информация по талону
+										li
+											|	Информация о результатах анализов пациента
+										li
+											|	Запись на прием к врачу
+									span.projects-slider__legend
+										|	Итог
+									p
+										|	На 45% Снижение нагрузки работников регистратуры

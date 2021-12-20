@@ -6,6 +6,10 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 4.4rem;
+
+		@include mq(lg) {
+			margin-bottom: 3.2rem;
+		}
 	}
 
 	&__title {
@@ -29,21 +33,51 @@
 
 			&:nth-child(2) {
 				grid-column: 12 span;
+				width: auto;
+				margin-right: -100%;
+				padding-right: 100%;
+				overflow: hidden;
 			}
 		}
 	}
 
 	&__slider {
 		display: flex;
+		width: 100%;
 	}
 }
 
 .projects-slider {
+	overflow: visible;
+
 	&__item {
 		flex-shrink: 0;
 		margin-right: 20px;
-		min-height: 54.4rem;
+		height: 54.4rem;
 		width: 89.9rem;
+
+		&.mod-small {
+			width: 36.8rem;
+			display: flex;
+			flex-direction: column;
+
+			.projects-slider__content {
+				&:nth-of-type(1) {
+					height: 17.1rem;
+					margin-bottom: 2rem;
+				}
+
+				&:nth-of-type(2) {
+					height: 35.3rem;
+				}
+			}
+
+			.projects-slider__heading {
+				font-weight: 700;
+				font-size: 1.8rem;
+				line-height: 2.2rem;
+			}
+		}
 	}
 
 	&__content {
@@ -102,6 +136,11 @@
 		font-weight: 700;
 		font-size: 2.7rem;
 		line-height: 3.2rem;
+
+		@include mq(lg) {
+			font-size: 2.2rem;
+			line-height: 2.6rem;
+		}
 	}
 
 	&__info {

@@ -13,9 +13,23 @@
 
 	&__nav {
 		margin-right: 9.9rem;
+
+		@include mq(lg) {
+			display: none;
+		}
+	}
+
+	&__btn-burger {
+		@include mq(lg) {
+			margin-left: auto;
+		}
 	}
 
 	&__links {
 		margin-left: auto;
+
+		@include mq(lg) {
+			margin-left: 3rem;
+		}
 	}
 }

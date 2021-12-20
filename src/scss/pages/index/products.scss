@@ -39,6 +39,10 @@
 		padding: 2.4rem 2rem;
 		min-height: 36rem;
 
+		@include mq(lg) {
+			grid-column: 8 span;
+		}
+
 		&-heading {
 			display: block;
 			font-weight: 700;

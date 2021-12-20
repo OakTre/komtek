@@ -17,6 +17,12 @@
 			width: 97.9rem;
 			height: 55.1rem;
 			margin-left: 5.3rem;
+
+			@include mq(lg) {
+				margin-left: 0;
+				width: 72.9rem;
+    			height: 41.1rem;
+			}
 		}
 	}
 
@@ -43,6 +49,11 @@
 			font-size: 7.4rem;
 			line-height: 8.9rem;
 			margin-right: 1.6rem;
+
+			@include mq(lg) {
+				font-size: 5.4rem;
+				line-height: 6.9rem;
+			}
 		}
 
 		p {

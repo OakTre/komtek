@@ -85,12 +85,23 @@
 	font-size: 2.4rem;
 	line-height: 2.9rem;
 	color: rgba(45, 48, 64, 0.4);
+
+
+	@include mq(lg) {
+		font-size: 2rem;
+		line-height: 2.4rem;
+	}
 }
 
 .site-second-title {
 	font-weight: 800;
 	font-size: 3.2rem;
 	line-height: 3.8rem;
+
+	@include mq(lg) {
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
 }
 
 .slider-nav {
