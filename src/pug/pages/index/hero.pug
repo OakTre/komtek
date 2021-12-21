@@ -1,14 +1,18 @@
 section.hero
-	img(src="img/hero-rec.svg", alt="" class="hero__rec")
-	.swiper.hero__slider-img
-		.swiper-wrapper
-			img(src="img/hero-img.png", alt="" class="hero__img swiper-slide")
-			img(src="img/projects-img1.png", alt="" class="hero__img swiper-slide")
 	.site-container.hero__container
 		h1.hero__title
 			|	Разработка индивидуальных решений в сфере здравоохранения
 		a.button.hero__btn(href="/")
 			|	Наши продукты
+
+
+		.hero__imgs-wrapper
+			img(src="img/hero-rec.svg", alt="" class="hero__rec")
+			.swiper.hero__slider-img
+				.swiper-wrapper
+					img(src="img/hero-img.png", alt="" class="hero__img swiper-slide")
+					img(src="img/projects-img1.png", alt="" class="hero__img swiper-slide")
+
 		.hero__slider-warpper
 			.hero__navifation
 				.hero__navifation-dots

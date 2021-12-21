@@ -13,6 +13,26 @@
 			width: 77.3rem;
 			height: 58.8rem;
 		}
+
+		@include mq(md) {
+			top: 11rem;
+			right: -8.4rem;
+		}
+
+		@include mq(sm) {
+			position: static;
+			top: auto;
+			right: auto;
+			width: auto;
+			height: auto;
+			transform: translateX(9rem);
+		}
+
+		@include mq(xxs) {
+			width: 40.2rem;
+			height: 29.5rem;
+			transform: translateX(2rem);
+		}
 	}
 
 	&__img {
@@ -20,9 +40,14 @@
 		height: 100%;
 	}
 
-	&__container {
+	&__slider-warpper {
 		position: relative;
 		z-index: 2;
+
+		@include mq(sm) {
+			flex-direction: column;
+			margin-top: -5rem;
+		}
 	}
 
 	&__content-text {
@@ -30,6 +55,18 @@
 			font-weight: 600;
 			font-size: 1.8rem;
 			line-height: 2.2rem;
+		}
+	}
+
+
+	&__imgs-wrapper {
+		@include mq(sm) {
+			position: relative;
+			margin-top: -5rem;
+		}
+
+		@include mq(xxs) {
+			margin-top: -4rem;
 		}
 	}
 
@@ -45,6 +82,28 @@
 			width: 87.3rem;
 			height: 68.8rem;
 		}
+
+		@include mq(md) {
+			top: 1rem;
+			right: -13rem;
+		}
+
+		@include mq(sm) {
+		    top: -17rem;
+			right: -5rem;
+		}
+
+		@include mq(xxs) {
+			top: -18rem;
+			right: -4rem;
+		}
+	}
+
+	&__slider {
+		@include mq(sm) {
+			max-width: 33.5rem;
+			margin-left: 0;
+		}
 	}
 
 	&__title {
@@ -54,16 +113,35 @@
 		line-height: 4.9rem;
 		margin-bottom: 3.9rem;
 		letter-spacing: 0.02em;
+
+		@include mq(sm) {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 2rem;
+		}
 	}
 
 	&__btn {
 		margin-bottom: 16rem;
+
+		@include mq(md) {
+			margin-bottom: 26rem;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__navifation {
 		display: flex;
 		align-items: center;
 		margin-right: 4rem;
+
+		@include mq(sm) {
+			margin-right: 0;
+			margin-bottom: 1.5rem;
+		}
 	}
 
 	&__navifation-dots {
@@ -71,6 +149,10 @@
 		align-items: center;
 		width: 9.8rem;
 		margin-right: 16.4rem;
+
+		@include mq(md) {
+			display: none;
+		}
 
 		._pagination-wrapper {
 			position: static;
@@ -120,6 +202,23 @@
 	&__slider-item {
 		p {
 			max-width: 51.8rem;
+
+			@include mq(sm) {
+				font-size: 1.4rem;
+				line-height: 1.8rem;
+			}
 		}
+	}
+
+	@include mq(md) {
+		position: relative;
+		padding-top: 8.4rem;
+		padding-bottom: 12rem;
+	}
+
+	@include mq(sm) {
+		position: relative;
+		padding-top: 5.6rem;
+		padding-bottom: 5.8rem;
 	}
 }

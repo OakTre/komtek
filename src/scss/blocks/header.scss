@@ -1,6 +1,10 @@
 .header {
 	padding-top: 2.4rem;
 
+	@include mq(sm) {
+		padding-top: 2.2rem;
+	}
+
 	&__container {
 		display: flex;
 		align-items: center;
@@ -23,6 +27,15 @@
 		@include mq(lg) {
 			margin-left: auto;
 		}
+
+		@include mq(sm) {
+			width: 4rem;
+			height: 4rem;
+
+			span {
+				width: 100%;
+			}
+		}
 	}
 
 	&__links {
@@ -30,6 +43,10 @@
 
 		@include mq(lg) {
 			margin-left: 3rem;
+		}
+
+		@include mq(sm) {
+			display: none;
 		}
 	}
 }

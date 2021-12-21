@@ -25,27 +25,39 @@ footer.footer
 					a.footer__mail-link(href="mailto:")
 						|  komtek@gmail.ru
 	.footer__bottom-block
-		.site-container.footer__bottom-block-content
-			._block
-				span.footer__legend
-					| Меню
-				ul.footer__nav
-					for item in foter_arr
-						li.footer__nav-item
-							a.footer__nav-link(href="/")=item
-			._block
-				span.footer__legend
-					| Информация об организации
-				span.footer__feautures
-					| ООО “Переезд”
-				span.footer__feautures
-					| ИНН 0000000000
-				span.footer__feautures
-					| ОГРН 0000000000
-			._block
-				span.footer__legend
-					| Адрес
-				span.footer__feautures
-					| Россия, 600000, г. Москва ул. Светлого Будущего, 3
-				span.footer__feautures._fw400
-					| Пн-пт 08:00-22:00
+		.site-container
+			.footer__bottom-block-content
+				._block
+					span.footer__legend
+						| Меню
+					ul.footer__nav
+						for item in foter_arr
+							li.footer__nav-item
+								a.footer__nav-link(href="/")=item
+				._block
+					span.footer__legend
+						| Информация об организации
+					span.footer__feautures
+						| ООО “Переезд”
+					span.footer__feautures
+						| ИНН 0000000000
+					span.footer__feautures
+						| ОГРН 0000000000
+				._block
+					span.footer__legend
+						| Адрес
+					span.footer__feautures
+						| Россия, 600000, г. Москва ул. Светлого Будущего, 3
+					span.footer__feautures._fw400
+						| Пн-пт 08:00-22:00
+			.footer__bottom-block-content-copyright
+				._block
+					p
+						|	2021 © Комтек
+				._block
+					a(href="")
+						|	Политика конфиденциальности
+				._block
+					a(href="/")
+						|	Создание сайта
+						img(src="img/MarkWeber.svg", alt="")

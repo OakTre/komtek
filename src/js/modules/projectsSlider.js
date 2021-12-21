@@ -16,8 +16,12 @@ export default () => {
 		breakpoints: {
 			// when window width is >= 320px
 			320: {
-			  slidesPerView: 1.2,
-			  spaceBetween: 20,
+			  slidesPerView: 1,
+			  spaceBetween: 10,
+			},
+			768: {
+				slidesPerView: 1.5,
+				spaceBetween: 20,
 			},
 			1200: {
 				slidesPerView: 'auto',

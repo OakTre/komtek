@@ -15,6 +15,10 @@
 	&__img {
 		display: block;
 		width: 30rem;
+
+		@include mq(sm) {
+			max-width: 15.4rem;
+		}
 	}
 }
 
@@ -36,6 +40,15 @@
 	&__link {
 		font-size: 2rem;
 		line-height: 3.8rem;
+		transition: color 200ms;
+
+		&.is-current {
+			color: var(--color-orange);
+		}
+
+		&:hover {
+			color: var(--color-orange);
+		}
 	}
 }
 
@@ -55,11 +68,22 @@
 		width: 5.7rem;
 		height: 2px;
 		background-color: var(--color-dark);
+		transition: background-color 200ms;
 
 
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	&:hover {
+		span {
+			background-color: var(--color-orange);
+		}
+	}
+
+	&:active {
+		transform: scale(0.99);
 	}
 }
 
@@ -69,6 +93,11 @@
 		font-weight: 800;
 		font-size: 2.2rem;
 		line-height: 3.6rem;
+		transition: color 200ms;
+
+		&:hover {
+			color: var(--color-orange);
+		}
 	}
 
 	&__text {
@@ -91,6 +120,12 @@
 		font-size: 2rem;
 		line-height: 2.4rem;
 	}
+
+
+	@include mq(sm) {
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+	}
 }
 
 .site-second-title {
@@ -102,6 +137,11 @@
 		font-size: 2.6rem;
 		line-height: 3rem;
 	}
+
+	@include mq(sm) {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
 }
 
 .slider-nav {
@@ -109,6 +149,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@include mq(sm) {
+		width: 7.8rem;
+	}
 
 	&__btn {
 		width: 4.4rem;
@@ -119,12 +163,41 @@
 		justify-content: center;
 		border: 1px solid rgba($color: #2D3040, $alpha: 0.1);
 		cursor: pointer;
+		transition: background-color 200ms, border-color 200ms;
+
+		&:hover {
+			border-color: var(--color-orange);
+
+			.slider-nav__btn-icon {
+				fill: var(--color-orange);
+			}
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
+
+		&.swiper-button-disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 
 		&-icon {
 			display: block;
 			width: 2rem;
 			height: 2rem;
 			fill: var(--color-dark);
+			transition: fill 200ms;
+		}
+
+		@include mq(sm) {
+			width: 3.5rem;
+			height: 3.5rem;
+
+			&-icon {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
 		}
 	}
 }
@@ -141,4 +214,20 @@
 	text-align: center;
 	letter-spacing: 0.11em;
 	text-transform: uppercase;
+	transition: color 200ms, background-color 200ms;
+
+	@include mq(sm) {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding: 1.9rem 3.4rem;
+	}
+
+	&:hover {
+		background-color: var(--color-orange);
+		color: var(--color-white);
+	}
+
+	&:active {
+		transform: scale(0.99);
+	}
 }

@@ -10,6 +10,16 @@
 		@include mq(lg) {
 			margin-bottom: 3.2rem;
 		}
+
+		@include mq(md) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__slider-nav {
+		@include mq(md) {
+			display: none;
+		}
 	}
 
 	&__title {
@@ -19,6 +29,25 @@
 			text-transform: uppercase;
 			color: var(--color-orange);
 		}
+
+		@include mq(md) {
+			margin-bottom: 2.5rem;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 2rem;
+			letter-spacing: 0.02em;
+		}
+	}
+
+	&__button {
+		@include mq(md) {
+			margin-bottom: 3.2rem;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	&__content {
@@ -26,9 +55,17 @@
 		grid-template-columns: repeat(16, 1fr);
 		column-gap: 20px;
 
+		@include mq(sm) {
+			column-gap: 0;
+		}
+
 		._block {
 			&:nth-child(1) {
 				grid-column: 4 span;
+
+				@include mq(md) {
+					grid-column: 16 span;
+				}
 			}
 
 			&:nth-child(2) {
@@ -37,6 +74,16 @@
 				margin-right: -100%;
 				padding-right: 100%;
 				overflow: hidden;
+
+				@include mq(md) {
+					grid-column: 16 span;
+				}
+
+
+				@include mq(custom, max, 360) {
+					margin-right: 0;
+					padding-right: 0;
+				}
 			}
 		}
 	}
@@ -44,6 +91,14 @@
 	&__slider {
 		display: flex;
 		width: 100%;
+
+		@include mq(custom, max, 360) {
+			width: auto;
+		}
+	}
+
+	@include mq(sm) {
+		margin-bottom: 3rem;
 	}
 }
 
@@ -56,6 +111,10 @@
 		height: 54.4rem;
 		width: 89.9rem;
 
+		@include mq(sm) {
+			height: 39rem;
+		}
+
 		&.mod-small {
 			width: 36.8rem;
 			display: flex;
@@ -65,10 +124,19 @@
 				&:nth-of-type(1) {
 					height: 17.1rem;
 					margin-bottom: 2rem;
+
+					@include mq(sm) {
+						margin-bottom: 10px;
+					}
 				}
 
 				&:nth-of-type(2) {
 					height: 35.3rem;
+					width: 100%;
+
+					// @include mq(sm) {
+					// 	height: 100%;
+					// }
 				}
 			}
 
@@ -76,6 +144,15 @@
 				font-weight: 700;
 				font-size: 1.8rem;
 				line-height: 2.2rem;
+
+				@include mq(sm) {
+					font-size: 1.6rem;
+					line-height: 1.9rem;
+				}
+			}
+
+			@include mq(sm) {
+				// flex-direction: row;
 			}
 		}
 	}
@@ -90,6 +167,16 @@
 		height: 100%;
 		width: 100%;
 		position: relative;
+
+		@include mq(sm) {
+			padding: 0.9rem 1.5rem 2.6rem 1.5rem;
+		}
+
+		&:hover {
+			.projects-slider__arrow {
+				opacity: 1;
+			}
+		}
 	}
 
 	&__img {
@@ -98,6 +185,13 @@
 		bottom: 8.1rem;
 		width: 40.4rem;
 		height: 26.8rem;
+
+		@include mq(md) {
+			width: 13.2rem;
+			height: 8.8rem;
+			bottom: 1.4rem;
+			right: 1.5rem;
+		}
 	}
 
 	&__arrow {
@@ -111,12 +205,18 @@
 		justify-content: center;
 		background-color: var(--color-white);
 		border-radius: 50%;
+		opacity: 0;
+		transition: opacity 200ms;
 
 		&-icon {
 			display: block;
 			width: 2rem;
 			height: 2rem;
 			fill: var(--color-dark);
+		}
+
+		@include mq(md) {
+			display: none;
 		}
 	}
 
@@ -128,6 +228,12 @@
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 		text-transform: uppercase;
+
+		@include mq(sm) {
+			font-size: 0.9rem;
+			line-height: 1.6rem;
+			margin-bottom: 0.3rem;
+		}
 	}
 
 	&__heading {
@@ -141,6 +247,12 @@
 			font-size: 2.2rem;
 			line-height: 2.6rem;
 		}
+
+		@include mq(sm) {
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			margin-bottom: 4rem;
+		}
 	}
 
 	&__info {
@@ -152,6 +264,11 @@
 			margin: -0.4rem;
 			margin-bottom: 4rem;
 			max-width: 39.7rem;
+
+			@include mq(sm) {
+				margin: -0.2rem;
+				margin-bottom: 2.5rem;
+			}
 
 			li {
 				display: inline-block;
@@ -165,6 +282,13 @@
 				line-height: 1.6rem;
 				letter-spacing: 0.01em;
 				text-transform: uppercase;
+
+				@include mq(sm) {
+					font-weight: 600;
+					font-size: 0.9rem;
+					line-height: 1.6rem;
+					margin: 0.2rem;
+				}
 			}
 		}
 
@@ -175,6 +299,16 @@
 			letter-spacing: 0.01em;
 			text-transform: uppercase;
 			color: #5C6073;
+
+			@include mq(md) {
+				max-width: 29rem;
+			}
+
+			@include mq(sm) {
+				font-size: 1.1rem;
+				line-height: 1.4rem;
+				max-width: 13.7rem;
+			}
 		}
 	}
 
@@ -185,5 +319,11 @@
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 		text-transform: uppercase;
+
+		@include mq(sm) {
+			font-size: 0.9rem;
+			line-height: 1.6rem;
+			margin-bottom: 0.4rem;
+		}
 	}
 }

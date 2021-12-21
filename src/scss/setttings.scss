@@ -24,8 +24,12 @@ html {
 		font-size: 10px;
 	}
 
-	@include mq(custom, max, 320) {
+	@include mq(custom, max, 360) {
 		font-size: 9px;
+	}
+
+	@include mq(custom, max, 320) {
+		font-size: 8px;
 	}
 }
 
@@ -35,6 +39,11 @@ body {
 	background-color: var(--color-white);
 	font-size: 1.6rem;
 	line-height: 1.9rem;
+
+	@include mq(sm) {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+	}
 }
 
 img {
@@ -70,6 +79,10 @@ a {
 
 	@include mq(custom, min, 2100) {
 		max-width: 100%;
+	}
+
+	@include mq(sm) {
+		padding: 0 20px;
 	}
 }
 

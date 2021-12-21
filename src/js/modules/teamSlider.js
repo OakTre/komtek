@@ -8,7 +8,7 @@ export default () => {
 
 	let sliderTeam = new Swiper(teamSlider, {
 		slidesPerView: 1.2,
-        spaceBetween: 20,
+        spaceBetween: 10,
 		navigation: {
 			nextEl: '.js-team-slider-nav-next',
 			prevEl: '.js-team-slider-nav-prev',
@@ -16,8 +16,8 @@ export default () => {
 		breakpoints: {
 			// when window width is >= 320px
 			320: {
-			  slidesPerView: 1.2,
-			  spaceBetween: 20
+			  slidesPerView: 1.3,
+			  spaceBetween: 10
 			},
 			// when window width is >= 480px
 			767: {

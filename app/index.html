@@ -32,12 +32,14 @@
         </div>
       </header>
       <main class="page-main main">
-        <section class="hero"><img class="hero__rec" src="img/hero-rec.svg" alt="">
-          <div class="swiper hero__slider-img">
-            <div class="swiper-wrapper"><img class="hero__img swiper-slide" src="img/hero-img.png" alt=""><img class="hero__img swiper-slide" src="img/projects-img1.png" alt=""></div>
-          </div>
+        <section class="hero">
           <div class="site-container hero__container">
             <h1 class="hero__title">	Разработка индивидуальных решений в сфере здравоохранения</h1><a class="button hero__btn" href="/">	Наши продукты</a>
+            <div class="hero__imgs-wrapper"><img class="hero__rec" src="img/hero-rec.svg" alt="">
+              <div class="swiper hero__slider-img">
+                <div class="swiper-wrapper"><img class="hero__img swiper-slide" src="img/hero-img.png" alt=""><img class="hero__img swiper-slide" src="img/projects-img1.png" alt=""></div>
+              </div>
+            </div>
             <div class="hero__slider-warpper">
               <div class="hero__navifation">
                 <div class="hero__navifation-dots">
@@ -168,7 +170,11 @@
         <section class="products lazy" data-bg="img/projects-bg2.webp" data-bg-fallback="img/projects-bg2.png">
           <div class="site-container products__container">
             <div class="products__title-wrapper">
-              <h2 class="products__title site-second-title"><span>Комтек</span>	— это автоматизация медицинских учреждений с 2005 года</h2><a class="button button-reset products__btn" href="/">	 Наши продукты</a>
+              <h2 class="products__title site-second-title"><span>Комтек</span>	— это автоматизация медицинских учреждений с 2005 года</h2>
+              <div class="products__title-mobile-wrapper">
+                <h2 class="products__title-mobile site-second-title">	Наши продукты</h2>
+                <p>	Внедряем медицинские информационные системы от Севастополя до Чукотки</p>
+              </div><a class="button button-reset products__btn" href="/">	 Наши продукты</a>
             </div>
             <div class="products__list">
               <div class="products__item"><span class="products__item-heading">Cистема автоматизации процесса вакцинирования</span><span class="products__item-feautures">Иммунизация • МИАЦ ХМАО, ДЗ ЧАО </span><img class="products__item-img" src="img/projects-img0.png" alt="Cистема автоматизации процесса вакцинирования"></div>
@@ -247,19 +253,28 @@
           </div>
         </div>
         <div class="footer__bottom-block">
-          <div class="site-container footer__bottom-block-content">
-            <div class="_block"><span class="footer__legend">Меню</span>
-              <ul class="footer__nav">
-                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Главная</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="/">О компании</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Команда</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Наши проекты</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Продукты</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="/">Контакты</a></li>
-              </ul>
+          <div class="site-container">
+            <div class="footer__bottom-block-content">
+              <div class="_block"><span class="footer__legend">Меню</span>
+                <ul class="footer__nav">
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Главная</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">О компании</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Команда</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Наши проекты</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Продукты</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="_block"><span class="footer__legend">Информация об организации</span><span class="footer__feautures">ООО “Переезд”</span><span class="footer__feautures">ИНН 0000000000</span><span class="footer__feautures">ОГРН 0000000000</span></div>
+              <div class="_block"><span class="footer__legend">Адрес</span><span class="footer__feautures">Россия, 600000, г. Москва ул. Светлого Будущего, 3</span><span class="footer__feautures _fw400">Пн-пт 08:00-22:00</span></div>
             </div>
-            <div class="_block"><span class="footer__legend">Информация об организации</span><span class="footer__feautures">ООО “Переезд”</span><span class="footer__feautures">ИНН 0000000000</span><span class="footer__feautures">ОГРН 0000000000</span></div>
-            <div class="_block"><span class="footer__legend">Адрес</span><span class="footer__feautures">Россия, 600000, г. Москва ул. Светлого Будущего, 3</span><span class="footer__feautures _fw400">Пн-пт 08:00-22:00</span></div>
+            <div class="footer__bottom-block-content-copyright">
+              <div class="_block">
+                <p>	2021 © Комтек</p>
+              </div>
+              <div class="_block"><a href="">	Политика конфиденциальности</a></div>
+              <div class="_block"><a href="/">	Создание сайта<img src="img/MarkWeber.svg" alt=""></a></div>
+            </div>
           </div>
         </div>
       </footer>
