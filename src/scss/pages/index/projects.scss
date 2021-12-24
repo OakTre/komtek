@@ -177,6 +177,16 @@
 				opacity: 1;
 			}
 		}
+
+		&:hover {
+			.projects-slider__heading {
+				color: var(--color-orange);
+			}
+
+			.projects-slider__img {
+				transform: scale(1.05);
+			}
+		}
 	}
 
 	&__img {
@@ -185,6 +195,7 @@
 		bottom: 8.1rem;
 		width: 40.4rem;
 		height: 26.8rem;
+		transition: transform 200ms;
 
 		@include mq(md) {
 			width: 13.2rem;
@@ -242,6 +253,7 @@
 		font-weight: 700;
 		font-size: 2.7rem;
 		line-height: 3.2rem;
+		transition: color 200ms;
 
 		@include mq(lg) {
 			font-size: 2.2rem;

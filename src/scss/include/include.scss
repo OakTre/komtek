@@ -38,16 +38,35 @@
 	}
 
 	&__link {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
 		font-size: 2rem;
 		line-height: 3.8rem;
 		transition: color 200ms;
 
-		&.is-current {
-			color: var(--color-orange);
+		&:hover {
+			&::before {
+				transform: translateX(0);
+			}
 		}
 
-		&:hover {
-			color: var(--color-orange);
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: var(--color-dark);
+			transform: translateX(-100%);
+			transition: transform 200ms;
+			content: "";
+		}
+
+		&.is-current {
+			&::before {
+				transform: translateX(0);
+			}
 		}
 	}
 }
@@ -68,7 +87,7 @@
 		width: 5.7rem;
 		height: 2px;
 		background-color: var(--color-dark);
-		transition: background-color 200ms;
+		transition: background-color 200ms, transform 200ms;
 
 
 		&:last-child {
@@ -78,7 +97,12 @@
 
 	&:hover {
 		span {
-			background-color: var(--color-orange);
+			&:nth-child(1) {
+				transform: translateY(0.3rem);
+			}
+			&:nth-child(2) {
+				transform: translateY(-0.3rem);
+			}
 		}
 	}
 
@@ -203,6 +227,8 @@
 }
 
 .button {
+	position: relative;
+	z-index: 1;
 	display: inline-block;
 	padding: 2.3rem 4.3rem;
 	border-radius: 1.5rem;
@@ -214,7 +240,22 @@
 	text-align: center;
 	letter-spacing: 0.11em;
 	text-transform: uppercase;
-	transition: color 200ms, background-color 200ms;
+	transition: color 400ms;
+	overflow: hidden;
+
+	&::before {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		z-index: -1;
+		width: 7rem;
+		height: 7rem;
+		background-color: var(--color-orange);
+		border-radius: 50%;
+		transform: translate(-50%);
+		transition: all 400ms;
+		content: "";
+	}
 
 	@include mq(sm) {
 		font-size: 1rem;
@@ -223,11 +264,33 @@
 	}
 
 	&:hover {
-		background-color: var(--color-orange);
 		color: var(--color-white);
+
+		&::before {
+			width: 45rem;
+			height: 45rem;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 
 	&:active {
 		transform: scale(0.99);
+	}
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-white);
+	z-index: 19;
+	transform: opacity 200ms, visibillty 200ms;
+
+	&._is-loaded {
+		opacity: 0;
+		visibility: hidden;
 	}
 }

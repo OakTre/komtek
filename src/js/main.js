@@ -4,9 +4,95 @@ import indexSlider from "./modules/indexSlider";
 import teamSlider from "./modules/teamSlider";
 import projectsSlider from "./modules/projectsSlider";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+function startAnim() {
+	const tmln1 = gsap.timeline();
+
+	tmln1
+		.to(".header__container", {y: 0, autoAlpha: 1, duration: 0.6, ease: "power4.out", clearProps: "all"})
+		.to(".hero__title", {y: 0, opacity: 1, duration: 0.6, ease: "power4.out", clearProps: "all"}, "-=0.5")
+		.to(".hero__btn", {y: 0, opacity: 1, duration: 0.6, ease: "power4.out", clearProps: "all"}, "-=0.5")
+		.to(".hero__slider-img", {y: 0, opacity: 1, duration: 0.6, ease: "power4.out", clearProps: "all"}, "-=0.6")
+		.to(".hero__rec", {opacity: 1, duration: 0.8, ease: "power4.out", clearProps: "all"})
+		.to(".hero__slider-warpper", {opacity: 1, duration: 0.8, ease: "power4.out", clearProps: "all"}, "-=0.8");
+	}
+
+window.onload = function () {
+	let preloader = document.querySelector(".preloader");
+	preloader.classList.add("_is-loaded");
+
+	setTimeout(() => {
+		startAnim();
+	}, 150);
+
+	setTimeout(() => {
+		preloader.style.display = "none";
+	}, 550);
+};
+
 documentReady(() => {
 	lazyImages();
 	indexSlider();
 	teamSlider();
 	projectsSlider();
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	gsap.set(".header__container", {y: -50, autoAlpha: 0});
+	gsap.set(".hero__slider-warpper", {opacity: 0});
+	gsap.set(".hero__title", {opacity: 0, y: -75});
+	gsap.set(".hero__btn", {opacity: 0, y: -75});
+	gsap.set(".hero__slider-img", {opacity: 0, y: -75});
+	gsap.set(".hero__rec", {opacity: 0});
+
+
+	// paralax
+	const tmln = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".parallax",
+			start: "top 85%",
+			end: "bottom 30%",
+			scrub: true
+		}
+	});
+
+	gsap.utils.toArray(".parallax").forEach(layer => {
+		gsap.set(layer, {y: 175})
+	});
+
+	gsap.utils.toArray(".parallax").forEach(layer => {
+		gsap.to(layer, {
+			y: 0,
+			duration: 2.5,
+			ease: "power4.out",
+			scrollTrigger: {
+				trigger: layer,
+				start: "top 90%",
+				end: "bottom top",
+			}
+		});
+	});
+
+	gsap.set(".map__map-img", {y: 75});
+	gsap.set(".map", {y: 275});
+	gsap.set(".map__title", {autoAlpha: 0});
+
+	const tmln2 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".map",
+			start: "top 74%",
+			end: "bottom top",
+		}
+	});
+
+	tmln2
+	.to(".map__title", {autoAlpha: 1, duration: 2.5, ease: "power4.out"})
+	.to(".map__map-img", {y: 0}, "-=2.5")
+	.to(".map", {y: 0, duration: 2.5, ease: "power4.out"}, "-=2.5");
+
+	gsap.utils.toArray(".map__info-item ._layer").forEach(layer => {
+		tmln2.to(layer, {y: "-100%", duration: 1.8, ease: "power4.out"}, "-=2.5");
+	});
 });
