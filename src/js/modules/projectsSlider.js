@@ -1,4 +1,5 @@
 import { Navigation, Swiper } from 'swiper';
+import gsap from "gsap";
 
 Swiper.use([Navigation]);
 
@@ -7,8 +8,9 @@ export default () => {
 	if (!projectsSlider) return;
 
 	let sliderProject = new Swiper(projectsSlider, {
-		slidesPerView: 'auto',
-        spaceBetween: 20,
+		slidesPerView: 1,
+        spaceBetween: 10,
+		speed: 600,
 		navigation: {
 			nextEl: '.js-projects-slider-nav-next',
 			prevEl: '.js-projects-slider-nav-prev',
@@ -20,12 +22,24 @@ export default () => {
 			  spaceBetween: 10,
 			},
 			768: {
-				slidesPerView: 1.5,
+				slidesPerView: 1.2,
 				spaceBetween: 20,
 			},
-			1200: {
-				slidesPerView: 'auto',
-			},
-		}
+		},
+		on: {
+			slideChange: function (swiper) {
+				if (window.matchMedia("(min-width: 994px)").matches) {
+					if (swiper.activeIndex === 1) {
+						let blockWidth = +document.querySelector(".projects__content ._block:nth-child(1)").offsetWidth;
+						blockWidth = blockWidth + 20;
+						gsap.to(".projects__content ._block:nth-child(1)",{autoAlpha: 0, duration: 0.6, ease: "power4.out" });
+						gsap.to(".projects__content ._block:nth-child(2)",{x: -blockWidth, duration: 0.6, ease: "power4.out" });
+					} else if(swiper.activeIndex === 0) {
+						gsap.to(".projects__content ._block:nth-child(2)",{x: 0, duration: 0.6, ease: "power4.out" });
+						gsap.to(".projects__content ._block:nth-child(1)",{autoAlpha: 1, duration: 0.6, ease: "power4.out" });
+					}
+				}
+			}
+		},
 	});
 };

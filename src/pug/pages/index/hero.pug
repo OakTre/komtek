@@ -24,8 +24,14 @@ section.hero
 
 				.slider-nav
 					button.button-reset.slider-nav__btn.js-swiper-button-prev
+						span._progress-bar._progress-bar-wrapper(data-anim="base wrapper")
+							span._progress-bar._progress-bar-mask(data-anim="base left")
+							span._progress-bar._progress-bar-mask(data-anim="base right")
 						+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
 					button.button-reset.slider-nav__btn.js-swiper-button-next
+						span._progress-bar._progress-bar-wrapper(data-anim="base wrapper")
+							span._progress-bar._progress-bar-mask(data-anim="base left")
+							span._progress-bar._progress-bar-mask(data-anim="base right")
 						+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
 			.hero__slider.hero__content-text.swiper
 				.swiper-wrapper

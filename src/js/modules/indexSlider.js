@@ -1,6 +1,6 @@
-import { Navigation, Swiper, Pagination, EffectFade, Controller } from 'swiper';
+import { Navigation, Swiper, Pagination, EffectFade, Controller, Autoplay } from 'swiper';
 
-Swiper.use([Navigation, Pagination, EffectFade, Controller]);
+Swiper.use([Navigation, Pagination, EffectFade, Controller, Autoplay]);
 
 export default () => {
 	const slider1 = document.querySelector(".hero__slider");
@@ -23,7 +23,7 @@ export default () => {
 				}
 				text += "</div>";
 				return text;
-			  }
+			}
 		},
 		navigation: {
 			nextEl: '.js-swiper-button-next',
@@ -33,6 +33,10 @@ export default () => {
 		fadeEffect: {
 		  crossFade: true
 		},
+		// autoplay: {
+		// 	delay: 4000,
+		// 	disableOnInteraction: false,
+		// },
 	});
 
 	let swiperImg= new Swiper(slider2, {
