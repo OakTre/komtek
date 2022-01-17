@@ -5,8 +5,16 @@ section.projects.parallax(data-depth="0.20")
 				|	Реализованные проекты
 			.slider-nav.projects__slider-nav
 				button.button-reset.slider-nav__btn.js-projects-slider-nav-prev
+					<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+					</svg>
 					+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
 				button.button-reset.slider-nav__btn.js-projects-slider-nav-next
+					<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+					</svg>
 					+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
 		.projects__content
 			._block
@@ -17,9 +25,9 @@ section.projects.parallax(data-depth="0.20")
 				a.button.projects__button(href="/")
 					|	Все проекты
 			._block
-				ul.projects__slider.projects-slider.swiper
+				.projects__slider.projects-slider.swiper
 					.swiper-wrapper
-						li.projects-slider__item.swiper-slide
+						.projects-slider__item.swiper-slide
 							a.projects-slider__content(href="/")
 								img(src="img/funny-img.png", alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15" class="projects-slider__img")
 								.projects-slider__arrow
@@ -46,7 +54,7 @@ section.projects.parallax(data-depth="0.20")
 										|	Итог
 									p
 										|	На 45% Снижение нагрузки работников регистратуры
-						li.projects-slider__item.mod-small.swiper-slide
+						.projects-slider__item.mod-small.swiper-slide
 							a.projects-slider__content(href="")
 								.projects-slider__arrow
 									+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")
@@ -61,7 +69,7 @@ section.projects.parallax(data-depth="0.20")
 									|	Тюменская область
 								span.projects-slider__heading
 									|	Система УДКОН в офтальмологическом центре
-						li.projects-slider__item.swiper-slide
+						.projects-slider__item.swiper-slide
 							a.projects-slider__content(href="/")
 								img(src="img/funny-img.png", alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15" class="projects-slider__img")
 								.projects-slider__arrow
@@ -88,7 +96,7 @@ section.projects.parallax(data-depth="0.20")
 										|	Итог
 									p
 										|	На 45% Снижение нагрузки работников регистратуры
-						li.projects-slider__item.mod-small.swiper-slide
+						.projects-slider__item.mod-small.swiper-slide
 							a.projects-slider__content(href="")
 								.projects-slider__arrow
 									+icon("arrow-right")(class="projects-slider__arrow-icon" width="20" height="20")

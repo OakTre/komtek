@@ -21,8 +21,8 @@ export default () => {
 			  slidesPerView: 1,
 			  spaceBetween: 10,
 			},
-			768: {
-				slidesPerView: 1.2,
+			769: {
+				slidesPerView: "auto",
 				spaceBetween: 20,
 			},
 		},

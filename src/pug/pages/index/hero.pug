@@ -10,8 +10,22 @@ section.hero
 			img(src="img/hero-rec.svg", alt="" class="hero__rec")
 			.swiper.hero__slider-img
 				.swiper-wrapper
-					img(src="img/hero-img.png", alt="" class="hero__img swiper-slide")
-					img(src="img/projects-img1.png", alt="" class="hero__img swiper-slide")
+					.swiper-slide
+						.hero__img-warpper
+							img(src="img/hero-img/paltform.png", alt="" class="hero__img")
+							img(src="img/hero-img/sphere.png", alt="" class="hero__img z-index1")
+							img(src="img/hero-img/netbook.png", alt="" class="hero__img z-index1")
+							img(src="img/hero-img/building.png", alt="" class="hero__img z-index1")
+							img(src="img/hero-img/satellite.png", alt="" class="hero__img")
+							img(src="img/hero-img/microscope.png", alt="" class="hero__img js-opacity-el js-first-step")
+							img(src="img/hero-img/server.png", alt="" class="hero__img z-index1 js-opacity-el js-second-step")
+							img(src="img/hero-img/storage.png", alt="" class="hero__img z-index1 js-opacity-el js-first-step")
+							img(src="img/hero-img/tel.png", alt="" class="hero__img js-opacity-el js-first-step")
+							img(src="img/hero-img/mod.png", alt="" class="hero__img z-index1 js-opacity-el js-second-step")
+							img(src="img/hero-img/prob.png", alt="" class="hero__img js-opacity-el js-second-step")
+							img(src="img/hero-img/dn.png", alt="" class="hero__img js-opacity-el js-second-step")
+					.swiper-slide
+						img(src="img/hero-img/hero-img22.svg", alt="" class="hero__slider-image")
 
 		.hero__slider-warpper
 			.hero__navifation
@@ -22,16 +36,18 @@ section.hero
 						span._dot
 							|	02
 
-				.slider-nav
+				.slider-nav.hero__slider-nav.js-hero-slider
 					button.button-reset.slider-nav__btn.js-swiper-button-prev
-						span._progress-bar._progress-bar-wrapper(data-anim="base wrapper")
-							span._progress-bar._progress-bar-mask(data-anim="base left")
-							span._progress-bar._progress-bar-mask(data-anim="base right")
+						<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+							<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						</svg>
 						+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
 					button.button-reset.slider-nav__btn.js-swiper-button-next
-						span._progress-bar._progress-bar-wrapper(data-anim="base wrapper")
-							span._progress-bar._progress-bar-mask(data-anim="base left")
-							span._progress-bar._progress-bar-mask(data-anim="base right")
+						<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+							<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						</svg>
 						+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
 			.hero__slider.hero__content-text.swiper
 				.swiper-wrapper

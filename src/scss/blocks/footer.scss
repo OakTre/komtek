@@ -7,58 +7,6 @@
 		}
 	}
 
-	&__btn-top {
-		display: flex;
-		align-items: center;
-		cursor: pointer;
-
-		&:hover {
-			._icon-wrap {
-				background-color: var(--color-orange);
-
-				.footer__btn-top-icon {
-					fill: var(--color-orange-light);
-				}
-			}
-
-			._name {
-				color: var(--color-orange-light);
-			}
-		}
-
-		@include mq(md) {
-			display: none;
-		}
-
-		._name {
-			font-weight: 700;
-			color: var(--color-orange);
-			font-size: 1.2rem;
-			line-height: 1.6rem;
-			text-transform: uppercase;
-			transition: color 200ms;
-		}
-
-		._icon-wrap {
-			width: 5.8rem;
-			height: 5.8rem;
-			background-color: var(--color-orange-light);
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-right: 1.5rem;
-			transition: background-color 200ms;
-		}
-
-		&-icon {
-			width: 2.7rem;
-			height: 2.7rem;
-			fill: var(--color-orange);
-			transition: fill 200ms;
-		}
-	}
-
 	&__content-text {
 		p {
 			font-weight: 700;

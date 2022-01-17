@@ -3,6 +3,7 @@ import lazyImages from "./modules/lazyImages";
 import indexSlider from "./modules/indexSlider";
 import teamSlider from "./modules/teamSlider";
 import projectsSlider from "./modules/projectsSlider";
+import btnHide from "./modules/btnHide";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,12 +12,14 @@ function startAnim() {
 	const tmln1 = gsap.timeline();
 
 	tmln1
-		.to(".header__container", {y: 0, autoAlpha: 1, duration: 0.6, ease: "power4.out", clearProps: "all"})
-		.to(".hero__title", {y: 0, opacity: 1, duration: 0.6, ease: "power4.out", clearProps: "all"}, "-=0.5")
-		.to(".hero__btn", {y: 0, opacity: 1, duration: 0.6, ease: "power4.out", clearProps: "all"}, "-=0.5")
-		.to(".hero__slider-img", {y: 0, opacity: 1, duration: 0.6, ease: "power4.out", clearProps: "all"}, "-=0.6")
-		.to(".hero__rec", {opacity: 1, duration: 0.8, ease: "power4.out", clearProps: "all"})
-		.to(".hero__slider-warpper", {opacity: 1, duration: 0.8, ease: "power4.out", clearProps: "all"}, "-=0.8");
+		.to(".header__container", {y: 0, autoAlpha: 1, duration: 1, ease: "power4.out", clearProps: "all"})
+		.to(".hero__title", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
+		.to(".hero__btn", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
+		.to(".hero__slider-img", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
+		.to(".js-first-step", {opacity: 1, y: 0,  duration: 1.2, ease: "power4.out"}, '-=0.1')
+		.to(".js-second-step", {opacity: 1, y: 0,  duration: 1.2, ease: "power4.out"}, '-=0.1')
+		.to(".hero__rec", {opacity: 1, duration: 1.2, ease: "power4.out", clearProps: "all"}, "-=1.2")
+		.to(".hero__slider-warpper", {opacity: 1.2, duration: 1, ease: "power4.out", clearProps: "all"}, "-=1.2");
 	}
 
 window.onload = function () {
@@ -37,6 +40,7 @@ documentReady(() => {
 	indexSlider();
 	teamSlider();
 	projectsSlider();
+	btnHide();
 
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -46,6 +50,9 @@ documentReady(() => {
 	gsap.set(".hero__btn", {opacity: 0, y: -75});
 	gsap.set(".hero__slider-img", {opacity: 0, y: -75});
 	gsap.set(".hero__rec", {opacity: 0});
+	gsap.utils.toArray(".js-opacity-el").forEach((el)=>{
+		gsap.set(el, {opacity: 0, y: "-4rem"});
+	});
 
 
 	// paralax

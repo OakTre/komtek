@@ -33,10 +33,25 @@ export default () => {
 		fadeEffect: {
 		  crossFade: true
 		},
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 9000,
+			disableOnInteraction: false,
+		},
+		on: {
+			afterInit: function() {
+				let btn = document.querySelector(".js-hero-slider");
+
+				btn.classList.add("js-anim-start");
+			},
+			slideChange: function () {
+				let btn = document.querySelector(".js-hero-slider");
+
+				btn.classList.remove("js-anim-start");
+				setTimeout(() => {
+					btn.classList.add("js-anim-start");
+				});
+			}
+		}
 	});
 
 	let swiperImg= new Swiper(slider2, {

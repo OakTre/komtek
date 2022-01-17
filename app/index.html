@@ -38,7 +38,12 @@
             <h1 class="hero__title">	Разработка индивидуальных решений в сфере здравоохранения</h1><a class="button hero__btn" href="/">	Наши продукты</a>
             <div class="hero__imgs-wrapper"><img class="hero__rec" src="img/hero-rec.svg" alt="">
               <div class="swiper hero__slider-img">
-                <div class="swiper-wrapper"><img class="hero__img swiper-slide" src="img/hero-img.png" alt=""><img class="hero__img swiper-slide" src="img/projects-img1.png" alt=""></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="hero__img-warpper"><img class="hero__img" src="img/hero-img/paltform.png" alt=""><img class="hero__img z-index1" src="img/hero-img/sphere.png" alt=""><img class="hero__img z-index1" src="img/hero-img/netbook.png" alt=""><img class="hero__img z-index1" src="img/hero-img/building.png" alt=""><img class="hero__img" src="img/hero-img/satellite.png" alt=""><img class="hero__img js-opacity-el js-first-step" src="img/hero-img/microscope.png" alt=""><img class="hero__img z-index1 js-opacity-el js-second-step" src="img/hero-img/server.png" alt=""><img class="hero__img z-index1 js-opacity-el js-first-step" src="img/hero-img/storage.png" alt=""><img class="hero__img js-opacity-el js-first-step" src="img/hero-img/tel.png" alt=""><img class="hero__img z-index1 js-opacity-el js-second-step" src="img/hero-img/mod.png" alt=""><img class="hero__img js-opacity-el js-second-step" src="img/hero-img/prob.png" alt=""><img class="hero__img js-opacity-el js-second-step" src="img/hero-img/dn.png" alt=""></div>
+                  </div>
+                  <div class="swiper-slide"><img class="hero__slider-image" src="img/hero-img/hero-img22.svg" alt=""></div>
+                </div>
               </div>
             </div>
             <div class="hero__slider-warpper">
@@ -47,13 +52,19 @@
                   <div class="swiper-pagination _pagination-wrapper"></div>
                   <div class="_count"><span class="_dots-line"></span><span class="_dot">	02</span></div>
                 </div>
-                <div class="slider-nav">
-                  <button class="button-reset slider-nav__btn js-swiper-button-prev"><span class="_progress-bar _progress-bar-wrapper" data-anim="base wrapper"><span class="_progress-bar _progress-bar-mask" data-anim="base left"></span><span class="_progress-bar _progress-bar-mask" data-anim="base right"></span></span>
+                <div class="slider-nav hero__slider-nav js-hero-slider">
+                  <button class="button-reset slider-nav__btn js-swiper-button-prev"><svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+</svg>
                     <svg class="icon icon-arrow-left slider-nav__btn-icon" width="20" height="20">
                       <use xlink:href="img/sprite.svg#arrow-left"></use>
                     </svg>
                   </button>
-                  <button class="button-reset slider-nav__btn js-swiper-button-next"><span class="_progress-bar _progress-bar-wrapper" data-anim="base wrapper"><span class="_progress-bar _progress-bar-mask" data-anim="base left"></span><span class="_progress-bar _progress-bar-mask" data-anim="base right"></span></span>
+                  <button class="button-reset slider-nav__btn js-swiper-button-next"><svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+</svg>
                     <svg class="icon icon-arrow-right slider-nav__btn-icon" width="20" height="20">
                       <use xlink:href="img/sprite.svg#arrow-right"></use>
                     </svg>
@@ -100,12 +111,18 @@
           <div class="site-container projects__container">
             <div class="projects__heading-wrapper"><span class="section-name">	Реализованные проекты</span>
               <div class="slider-nav projects__slider-nav">
-                <button class="button-reset slider-nav__btn js-projects-slider-nav-prev">
+                <button class="button-reset slider-nav__btn js-projects-slider-nav-prev"><svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+</svg>
                   <svg class="icon icon-arrow-left slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="button-reset slider-nav__btn js-projects-slider-nav-next">
+                <button class="button-reset slider-nav__btn js-projects-slider-nav-next"><svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+</svg>
                   <svg class="icon icon-arrow-right slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -117,9 +134,9 @@
                 <h2 class="projects__title site-second-title">	Более 1 500 000  пользователей продуктов<span>	КОМТЕК</span></h2><a class="button projects__button" href="/">	Все проекты</a>
               </div>
               <div class="_block">
-                <ul class="projects__slider projects-slider swiper">
+                <div class="projects__slider projects-slider swiper">
                   <div class="swiper-wrapper">
-                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
+                    <div class="projects-slider__item swiper-slide"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
                         <div class="projects-slider__arrow">
                           <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -134,8 +151,8 @@
                             <li>	Запись на прием к врачу</li>
                           </ul><span class="projects-slider__legend">	Итог</span>
                           <p>	На 45% Снижение нагрузки работников регистратуры</p>
-                        </div></a></li>
-                    <li class="projects-slider__item mod-small swiper-slide"><a class="projects-slider__content" href="">
+                        </div></a></div>
+                    <div class="projects-slider__item mod-small swiper-slide"><a class="projects-slider__content" href="">
                         <div class="projects-slider__arrow">
                           <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -145,8 +162,8 @@
                           <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
                           </svg>
-                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Система УДКОН в офтальмологическом центре</span></a></li>
-                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
+                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Система УДКОН в офтальмологическом центре</span></a></div>
+                    <div class="projects-slider__item swiper-slide"><a class="projects-slider__content" href="/"><img class="projects-slider__img" src="img/funny-img.png" alt="Установка интерактивных сенсорных терминалов для Областной клинической больницы №15">
                         <div class="projects-slider__arrow">
                           <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -161,8 +178,8 @@
                             <li>	Запись на прием к врачу</li>
                           </ul><span class="projects-slider__legend">	Итог</span>
                           <p>	На 45% Снижение нагрузки работников регистратуры</p>
-                        </div></a></li>
-                    <li class="projects-slider__item mod-small swiper-slide"><a class="projects-slider__content" href="">
+                        </div></a></div>
+                    <div class="projects-slider__item mod-small swiper-slide"><a class="projects-slider__content" href="">
                         <div class="projects-slider__arrow">
                           <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -172,9 +189,9 @@
                           <svg class="icon icon-arrow-right projects-slider__arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
                           </svg>
-                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Система УДКОН в офтальмологическом центре</span></a></li>
+                        </div><span class="projects-slider__where">	Тюменская область</span><span class="projects-slider__heading">	Система УДКОН в офтальмологическом центре</span></a></div>
                   </div>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -205,12 +222,18 @@
             <div class="our-team__info"><span class="section-name">	Сотрудники компании</span>
               <h2 class="site-second-title our-team__title">	Профессионалы с&nbsp;большим опытом работы в отрасли медицины и IT</h2><a class="our-team__link" href="/">	 Вся команда</a>
               <div class="slider-nav our-team__slider-nav">
-                <button class="button-reset slider-nav__btn js-team-slider-nav-prev">
+                <button class="button-reset slider-nav__btn js-team-slider-nav-prev"><svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+</svg>
                   <svg class="icon icon-arrow-left slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="button-reset slider-nav__btn js-team-slider-nav-next">
+                <button class="button-reset slider-nav__btn js-team-slider-nav-next"><svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+</svg>
                   <svg class="icon icon-arrow-right slider-nav__btn-icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -247,12 +270,7 @@
       <footer class="footer parallax" data-depth="0.20">
         <div class="footer__top-block">
           <div class="site-container">
-            <div class="footer__top-block-wrapper"><a class="logo footer__logo" href="/"><img class="logo__img" src="img/logo-white.svg" alt="Логотип"></a>
-              <button class="button-reset footer__btn-top"><span class="_icon-wrap">
-                  <svg class="icon icon-arrow-top footer__btn-top-icon" width="27" height="27">
-                    <use xlink:href="img/sprite.svg#arrow-top"></use>
-                  </svg></span><span class="_name">наврех</span></button>
-            </div>
+            <div class="footer__top-block-wrapper"><a class="logo footer__logo" href="/"><img class="logo__img" src="img/logo-white.svg" alt="Логотип"></a></div>
             <div class="footer__top-block-info">
               <div class="_block footer__content-text">
                 <p>	Будем рады обсудить проект для вашей организации</p>
@@ -290,6 +308,14 @@
           </div>
         </div>
       </footer>
+      <div class="btn-top-container">
+        <div class="site-container">
+          <button class="button-reset btn-top"><span class="_icon-wrap">
+              <svg class="icon icon-arrow-top footer__btn-top-icon" width="27" height="27">
+                <use xlink:href="img/sprite.svg#arrow-top"></use>
+              </svg></span><span class="_name">наврех</span></button>
+        </div>
+      </div>
     </div>
   </body>
   <script src="js/main.js?v=0.0.1.9"></script>

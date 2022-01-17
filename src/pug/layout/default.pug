@@ -17,6 +17,13 @@ html(lang=siteLang)
 
 			block footer
 				include ../parts/footer.pug
+			.btn-top-container
+				.site-container
+					button.button-reset.btn-top
+						span._icon-wrap
+							+icon("arrow-top")(class="footer__btn-top-icon" width="27" height="27")
+						span._name
+							| наврех
 
 	block scripts
 		script(src="js/main.js?v=" + siteVersion)
