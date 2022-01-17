@@ -140,10 +140,31 @@
 					height: 35.3rem;
 					width: 100%;
 
-					// @include mq(sm) {
-					// 	height: 100%;
-					// }
+					.projects-slider__img {
+						width: 25rem;
+						height: 25rem;
+						right: 0;
+						bottom: 0;
+						z-index: -1;
+
+						@include mq(sm) {
+							width: 18rem;
+							height: 18rem;
+						}
+					}
 				}
+			}
+
+			.projects-slider__img {
+				width: 10.4rem;
+				height: 10.4rem;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+			}
+
+			.projects-slider__arrow {
+				opacity: 0;
 			}
 
 			.projects-slider__heading {
@@ -173,6 +194,7 @@
 		height: 100%;
 		width: 100%;
 		position: relative;
+		z-index: 2;
 
 		@include mq(sm) {
 			padding: 0.9rem 1.5rem 2.6rem 1.5rem;
