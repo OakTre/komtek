@@ -22,6 +22,10 @@
 			height: 55.1rem;
 			margin-left: 5.3rem;
 
+			&._mobile {
+				display: none;
+			}
+
 			@include mq(lg) {
 				margin-left: 0;
 				width: 72.9rem;
@@ -37,6 +41,11 @@
 			@include mq(sm) {
 				width: auto;
 				height: auto;
+				display: none;
+
+				&._mobile {
+					display: block;
+				}
 			}
 		}
 
