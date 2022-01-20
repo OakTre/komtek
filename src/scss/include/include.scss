@@ -350,6 +350,23 @@
 		opacity: 0;
 		visibility: hidden;
 	}
+
+	&__image {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 7rem;
+		height: 7rem;
+		transform: translate(-50%,-50%);
+		animation: preloader-rotate 3s infinite linear;
+		color: var(--color-orange);
+	  }
+
+	  @keyframes preloader-rotate {
+		100% {
+		  transform: translate(-50%,-50%) rotate(360deg);
+		}
+	  }
 }
 
 
