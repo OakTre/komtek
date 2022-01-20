@@ -72,8 +72,9 @@ documentReady(() => {
 	gsap.utils.toArray(".parallax").forEach(layer => {
 		gsap.to(layer, {
 			y: 0,
-			duration: 2.5,
-			ease: "power4.out",
+			duration: 1,
+			ease: "sine.out",
+			// ease: "power4.out",
 			scrollTrigger: {
 				trigger: layer,
 				start: "top 90%",
