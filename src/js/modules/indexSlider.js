@@ -4,7 +4,7 @@ Swiper.use([Navigation, Pagination, EffectFade, Controller, Autoplay]);
 
 export default () => {
 	const slider1 = document.querySelector(".hero__slider");
-	const slider2 = document.querySelector(".hero__slider-img");
+	// const slider2 = document.querySelector(".hero__slider-img");
 	if (!slider1) return;
 
 	let swiperText = new Swiper(slider1, {
@@ -54,16 +54,16 @@ export default () => {
 		}
 	});
 
-	let swiperImg= new Swiper(slider2, {
-		effect: 'fade',
-		slidesPerView: 'auto',
-		fadeEffect: {
-		  crossFade: true
-		},
-	});
+	// let swiperImg= new Swiper(slider2, {
+	// 	effect: 'fade',
+	// 	slidesPerView: 'auto',
+	// 	fadeEffect: {
+	// 	  crossFade: true
+	// 	},
+	// });
 
-	swiperText.controller.control = swiperImg;
-	swiperImg.controller.control = swiperText;
+	// swiperText.controller.control = swiperImg;
+	// swiperImg.controller.control = swiperText;
 
 	let slideLength = document.querySelectorAll(".hero__slider-item").length;
 

@@ -9,33 +9,33 @@
 
 	&__slider-img {
 		position: absolute;
-		top: 7rem;
-		right: 3.6rem;
-		width: 107.3rem;
-		height: 78.8rem;
+		top: 17rem;
+		right: 15.6rem;
+		width: 84rem;
+		height: 59.3rem;
 
 		@include mq(lg) {
-			width: 77.3rem;
-			height: 58.8rem;
+			top: 13rem;
+			right: 2.6rem;
 		}
 
 		@include mq(md) {
 			top: 11rem;
-			right: -8.4rem;
+			right: -5.4rem;
+			width: 68rem;
+			height: 49.3rem;
 		}
 
 		@include mq(sm) {
 			position: static;
 			top: auto;
 			right: auto;
-			width: 45rem;
+			width: 35rem;
 			height: 33.5rem;
 			transform: translateX(9rem);
 		}
 
 		@include mq(xxs) {
-			width: 40.2rem;
-			height: 29.5rem;
 			transform: translateX(2rem);
 		}
 	}
@@ -49,6 +49,9 @@
 
 		&.z-index1 {
 			z-index: 1;
+		}
+		&.z-index2 {
+			z-index: 2;
 		}
 	}
 

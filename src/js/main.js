@@ -14,12 +14,12 @@ function startAnim() {
 	tmln1
 		.to(".header__container", {y: 0, autoAlpha: 1, duration: 1, ease: "power4.out", clearProps: "all"})
 		.to(".hero__title", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
-		.to(".hero__btn", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
+		.to(".hero__btn", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.7")
+		.to(".hero__slider-warpper", {opacity: 1.2, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
 		.to(".hero__slider-img", {y: 0, opacity: 1, duration: 1, ease: "power4.out", clearProps: "all"}, "-=0.9")
-		.to(".js-first-step", {opacity: 1, y: 0,  duration: 1.2, ease: "power4.out"}, '-=0.1')
-		.to(".js-second-step", {opacity: 1, y: 0,  duration: 1.2, ease: "power4.out"}, '-=0.1')
-		.to(".hero__rec", {opacity: 1, duration: 1.2, ease: "power4.out", clearProps: "all"}, "-=1.2")
-		.to(".hero__slider-warpper", {opacity: 1.2, duration: 1, ease: "power4.out", clearProps: "all"}, "-=1.2");
+		.to(".js-first-step", {opacity: 1, y: 0,  duration: 1.2, ease: "power4.out", clearProps: "all"}, '-=0.1')
+		.to(".js-second-step", {opacity: 1, y: 0,  duration: 1.2, ease: "power4.out", clearProps: "all"}, '-=0.1')
+		.to(".hero__rec", {opacity: 1, duration: 1.2, ease: "power4.out", clearProps: "all"}, "-=1.2");
 	}
 
 window.onload = function () {
@@ -83,13 +83,13 @@ documentReady(() => {
 	});
 
 	gsap.set(".map__map-img", {y: 75});
-	gsap.set(".map", {y: 275});
+	gsap.set(".map", {y: 185});
 	gsap.set(".map__title", {autoAlpha: 0});
 
 	const tmln2 = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".map",
-			start: "top 74%",
+			start: "top bottom",
 			end: "bottom top",
 		}
 	});
