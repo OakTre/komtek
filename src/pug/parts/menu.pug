@@ -1,0 +1,52 @@
+- let arr_menu = ["Главная", "Наши проекты", "О компании", "Продукты", "Команда", "Контакты"];
+
+.menu.js-menu(style="background-image: url(../img/menu-bg.svg)")
+	.site-container.menu__container
+		a.logo.menu__logo(href="/")
+			img(src="img/logo-white.svg", alt="Логотип" class="logo__img")
+		.menu__top-block
+			.menu__top-block-item
+				span.menu__legend
+					|	Меню
+			.menu__top-block-item
+				nav.menu__nav
+					ul.menu__list
+						for item in arr_menu
+							li.menu__list-item
+								a.menu__list-link(href="/")=item
+				.menu__contacts
+					p.menu__contacts-heading
+						|	Россия, 600000, г. Москва ул.&nbsp;Светлого Будущего, 3
+					span.menu__contacts-small-legend
+						|	ПН-ПТ 08:00 - 22:00
+					a(href="tel:+78007750797").menu__contacts-heading._link
+						|	8 800 775 07 97
+					span.menu__contacts-small-legend
+						|	Бесплатно по России
+					a(href="mailto:komtek@gmail.ru").menu__contacts-heading._link
+						|	komtek@gmail.ru
+					span.menu__contacts-small-legend
+						|	по всем вопросам
+		.menu__bottom-block
+			.menu__bottom-block-item
+				span.menu__legend
+					|	Популярные продукты
+			.menu__bottom-block-item
+				ul.menu__fav-list
+					li.menu__fav-item
+						a.menu__fav-item-link(href="")
+							p
+								|	Лабораторная информационная система, как&nbsp;часть МИС
+							+icon("arrow-right")(class="menu__fav-item-icon" width="20" height="20")
+					li.menu__fav-item
+						a.menu__fav-item-link(href="")
+							p
+								|	Вертикально-интегрированная медицинская информационная система
+							+icon("arrow-right")(class="menu__fav-item-icon" width="20" height="20")
+					li.menu__fav-item
+						a.menu__fav-item-link(href="")
+							p
+								|	Информационная система Диспансеризация
+							+icon("arrow-right")(class="menu__fav-item-icon" width="20" height="20")
+
+

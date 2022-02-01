@@ -73,6 +73,7 @@
 
 .button-burger {
 	position: relative;
+	z-index: 15;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -95,7 +96,7 @@
 		}
 	}
 
-	&:hover {
+	&:not(.is-active):hover {
 		span {
 			&:nth-child(1) {
 				transform: translateY(0.3rem);
@@ -108,6 +109,20 @@
 
 	&:active {
 		transform: scale(0.99);
+	}
+
+	&.is-active {
+		span {
+			background-color: var(--color-white);
+			margin: 0;
+
+			&:nth-child(1) {
+				transform: rotate(32deg);
+			}
+			&:nth-child(2) {
+				transform: rotate(-32deg);
+			}
+		}
 	}
 }
 

@@ -19,6 +19,50 @@
 <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
 </svg>
     </div>
+    <div class="menu js-menu" style="background-image: url(../img/menu-bg.svg)">
+      <div class="site-container menu__container"><a class="logo menu__logo" href="/"><img class="logo__img" src="img/logo-white.svg" alt="Логотип"></a>
+        <div class="menu__top-block">
+          <div class="menu__top-block-item"><span class="menu__legend">	Меню</span></div>
+          <div class="menu__top-block-item">
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Главная</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Наши проекты</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">О компании</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Продукты</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Команда</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="menu__contacts">
+              <p class="menu__contacts-heading">	Россия, 600000, г. Москва ул.&nbsp;Светлого Будущего, 3</p><span class="menu__contacts-small-legend">	ПН-ПТ 08:00 - 22:00</span><a class="menu__contacts-heading _link" href="tel:+78007750797">	8 800 775 07 97</a><span class="menu__contacts-small-legend">	Бесплатно по России</span><a class="menu__contacts-heading _link" href="mailto:komtek@gmail.ru">	komtek@gmail.ru</a><span class="menu__contacts-small-legend">	по всем вопросам</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu__bottom-block">
+          <div class="menu__bottom-block-item"><span class="menu__legend">	Популярные продукты</span></div>
+          <div class="menu__bottom-block-item">
+            <ul class="menu__fav-list">
+              <li class="menu__fav-item"><a class="menu__fav-item-link" href="">
+                  <p>	Лабораторная информационная система, как&nbsp;часть МИС</p>
+                  <svg class="icon icon-arrow-right menu__fav-item-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+              <li class="menu__fav-item"><a class="menu__fav-item-link" href="">
+                  <p>	Вертикально-интегрированная медицинская информационная система</p>
+                  <svg class="icon icon-arrow-right menu__fav-item-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+              <li class="menu__fav-item"><a class="menu__fav-item-link" href="">
+                  <p>	Информационная система Диспансеризация</p>
+                  <svg class="icon icon-arrow-right menu__fav-item-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="page-wrapper">
       <header class="header">
         <div class="site-container header__container"><a class="logo header__logo" href="/"><img class="logo__img" src="img/logo-black.svg" alt="Логотип"></a>
@@ -31,7 +75,7 @@
               <li class="nav__item"><a class="nav__link" href="/">Контакты</a></li>
             </ul>
           </nav>
-          <button class="button-reset button-burger header__btn-burger"><span></span><span></span></button>
+          <button class="button-reset button-burger header__btn-burger js-open-menu"><span></span><span></span></button>
           <div class="header__links tel"><a class="tel__link" href="tel:+78007750797">8 800 775 07 97</a><span class="tel__text">Бесплатно по России</span></div>
         </div>
       </header>

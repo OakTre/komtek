@@ -4,6 +4,7 @@ import indexSlider from "./modules/indexSlider";
 import teamSlider from "./modules/teamSlider";
 import projectsSlider from "./modules/projectsSlider";
 import btnHide from "./modules/btnHide";
+import openMenu from "./modules/openMenu";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -41,6 +42,7 @@ documentReady(() => {
 	teamSlider();
 	projectsSlider();
 	btnHide();
+	openMenu();
 
 	gsap.registerPlugin(ScrollTrigger);
 
