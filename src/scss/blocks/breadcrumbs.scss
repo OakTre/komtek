@@ -1,0 +1,28 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+
+	&__container {
+		margin-top: 9.4rem;
+		margin-bottom: 1rem;
+	}
+
+	&__item {
+		font-weight: 600;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+		color: var(--color-grey3);
+	}
+
+	&__arrow {
+		padding: 0 0.5rem;
+		color: var(--color-grey3);
+	}
+
+	&__item-link {
+		&:hover {
+			color: var(--color-orange);
+		}
+	}
+}

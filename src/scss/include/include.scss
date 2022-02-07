@@ -312,6 +312,7 @@
 	text-transform: uppercase;
 	transition: color 400ms;
 	overflow: hidden;
+	cursor: pointer;
 
 	&::before {
 		position: absolute;
@@ -327,6 +328,16 @@
 		content: "";
 	}
 
+	&_secondary {
+		background-color: var(--color-orange);
+		color: var(--color-white);
+		text-transform: none;
+
+		&::before {
+			background-color: var(--color-orange-dark);
+		}
+	}
+
 	@include mq(sm) {
 		font-size: 1rem;
 		line-height: 1.5rem;
@@ -338,8 +349,8 @@
 			color: var(--color-white);
 
 			&::before {
-				width: 45rem;
-				height: 45rem;
+				width: 55rem;
+				height: 55rem;
 				top: 50%;
 				transform: translate(-50%, -50%);
 			}

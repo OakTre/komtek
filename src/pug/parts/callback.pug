@@ -1,0 +1,32 @@
+section.callback
+	.site-container.callback__container
+		.callback__left-block
+			span.section-name
+				|	Обратная связь
+		.callback__right-block
+			.callback__heading
+				h2.callback__title
+					|	Мы всегда заинтересованы в сотрудничествеи развитии
+
+				.callback__info-text
+					span
+						|	1500+
+					span
+						|	пользователей продукции КОМТЕК
+			.callback__form
+				form.form(action="/")
+					label.form__label
+						input(type="text" name="name" placeholder="Ваше имя" class="input")
+					label.form__label
+						input(type="tel" name="tel" placeholder="Ваш телефон" class="input")
+					label.form__label
+						input(type="email" name="email" placeholder="E-mail" class="input")
+
+					label.form__agreement
+						input(type="checkbox" class="visually-hidden" class="input-agreement")
+						p
+							|	Я согласен на обработку
+							a(href="/")
+								|	персональных данных
+					button.button-reset.form__button.button.button_secondary
+						|	 Отправить заявку

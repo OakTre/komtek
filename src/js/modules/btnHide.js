@@ -1,6 +1,9 @@
 export default () => {
 	const btntop = document.querySelector('.btn-top-container');
 	const first = document.querySelector('.map');
+
+	if (!first) return;
+
 	const btntopHeight = btntop.offsetHeight;
 	const firstHeight = first.offsetHeight;
 	let lastScrollTop = 0;

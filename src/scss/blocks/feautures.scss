@@ -1,0 +1,29 @@
+.feautures {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	column-gap: 20px;
+
+	&__item {
+		grid-column: 4 span;
+	}
+
+	&__item-content {
+		display: flex;
+		align-items: center;
+
+		p {
+			font-weight: 700;
+			font-size: 1.8rem;
+			line-height: 2.2rem;
+			max-width: 32.8rem;
+		}
+	}
+
+	&__item-content-num {
+		display: block;
+		font-weight: 600;
+		font-size: 7.4rem;
+		line-height: 1;
+		margin-right: 1.7rem;
+	}
+}
