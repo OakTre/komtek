@@ -20,6 +20,8 @@
         "@babel/preset-env": "^7.14.4",
         "babel-loader": "^8.2.2",
         "browser-sync": "^2.26.14",
+        "choices.js": "^10.0.0",
+        "dayjs": "^1.10.7",
         "del": "^6.0.0",
         "gsap": "^3.9.0",
         "gulp": "^4.0.2",
@@ -35,6 +37,8 @@
         "gulp-svg-sprite": "^1.5.0",
         "gulp-uglify-es": "^2.0.0",
         "gulp-webp": "^4.0.1",
+        "inputmask": "^5.0.7",
+        "jquery": "^3.6.0",
         "node-sass": "^6.0.0",
         "stylelint": "^13.13.1",
         "stylelint-config-rational-order": "^0.1.2",
@@ -47,6 +51,7 @@
     },
     "dependencies": {
         "normalize.css": "^8.0.1",
+        "parsleyjs": "^2.9.2",
         "pug-include-glob": "^0.4.3",
         "swiper": "^7.3.3"
     }

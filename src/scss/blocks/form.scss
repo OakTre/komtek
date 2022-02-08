@@ -10,6 +10,17 @@
 		&:nth-last-of-type(1) {
 			margin-bottom: 0;
 		}
+
+		.parsley-errors-list {
+			position: absolute;
+			left: 0;
+			bottom: -2.2rem;
+			font-weight: 600;
+			font-size: 1.2rem;
+			line-height: 2.6rem;
+			text-transform: uppercase;
+			color: #EA3939;
+		}
 	}
 
 	&__agreement {
@@ -19,6 +30,20 @@
 		cursor: pointer;
 		margin-bottom: 3rem;
 		margin-top: 2.8rem;
+
+		&.parsley-error {
+			p {
+				color: #EA3939;
+
+				a {
+					color: #EA3939;
+				}
+			}
+		}
+
+		& ~ .parsley-errors-list {
+			display: none;
+		}
 
 		p {
 			position: relative;
@@ -66,19 +91,63 @@
 	border-radius: 1rem;
 	border: 1px solid var(--color-grey3);
 	outline: none;
-	padding: 2.4rem 3.2rem;
+	padding: 3.1rem 5rem 1.4rem 3.2rem;
 	color: var(--color-grey3);
 	font-weight: 700;
 	font-size: 1.2rem;
 	line-height: 1.6rem;
 	text-transform: uppercase;
 
-	&::placeholder {
-		font-weight: 700;
-		color: var(--color-grey3);
-		font-size: 1.2rem;
+	&:focus {
+		background-color: var(--color-purple-light);
+	}
+
+	&:focus {
+		~ .input-heading {
+			top: 1.2rem;
+			font-size: 0.9rem;
+			line-height: 1.6rem;
+		}
+	}
+
+	&.parsley-error {
+		background-color: #FFEAEA;
+		border-color: #EA3939;
+
+		~ .input-ok {
+			opacity: 0;
+		}
+	}
+}
+
+.input-heading {
+	position: absolute;
+	top: 2.4rem;
+	left: 3.2rem;
+	font-weight: 700;
+	color: var(--color-grey3);
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	text-transform: uppercase;
+	transition: all 200ms;
+
+	&.is-active {
+		top: 1.2rem;
+		font-size: 0.9rem;
 		line-height: 1.6rem;
-		text-transform: uppercase;
+	}
+}
+
+.input-ok {
+	position: absolute;
+	top: 50%;
+	right: 3rem;
+	transform: translateY(-50%);
+	fill: #76C25B;
+	opacity: 0;
+
+	&.is-shown {
+		opacity: 1;
 	}
 }
 
@@ -88,6 +157,105 @@
 			&::before {
 				background-color: vaR(--color-orange);
 				border-color: var(--color-white);
+			}
+		}
+	}
+}
+
+.select {
+	position: relative;
+	margin-bottom: 2rem;
+
+	.parsley-errors-list {
+		position: absolute;
+		left: 3.2rem;
+		bottom: 2rem;
+		z-index: 2;
+		font-weight: 600;
+		font-size: 1.2rem;
+		line-height: 2.6rem;
+		text-transform: uppercase;
+		color: #EA3939;
+	}
+
+	.choices {
+		&::after {
+			content: "";
+			right: 3.2rem;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: 0;
+			height: 2rem;
+			width: 2rem;
+			background-image: url(../img/arow-shevron.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: none !important;
+			transition: transform 200ms;
+		}
+
+		&.is-open {
+			.choices__inner {
+				border-bottom-color: transparent;
+				border-radius: 1rem 1rem 0 0;
+			}
+
+			.choices__list--dropdown {
+				border-top-color: transparent;
+			}
+
+			&::after {
+				margin-top: 0;
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+
+	.choices__inner {
+		padding: 2.4rem 3.2rem !important;
+		background-color: var(--color-white);
+		border-radius: 1rem;
+		border: 1px solid var(--color-grey3);
+	}
+
+	.choices__list--single {
+		padding: 0 !important;
+	}
+
+	.choices__placeholder {
+		font-weight: 700;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+		color: var(--color-orange);
+	}
+
+	.choices__list--dropdown {
+		border-radius: 0 0 1rem 1rem;
+		border: 1px solid var(--color-grey3);
+		padding: 0 3.2rem 2.9rem 3.2rem;
+
+		.choices__item {
+			padding: 1.3rem 0;
+			background-color: transparent;
+			font-size: 1.6rem;
+			line-height: 2rem;
+			transition: color 200ms;
+			border-top: 1px solid var(--color-purple-light);
+			text-transform: none;
+			color: var(--color-dark);
+
+			&.is-selected {
+				color: var(--color-orange);
+			}
+
+			&:hover {
+				color: var(--color-orange);
+			}
+
+			&:last-child {
+				padding-bottom: 0;
 			}
 		}
 	}

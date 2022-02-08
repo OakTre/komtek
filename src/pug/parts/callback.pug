@@ -1,4 +1,4 @@
-section.callback
+section.callback.parallax
 	.site-container.callback__container
 		.callback__left-block
 			span.section-name
@@ -14,16 +14,35 @@ section.callback
 					span
 						|	пользователей продукции КОМТЕК
 			.callback__form
-				form.form(action="/")
+				form.form(action="/" data-need-validation)
+					.select
+						.select__container
+							select(name="place" class="js-custom-select")
+								option(placeholder value="")
+									|	Выберите интересующую вас область
+								option(placeholder value="")
+									|	Управление
+								option(placeholder value="")
+									|	Учет пациентов
+								option(placeholder value="")
+									|	Использование изделий
 					label.form__label
-						input(type="text" name="name" placeholder="Ваше имя" class="input")
+						input(type="text" name="name" class="input" data-parsley-required)
+						span.input-heading
+							|	Ваше имя
+						+icon("ok")(width="19" height="16" class="input-ok")
 					label.form__label
-						input(type="tel" name="tel" placeholder="Ваш телефон" class="input")
+						input(type="tel" name="tel" class="input js-phone-mask" data-parsley-required data-parsley-phone)
+						span.input-heading
+							|	Ваш телефон
+						+icon("ok")(width="19" height="16" class="input-ok")
 					label.form__label
-						input(type="email" name="email" placeholder="E-mail" class="input")
-
+						input(type="email" name="email" class="input" data-parsley-required)
+						span.input-heading
+							|	E-mail
+						+icon("ok")(width="19" height="16" class="input-ok")
 					label.form__agreement
-						input(type="checkbox" class="visually-hidden" class="input-agreement")
+						input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
 						p
 							|	Я согласен на обработку
 							a(href="/")
