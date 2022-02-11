@@ -3,7 +3,8 @@
 ## Ссылки
 
 1. [Главная](https://oaktre.github.io/komtek/app/)
-1. [Продукты](https://oaktre.github.io/komtek/app/products.html)
+2. [Продукты](https://oaktre.github.io/komtek/app/products.html)
+3. [О компании](https://oaktre.github.io/komtek/app/about.html)
 
 
 
