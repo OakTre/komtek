@@ -1768,6 +1768,12 @@ a {
   padding: 13rem 0 15.9rem;
 }
 
+.our-team_grey-bg {
+  padding: 10rem 0;
+  background-color: var(--color-purple-light);
+  margin-bottom: 13.3rem;
+}
+
 .our-team__container {
   display: -ms-grid;
   display: grid;
@@ -2513,6 +2519,219 @@ a {
 .base-products__item:nth-child(14) {
   -ms-grid-column-span: 6;
   grid-column: 6 span;
+}
+
+.history {
+  margin-bottom: 10.5rem;
+}
+
+.history__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+  grid-template-columns: repeat(16,1fr);
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+.history__left-block {
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.history__slider-nav {
+  margin-top: auto;
+}
+
+.history__right-block {
+  min-width: 0;
+  -ms-grid-column-span: 12;
+  grid-column: 12 span;
+}
+
+.history__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history__slider-item {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.history__slider-item.swiper-slide-active .history__slider-item-heading {
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--color-orange);
+}
+
+.history__slider-item.swiper-slide-active .history__slider-item-body {
+  border-color: var(--color-orange);
+}
+
+.history__slider-item-heading {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  display: block;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.history__slider-item-top {
+  height: 6.6rem;
+}
+
+.history__slider-item-body {
+  padding-top: 3.1rem;
+  border-top: 2px solid var(--color-grey3);
+  -webkit-transition: border-color .2s;
+  -o-transition: border-color .2s;
+  transition: border-color .2s;
+}
+
+.history__slider-item-body p {
+  max-width: 34.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.history__slider-item-body p b,
+.history__slider-item-body p strong {
+  color: var(--color-orange);
+}
+
+.history__slider-item-body p:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.history__slider-item-legend {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: var(--color-grey3);
+}
+
+.about-intro {
+  margin-bottom: 10rem;
+}
+
+.about-intro__heading {
+  font-weight: 800;
+  font-size: 4.2rem;
+  line-height: 4.9rem;
+  letter-spacing: .02em;
+  margin-bottom: 8rem;
+}
+
+.about-intro__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+  grid-template-columns: repeat(16,1fr);
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+.about-intro__left-block {
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+}
+
+.about-intro__right-block {
+  -ms-grid-column-span: 12;
+  grid-column: 12 span;
+}
+
+.about-intro__content-txt {
+  margin-bottom: 8rem;
+}
+
+.about-intro__content-txt p {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4.9rem;
+  letter-spacing: .02em;
+}
+
+.about-intro__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12,1fr);
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  padding-top: 7rem;
+  border-top: 1px solid var(--color-grey3);
+}
+
+.about-intro__item {
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about-intro__item span {
+  margin-right: 1.6rem;
+  display: block;
+  font-weight: 600;
+  font-size: 7.4rem;
+  line-height: 8.9rem;
+}
+
+.about-intro__item p {
+  max-width: 21rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.about-intro__item p b,
+.about-intro__item p strong {
+  color: var(--color-orange);
+}
+
+.region-map {
+  padding: 7.2rem 0 10rem;
+  margin-bottom: 12rem;
+  background-color: var(--color-dark-blue);
+}
+
+.region-map__heading {
+  color: var(--color-white);
+  max-width: 28.2rem;
+}
+
+.region-map__map-container {
+  margin: 0 auto;
+  width: 122.7rem;
+  height: 67.1rem;
+}
+
+.region-map__map {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width:767px) {

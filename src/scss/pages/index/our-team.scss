@@ -1,6 +1,12 @@
 .our-team {
 	padding: 13rem 0 15.9rem;
 
+	&_grey-bg {
+		padding: 10rem 0;
+		background-color: var(--color-purple-light);
+		margin-bottom: 13.3rem;
+	}
+
 	@include mq(sm) {
 		padding: 4rem 0 6rem;
 	}

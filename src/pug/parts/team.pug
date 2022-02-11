@@ -1,0 +1,34 @@
+- let team_arr2 = [{name: "Григорий Анатольевич Чернухин", position: "Учредитель компании"},{name: "Александр Чернышов", position: "Коммерческий директор"},{name: "Андрей Мутохляев", position: "Директор офиса в Уфе"},{name: "Оксана Мезитова", position: "Директор ООО 'КОМТЕК' и главный бухгалтер"}, {name: "Оксана Мезитова", position: "Директор ООО 'КОМТЕК' и главный бухгалтер"}]
+
+section.our-team.our-team_grey-bg.parallax(data-depth="0.20")
+	.site-container.our-team__container
+		.our-team__info
+			span.section-name
+				|	Сотрудники компании
+			h2.site-second-title.our-team__title
+				|	Профессионалы с&nbsp;большим опытом работы в отрасли медицины и IT
+			a.our-team__link(href="/")
+				|	 Вся команда
+			.slider-nav.our-team__slider-nav
+				button.button-reset.slider-nav__btn.js-team-slider-nav-prev
+					<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+					</svg>
+					+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
+				button.button-reset.slider-nav__btn.js-team-slider-nav-next
+					<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+					</svg>
+					+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
+		.our-team__slider.swiper
+			.swiper-wrapper
+				for item, index in team_arr2
+					.our-team-item.swiper-slide
+						.our-team-item__img-wrap
+							img(src=`img/our-team/person${index}.jpg`, alt=item.name class="our-team-item__img")
+						.our-team-item__bottom
+							span.our-team-item__name=item.name
+							span.our-team-item__position=item.position
+
