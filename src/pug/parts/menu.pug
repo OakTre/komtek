@@ -27,6 +27,20 @@
 						|	komtek@gmail.ru
 					span.menu__contacts-small-legend
 						|	по всем вопросам
+
+		.menu__md-block
+			.menu__md-block-item
+				span.menu__legend
+					|	Поиск
+			.menu__md-block-item
+				form.menu__search-form
+					+icon("search")(width="35" height="35" class="menu__search-form-icon")
+					input(type="text" name="q" class="menu__search-form-input" placeholder="Что хотите найти?")
+					button.menu__search-form-btn.button-reset
+						|	ПОИСК
+
+
+
 		.menu__bottom-block
 			.menu__bottom-block-item
 				span.menu__legend
