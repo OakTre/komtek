@@ -1,0 +1,56 @@
+section.question-form
+	.site-container.question-form__container.grid-container
+		.grid-container__block
+			span.section-name
+				|	Обратная связь
+		.grid-container__block
+			h2.site-first-title.question-form__heading
+				|	Свяжитесь с нами, если у вас возникли вопросы
+
+			form.form(action="/" data-need-validation)
+				.form__container
+					.form__block
+						label.form__label
+							input(type="text" name="name" class="input" data-parsley-required)
+							span.input-heading
+								|	Ваше имя
+							+icon("ok")(width="19" height="16" class="input-ok")
+						label.form__label
+							input(type="tel" name="tel" class="input js-phone-mask" data-parsley-required data-parsley-phone)
+							span.input-heading
+								|	Ваш телефон
+							+icon("ok")(width="19" height="16" class="input-ok")
+						label.form__label
+							input(type="email" name="email" class="input" data-parsley-required)
+							span.input-heading
+								|	E-mail
+							+icon("ok")(width="19" height="16" class="input-ok")
+						label.form__label
+							input(type="text" name="company-name" class="input" data-parsley-required)
+							span.input-heading
+								|	НАЗВАНИЕ ОРГАНИЗАЦИИ
+							+icon("ok")(width="19" height="16" class="input-ok")
+
+
+						label.form__agreement
+							input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
+							p
+								|	Я согласен на обработку
+								a(href="/")
+									|	персональных данных
+						button.button-reset.form__button.button.button_secondary
+							|	 Отправить заявку
+					.form__block
+						.select
+							.select__container
+								select(name="place" class="js-custom-select")
+									option(placeholder value="")
+										|	ТЕМА СООБЩЕНИЯ
+									option(placeholder value="")
+										|	Управление
+									option(placeholder value="")
+										|	Учет пациентов
+									option(placeholder value="")
+										|	Использование изделий
+						label.form__label
+							textarea(name="text" class="texaarea" placeholder="Сообщение")

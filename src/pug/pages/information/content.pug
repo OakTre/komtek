@@ -1,0 +1,59 @@
+-
+	let arr = [
+		"Мониторинг исполнения государственного задания",
+		"Нормативно-правовые акты в сфере здравоохранения",
+		"Перечни лекарственных препаратов",
+		"Требования к сайтам медицинскиъ организаций",
+		"Уставные документы учреждения",
+		"ЦМП"
+	]
+
+	let arr2 = [
+		"Мониторинг исполнения государственного задания",
+		"Нормативно-правовые акты в сфере здравоохранения",
+		"Перечни лекарственных препаратов",
+	]
+
+
+section.information-content
+	.site-container.information-content__container.grid-container.js-tabs-container
+		.grid-container__block
+			label.site-second-title.information-content__legend
+				input(type="radio" class="visually-hidden js-tab" checked name="tab" value="reglament")
+				span
+					|	Регламенты
+			label.site-second-title.information-content__legend
+				input(type="radio" class="visually-hidden js-tab" name="tab" value="npa")
+				span
+					|	НПА
+		.grid-container__block
+			.information-content__tab-content.js-tab-content(data-content="reglament")
+				ul.information-content__list
+					for item in arr
+						li.information-content__item
+							button.button-reset.information-content__item-head.js-drop-menu-btn
+								span.information-content__item-head-heading=item
+								+icon("shevron")(width="20" height="20" class="information-content__item-head-icon")
+							.drop-menu-container.js-drop-menu-container
+								.information-content__item-body.drop-menu.js-drop-menu
+									-for(let i = 0; i<5; i++)
+										a.file(href="/" download)
+											span.file__icon-wrapper
+												+icon("file-dwnld")(width="16" height="16" class="file__icon")
+											span.file__text
+												|	 Отчет об исполнении государственного задания учреждениями здравоохранения города Севастополя по&nbsp;состоянию на август месяц 2020 года
+			.information-content__tab-content.js-tab-content(data-content="npa")
+				ul.information-content__list
+					for item in arr2
+						li.information-content__item
+							button.button-reset.information-content__item-head.js-drop-menu-btn
+								span.information-content__item-head-heading=item
+								+icon("shevron")(width="20" height="20" class="information-content__item-head-icon")
+							.drop-menu-container.js-drop-menu-container
+								.information-content__item-body.drop-menu.js-drop-menu
+									-for(let i = 0; i<7; i++)
+										a.file(href="/" download)
+											span.file__icon-wrapper
+												+icon("file-dwnld")(width="16" height="16" class="file__icon")
+											span.file__text
+												|	 Отчет об исполнении государственного задания учреждениями здравоохранения города Севастополя по&nbsp;состоянию на август месяц 2020 года

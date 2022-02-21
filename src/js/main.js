@@ -10,6 +10,8 @@ import activeInput from "./modules/activeInput.js";
 import validation from "./modules/validation.js";
 import inputMask from "./modules/inputMask.js";
 import initHistorySlider from "./modules/initHistorySlider.js";
+import initAccordion from "./modules/initAccordion.js";
+import initTabs from "./modules/initTabs";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -56,6 +58,8 @@ documentReady(() => {
 	validation();
 	inputMask();
 	initHistorySlider();
+	initAccordion();
+	initTabs();
 
 	gsap.registerPlugin(ScrollTrigger);
 

@@ -12,6 +12,7 @@ export default function initSelects() {
         searchEnabled: false,
         itemSelectText: '',
         shouldSort: false,
+				allowHTML: true,
       });
 
       slcts.push(slct);
@@ -34,6 +35,7 @@ export default function initSelects() {
         searchEnabled: true,
         itemSelectText: '',
         shouldSort: false,
+				allowHTML: true,
       });
     });
   }
@@ -44,6 +46,7 @@ function initSelect(elem) {
     searchEnabled: false,
     itemSelectText: '',
     shouldSort: false,
+		allowHTML: true,
   });
 }
 

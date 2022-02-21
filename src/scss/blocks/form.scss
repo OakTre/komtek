@@ -81,6 +81,16 @@
 		font-size: 1.8rem;
 		line-height: 2.2rem;
 	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(10,1fr);
+		column-gap: 20px;
+	}
+
+	&__block {
+		grid-column: 5 span;
+	}
 }
 
 
@@ -97,6 +107,7 @@
 	font-size: 1.2rem;
 	line-height: 1.6rem;
 	text-transform: uppercase;
+	height: 6.5rem;
 
 	&:focus {
 		background-color: var(--color-purple-light);
@@ -213,10 +224,11 @@
 	}
 
 	.choices__inner {
-		padding: 2.4rem 3.2rem !important;
+		padding: 2.1rem 3.2rem !important;
 		background-color: var(--color-white);
 		border-radius: 1rem;
 		border: 1px solid var(--color-grey3);
+		height: 6.5rem;
 	}
 
 	.choices__list--single {
@@ -258,5 +270,36 @@
 				padding-bottom: 0;
 			}
 		}
+	}
+}
+
+.texaarea {
+	display: block;
+	width: 100%;
+	background-color: var(--color-white);
+	border-radius: 1rem;
+	border: 1px solid var(--color-grey3);
+	outline: none;
+	padding: 2.4rem 3.2rem;
+	color: var(--color-grey3);
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	font-family: var(--main-ff);
+	text-transform: uppercase;
+	height: 23.5rem;
+
+	&::placeholder {
+		font-family: var(--main-ff);
+		color: var(--color-grey3);
+		font-weight: 700;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+	}
+
+	&.parsley-error {
+		background-color: #FFEAEA;
+		border-color: #EA3939;
 	}
 }

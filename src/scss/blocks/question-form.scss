@@ -1,0 +1,10 @@
+.question-form {
+	padding: 10rem 0;
+	background-color: var(--color-purple-light);
+
+	&__heading {
+		max-width: 59.4rem;
+		color: var(--color-orange);
+		margin-bottom: 7rem;
+	}
+}
