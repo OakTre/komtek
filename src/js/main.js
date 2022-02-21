@@ -76,33 +76,37 @@ documentReady(() => {
 		});
 	}
 
-	// paralax
-	const tmln = gsap.timeline({
-		scrollTrigger: {
-			trigger: ".parallax",
-			start: "top 85%",
-			end: "bottom 30%",
-			scrub: true
-		}
-	});
 
-	gsap.utils.toArray(".parallax").forEach(layer => {
-		gsap.set(layer, { y: 175 })
-	});
-
-	gsap.utils.toArray(".parallax").forEach(layer => {
-		gsap.to(layer, {
-			y: 0,
-			duration: 1,
-			ease: "sine.out",
-			// ease: "power4.out",
+	if(document.querySelector(".parallax")) {
+		// paralax
+		const tmln = gsap.timeline({
 			scrollTrigger: {
-				trigger: layer,
-				start: "top 90%",
-				end: "bottom top",
+				trigger: ".parallax",
+				start: "top 85%",
+				end: "bottom 30%",
+				scrub: true
 			}
 		});
-	});
+
+		gsap.utils.toArray(".parallax").forEach(layer => {
+			gsap.set(layer, { y: 175 })
+		});
+
+		gsap.utils.toArray(".parallax").forEach(layer => {
+			gsap.to(layer, {
+				y: 0,
+				duration: 1,
+				ease: "sine.out",
+				// ease: "power4.out",
+				scrollTrigger: {
+					trigger: layer,
+					start: "top 90%",
+					end: "bottom top",
+				}
+			});
+		});
+	}
+
 
 	if (document.querySelector(".map")) {
 		gsap.set(".map__map-img", { y: 75 });

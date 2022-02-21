@@ -1,0 +1,23 @@
+.error-page {
+	padding-top: 20rem;
+
+	&__container {
+		position: relative;
+		padding-bottom: 31.9rem;
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: 32px;
+		display: block;
+		object-fit: cover;
+		width: 77.8rem;
+		height: 75.6rem;
+	}
+
+	&__heading {
+		max-width: 72.1rem;
+		margin-bottom: 5rem;
+	}
+}

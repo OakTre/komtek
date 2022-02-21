@@ -5,7 +5,8 @@
 1. [Главная](https://oaktre.github.io/komtek/app/)
 2. [Продукты](https://oaktre.github.io/komtek/app/products.html)
 3. [О компании](https://oaktre.github.io/komtek/app/about.html)
-3. [Информация](https://oaktre.github.io/komtek/app/information.html)
+4. [Информация](https://oaktre.github.io/komtek/app/information.html)
+5. [404](https://oaktre.github.io/komtek/app/404.html)
 
 
 
