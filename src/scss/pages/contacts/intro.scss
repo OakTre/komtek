@@ -1,0 +1,58 @@
+.contacts-intro {
+	margin-bottom: 8rem;
+
+	&__heading {
+		margin-bottom: 6.3rem;
+	}
+
+	&__heading-info {
+		display: grid;
+		grid-template-columns: 5fr 7fr;
+		column-gap: 20px;
+	}
+
+	&__heading-info-block {
+		span {
+			display: block;
+			margin-top: 0.9rem;
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: var(--color-grey);
+		}
+	}
+
+	&__heading-info-text {
+		display: inline-block;
+		font-weight: 800;
+		font-size: 4.2rem;
+		line-height: 4.9rem;
+		letter-spacing: 0.02em;
+		transition: color 200ms;
+
+		&:not(._mail):hover {
+			color: var(--color-orange);
+		}
+
+		&._mail {
+			position: relative;
+			color: var(--color-orange);
+
+			&:hover {
+				&::before {
+					opacity: 0;
+				}
+			}
+
+			&::before {
+				position: absolute;
+				bottom: -0.2rem;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: var(--color-orange);
+				transition: opacity 200ms;
+				content: "";
+			}
+		}
+	}
+}

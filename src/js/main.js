@@ -12,6 +12,7 @@ import inputMask from "./modules/inputMask.js";
 import initHistorySlider from "./modules/initHistorySlider.js";
 import initAccordion from "./modules/initAccordion.js";
 import initTabs from "./modules/initTabs";
+import contactsMap from "./modules/contactsMap";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -60,6 +61,7 @@ documentReady(() => {
 	initHistorySlider();
 	initAccordion();
 	initTabs();
+	contactsMap();
 
 	gsap.registerPlugin(ScrollTrigger);
 

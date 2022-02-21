@@ -1,0 +1,76 @@
+-
+	let city_arr = [
+		{
+			city: "Уфа",
+			coords: "[54.741271, 55.967749]"
+		},
+		{
+			city: "Москва",
+			coords: "[55.669747, 37.532143]"
+		},
+		{
+			city: "Барнаул",
+			coords: "[53.353380, 83.718331]"
+		},
+		{
+			city: "Нижневартовск",
+			coords: "[60.934042, 76.560648]"
+		},
+		{
+			city: "Тюмень",
+			coords: "[57.172654, 65.486735]"
+		},
+		{
+			city: "Севастополь",
+			coords: "[44.601528, 33.484873]"
+		}
+	]
+
+
+
+section.contacts-map#contacts-map-host.parallax
+	.site-container.contacts-map__container.grid-container
+		.grid-container__block
+			h2.site-second-title.contacts-map__heading
+				|	Мы ждем Вас в наших офисах
+			label.switch.contacts-map__switch
+				input(type="checkbox" name="switch" class="visually-hidden js-switch")
+				span.switch__name._left
+					|	КАРТА
+				span.switch__container
+				span.switch__name._right
+					|	СПИСОК
+
+		.grid-container__block
+			#map.contacts-map__map.mod-show.js-map(data-center="[60.934042, 76.560648]" data-pin="img/pin.png")
+
+			ul.contacts-map__list.js-map-list
+				li.contacts-map__list-row-heading
+					.contacts-map__item
+						span.contacts-map__smal-legend
+							|	ГОРОД
+					.contacts-map__item
+						span.contacts-map__smal-legend
+							|	Адрес
+					.contacts-map__item
+						span.contacts-map__smal-legend
+							|	КОНТАКТЫ
+				for item in city_arr
+					li.contacts-map__list-row.js-offices-item(data-coord=item.coords)
+						.contacts-map__item
+							span.contacts-map__item-text-bold.js-city=item.city
+						.contacts-map__item
+							span.contacts-map__item-text.js-address
+								|	ул. Тимерязева, 22
+							span.contacts-map__item-text-small.js-time
+								|	09:00-17:00
+						.contacts-map__item
+							.div
+								a.contacts-map__item-text.js-phone(href="tel:+78007750797")
+									|	8 800 775 07 97
+								a.contacts-map__item-text-small.js-email(href="mailto:ufa@komtek.ru")
+									|	ufa@komtek.ru
+							.contacts-map__item-icon-wrapper
+								+icon("vector")(width="12" height="14" class="contacts-map__item-icon")
+
+script(src="https://api-maps.yandex.ru/2.1/?apikey=b0b15954-57af-4901-b78c-0ad5bd94cda8&lang=ru_RU")
