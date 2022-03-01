@@ -71,6 +71,19 @@
 				background-color: transparent;
 				content: "";
 			}
+
+			&::after {
+				position: absolute;
+				top: .6rem;
+				left: .4rem;
+				width: 1.1rem;
+				height: 0.8rem;
+				background-image: url(../img/tick.svg);
+				background-position: center;
+				background-size: cover;
+				content: "";
+				opacity: 0;
+			}
 		}
 	}
 
@@ -168,6 +181,10 @@
 			&::before {
 				background-color: vaR(--color-orange);
 				border-color: var(--color-white);
+			}
+
+			&::after {
+				opacity: 1;
 			}
 		}
 	}
