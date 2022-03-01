@@ -208,10 +208,12 @@
 		display: block;
 		color: var(--color-grey);
 		transition: color 200ms;
+		max-width: 21.1rem;
 
 		@include mq(sm) {
 			font-size: 1.4rem;
 			line-height: 1.8rem;
+			max-width: 100%;
 		}
 	}
 }

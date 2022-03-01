@@ -45,14 +45,14 @@
 	&__item {
 		grid-column: 4 span;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 
 		span {
 			margin-right: 1.6rem;
 			display: block;
 			font-weight: 600;
 			font-size: 7.4rem;
-			line-height: 8.9rem;
+			line-height: 0.8;
 		}
 
 		p {

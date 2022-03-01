@@ -2349,6 +2349,7 @@ a {
   -webkit-transition: color .2s;
   -o-transition: color .2s;
   transition: color .2s;
+  max-width: 21.1rem;
 }
 
 .products {
@@ -3085,9 +3086,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .about-intro__item span {
@@ -3095,7 +3096,7 @@ a {
   display: block;
   font-weight: 600;
   font-size: 7.4rem;
-  line-height: 8.9rem;
+  line-height: .8;
 }
 
 .about-intro__item p {
@@ -4178,6 +4179,7 @@ a {
   .our-team-item__position {
     font-size: 1.4rem;
     line-height: 1.8rem;
+    max-width: 100%;
   }
 
   .products {
