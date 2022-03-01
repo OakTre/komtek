@@ -28,13 +28,17 @@
 		}
 
 		@include mq(md) {
-			display: none;
+			height: auto;
 		}
 	}
 
 	&__map {
 		width: 100%;
 		height: 100%;
+
+		@include mq(sm) {
+			display: none;
+		}
 
 		// .map-cirlcles {
 		// 	opacity: 0;
@@ -43,5 +47,59 @@
 		// 		opacity: 1;
 		// 	}
 		// }
+	}
+
+	&__map-mobile {
+		display: none;
+
+		@include mq(sm) {
+			display: block;
+			width: 100%;
+			height: 22.2rem;
+			object-fit: contain;
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__mobile-list {
+		@include mq(sm, min) {
+			display: none;
+		}
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 18px 20px;
+	}
+
+	&__mobile-item {
+		grid-column: 2 span;
+		display: flex;
+	}
+
+	&__mobile-item-icon {
+		width: 1.5rem;
+		height: 1.5rem;
+		fill: var(--color-orange);
+		margin-right: 0.6rem;
+	}
+
+	&__mobile-text-wrapper {
+		p {
+			&:nth-child(1) {
+				font-weight: 600;
+				font-size: 1.3rem;
+				line-height: 1.6rem;
+				letter-spacing: 0.01em;
+				color: var(--color-white);
+				margin-bottom: 0.6rem;
+			}
+
+			&:nth-child(2) {
+				font-weight: 600;
+				font-size: 1.1rem;
+				line-height: 1.3rem;
+				color: var(--color-grey3);
+			}
+		}
 	}
 }

@@ -5,3 +5,15 @@ section.region-map.js-block
 
 		.region-map__map-container
 			include russia-svg-map
+
+			img(src="img/russia-map-mobil.svg" alt="" class="region-map__map-mobile")
+
+			.region-map__mobile-list 
+				- for (let i=0; i<6; i++)
+					.region-map__mobile-item
+						+icon("marker")(width="15" height="15" class="region-map__mobile-item-icon")
+						.region-map__mobile-text-wrapper 
+							p
+								|	Республика Крым
+							p 
+								|	25 мед.учреждений
