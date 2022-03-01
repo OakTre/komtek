@@ -1,6 +1,6 @@
 export default () => {
 	const btntop = document.querySelector('.btn-top-container');
-	const first = document.querySelector('.map');
+	const first = document.querySelector('.js-block');
 
 	if (!first) return;
 

@@ -9,13 +9,17 @@
 
 	&__item-content {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 
 		p {
 			font-weight: 700;
 			font-size: 1.8rem;
 			line-height: 2.2rem;
 			max-width: 32.8rem;
+
+			b {
+				color: var(--color-orange)
+			}
 		}
 	}
 
@@ -23,7 +27,7 @@
 		display: block;
 		font-weight: 600;
 		font-size: 7.4rem;
-		line-height: 1;
+		line-height: 0.8;
 		margin-right: 1.7rem;
 	}
 }
