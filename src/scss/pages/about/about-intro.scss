@@ -1,12 +1,28 @@
 .about-intro {
 	margin-bottom: 10rem;
 
+	@include mq(sm) {
+		padding-top: 6rem;
+		margin-bottom: 5.5rem;
+	}
+
 	&__heading {
 		font-weight: 800;
 		font-size: 4.2rem;
 		line-height: 4.9rem;
 		letter-spacing: 0.02em;
 		margin-bottom: 8rem;
+
+		@include mq(md) {
+			margin-bottom: 4rem;
+		}
+
+		@include mq(sm) {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 3rem;
+			letter-spacing: 0.02em;
+		}
 	}
 
 	&__content {
@@ -15,12 +31,26 @@
 		column-gap: 20px;
 	}
 
+	&__icon-bg {
+		@include mq(md) {
+			display: none;
+		}
+	}
+
 	&__left-block {
 		grid-column: 4 span;
+
+		@include mq(md) {
+			grid-column: 16 span;
+		}
 	}
 
 	&__right-block {
 		grid-column: 12 span;
+
+		@include mq(md) {
+			grid-column: 16 span;
+		}
 	}
 
 	&__content-txt {
@@ -31,6 +61,28 @@
 			font-size: 3.8rem;
 			line-height: 4.9rem;
 			letter-spacing: 0.02em;
+
+			@include mq(md) {
+				font-size: 3.2rem;
+				line-height: 3.6rem;
+
+				br {
+					display: none;
+				}
+			}
+
+			@include mq(sm) {
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+		}
+
+		@include mq(md) {
+			margin-bottom: 4rem;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 4.7rem;
 		}
 	}
 
@@ -40,6 +92,11 @@
 		column-gap: 20px;
 		padding-top: 7rem;
 		border-top: 1px solid var(--color-grey3);
+
+		@include mq(md) {
+			padding-top: 4rem;
+			gap: 35px 0;
+		}
 	}
 
 	&__item {
@@ -53,6 +110,14 @@
 			font-weight: 600;
 			font-size: 7.4rem;
 			line-height: 0.8;
+
+			@include mq(md) {
+				font-size: 5rem;
+			}
+
+			@include mq(sm) {
+				margin-right: 2.2rem;
+			}
 		}
 
 		p {
@@ -64,6 +129,20 @@
 			b,strong {
 				color: var(--color-orange);
 			}
+
+			@include mq(md) {
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+
+			@include mq(md) {
+				font-size: 1.4rem;
+				line-height: 1.7rem;
+			}
+		}
+
+		@include mq(sm) {
+			grid-column: 12 span;
 		}
 	}
 }

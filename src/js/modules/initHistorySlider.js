@@ -15,19 +15,19 @@ export default () => {
 		},
 		breakpoints: {
 			// when window width is >= 320px
-			// 320: {
-			//   slidesPerView: 1.3,
-			//   spaceBetween: 10
-			// },
-			// // when window width is >= 480px
-			// 767: {
-			//   slidesPerView: 3,
-			//   spaceBetween: 20
-			// },
-			// 1200: {
-			// 	slidesPerView: 4,
-			// 	spaceBetween: 20
-			// },
+			320: {
+			  slidesPerView: 1.1,
+			  spaceBetween: 0
+			},
+			// when window width is >= 480px
+			767: {
+			  slidesPerView: 2,
+			  spaceBetween: 0
+			},
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 0
+			},
 		}
 	});
 };

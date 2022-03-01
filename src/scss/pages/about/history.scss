@@ -1,25 +1,49 @@
 .history {
 	margin-bottom: 10.5rem;
 
+	@include mq(sm) {
+		margin-bottom: 6rem;
+	}
+
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(16, 1fr);
 		column-gap: 20px;
 	}
 
+	&__title {
+		@include mq(sm) {
+			margin-bottom: 4.1rem;
+			font-size: 2rem;
+			line-height: 2.4rem;
+		}
+	}
+
 	&__left-block {
 		grid-column: 4 span;
 		display: flex;
 		flex-direction: column;
+
+		@include mq(sm) {
+			grid-column: 16 span;
+		}
 	}
 
 	&__slider-nav {
 		margin-top: auto;
+
+		@include mq(sm) {
+			display: none;
+		}
 	}
 
 	&__right-block {
 		min-width: 0;
 		grid-column: 12 span;
+
+		@include mq(sm) {
+			grid-column: 16 span;
+		}
 	}
 
 	&__slider {
@@ -34,6 +58,11 @@
 				font-size: 5rem;
 				line-height: 1;
 				color: var(--color-orange);
+
+				@include mq(sm) {
+					font-size: 3.5rem;
+					line-height: 1;
+				}
 			}
 
 			.history__slider-item-body {
@@ -48,10 +77,18 @@
 		line-height: 3.2rem;
 		display: block;
 		transition: all 200ms;
+
+		@include mq(sm) {
+			line-height: 2rem;
+		}
 	}
 
 	&__slider-item-top {
 		height: 6.6rem;
+
+		@include mq(sm) {
+			line-height: 2rem;
+		}
 	}
 
 	&__slider-item-body {
@@ -71,6 +108,15 @@
 
 			&:nth-last-of-type(1) {
 				margin-bottom: 0;
+			}
+
+			@include mq(lg) {
+				max-width: 91.3%;
+			}
+
+			@include mq(sm) {
+				font-size: 1.3rem;
+				line-height: 1.6rem;
 			}
 		}
 	}

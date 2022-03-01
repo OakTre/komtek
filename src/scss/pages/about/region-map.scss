@@ -3,15 +3,33 @@
 	margin-bottom: 12rem;
 	background-color: var(--color-dark-blue);
 
+	@include mq(sm) {
+		padding: 4rem 0;
+		margin-bottom: 5.5rem;
+	}
+
 	&__heading {
 		color: var(--color-white);
 		max-width: 28.2rem;
+
+		@include mq(sm) {
+			font-size: 2rem;
+			line-height: 2.4rem;
+		}
 	}
 
 	&__map-container {
 		margin: 0 auto;
 		width: 122.7rem;
 		height: 67.1rem;
+
+		@include mq(md) {
+			width: 100%;
+		}
+
+		@include mq(md) {
+			display: none;
+		}
 	}
 
 	&__map {

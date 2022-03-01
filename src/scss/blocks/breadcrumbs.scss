@@ -5,6 +5,10 @@
 	&__container {
 		margin-top: 9.4rem;
 		margin-bottom: 1rem;
+
+		@include mq(sm) {
+			display: none;
+		}
 	}
 
 	&__item {
