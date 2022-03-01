@@ -30,16 +30,16 @@ section.question-form.parallax
 							span.input-heading
 								|	НАЗВАНИЕ ОРГАНИЗАЦИИ
 							+icon("ok")(width="19" height="16" class="input-ok")
-
-
-						label.form__agreement
-							input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
-							p
-								|	Я согласен на обработку
-								a(href="/")
-									|	персональных данных
-						button.button-reset.form__button.button.button_secondary
-							|	 Отправить заявку
+						.form__desktop-block
+							label.form__agreement
+								input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
+								p
+									|	Я согласен на обработку
+									a(href="/")
+										|	персональных данных
+							button.button-reset.form__button.button.button_secondary
+								|	 Отправить заявку
+							
 					.form__block
 						.select
 							.select__container
@@ -54,3 +54,14 @@ section.question-form.parallax
 										|	Использование изделий
 						label.form__label
 							textarea(name="text" class="texaarea" placeholder="Сообщение")
+
+						.form__mobile-block
+							label.form__agreement
+								input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
+								p
+									|	Я согласен на обработку
+									a(href="/")
+										|	персональных данных
+							button.button-reset.form__button.button.button_secondary
+								|	 Отправить заявку
+

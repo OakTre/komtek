@@ -2,9 +2,19 @@
 	padding: 10rem 0;
 	background-color: var(--color-purple-light);
 
+	@include mq(sm) {
+		padding: 6rem 0;
+	}
+
 	&__heading {
 		max-width: 59.4rem;
 		color: var(--color-orange);
 		margin-bottom: 7rem;
+
+		@include mq(sm) {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 4rem;
+		}
 	}
 }

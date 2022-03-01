@@ -105,12 +105,12 @@
                 <div class="breadcrumbs__item">Информация</div>
               </div>
             </div>
-            <h1 class="site-first-title information-intro__heading">	ИНФОРМАЦИЯ</h1>
+            <h1 class="site-first-title information-intro__heading">	Информация</h1>
           </div>
         </section>
         <section class="information-content js-block">
           <div class="site-container information-content__container grid-container js-tabs-container">
-            <div class="grid-container__block">
+            <div class="grid-container__block information-content__nav">
               <label class="site-second-title information-content__legend">
                 <input class="visually-hidden js-tab" type="radio" checked name="tab" value="reglament"><span>	Регламенты</span>
               </label>
@@ -414,11 +414,13 @@
                         <use xlink:href="img/sprite.svg#ok"></use>
                       </svg>
                     </label>
-                    <label class="form__agreement">
-                      <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
-                      <p>	Я согласен на обработку<a href="/">	персональных данных</a></p>
-                    </label>
-                    <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
+                    <div class="form__desktop-block">
+                      <label class="form__agreement">
+                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
+                        <p>	Я согласен на обработку<a href="/">	персональных данных</a></p>
+                      </label>
+                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
+                    </div>
                   </div>
                   <div class="form__block">
                     <div class="select">
@@ -434,6 +436,13 @@
                     <label class="form__label">
                       <textarea class="texaarea" name="text" placeholder="Сообщение"></textarea>
                     </label>
+                    <div class="form__mobile-block">
+                      <label class="form__agreement">
+                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
+                        <p>	Я согласен на обработку<a href="/">	персональных данных</a></p>
+                      </label>
+                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
+                    </div>
                   </div>
                 </div>
               </form>

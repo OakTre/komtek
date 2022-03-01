@@ -19,6 +19,32 @@
 		&:hover {
 			color: var(--color-orange);
 		}
+
+		@include mq(md) {
+			margin-right: 2.4rem;
+			margin-bottom: 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@include mq(sm){
+			font-size: 2rem;
+			line-height: 2.4rem;
+			letter-spacing: 0.01em;
+		}
+	}
+
+	&__nav {
+		@include mq(md) {
+			display: flex;
+			align-items: center;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	&__list {
@@ -63,6 +89,14 @@
 		line-height: 3rem;
 		transition: color 200ms;
 		padding: 3rem 0;
+
+		@include mq(sm) {
+			padding: 2.5rem 0;
+			font-size: 1.4rem;
+			line-height: 2.1rem;
+			max-width: 92%;
+			text-align: left;
+		}
 	}
 
 	&__item-head-icon {
@@ -76,6 +110,10 @@
 	&__item-body {
 		padding-top: 0.5rem;
 		padding-bottom: 5rem;
+
+		@include mq(sm) {
+			padding-bottom: 2.5rem;
+		}
 	}
 
 	&__tab-content {

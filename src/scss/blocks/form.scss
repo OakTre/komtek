@@ -104,10 +104,30 @@
 		display: grid;
 		grid-template-columns: repeat(10,1fr);
 		column-gap: 20px;
+
+		@include mq(sm) {
+			gap: 20px 0;
+		}
 	}
 
 	&__block {
 		grid-column: 5 span;
+
+		@include mq(sm) {
+			grid-column: 10 span;
+		}
+	}
+
+	&__desktop-block {
+		@include mq(sm) {
+			display: none;
+		}
+	}
+
+	&__mobile-block	{
+		@include mq(sm, min) {
+			display: none;
+		}
 	}
 }
 
@@ -282,6 +302,10 @@
 		border: 1px solid var(--color-grey3);
 		padding: 0 3.2rem 2.9rem 3.2rem;
 
+		@include mq(sm) {
+			padding: 0 2rem 1.6rem 2rem;
+		}
+
 		.choices__item {
 			padding: 1.3rem 0;
 			background-color: transparent;
@@ -302,6 +326,11 @@
 
 			&:last-child {
 				padding-bottom: 0;
+			}
+
+			@include mq(sm) {
+				font-size: 1.2rem;
+				line-height: 1.6rem;
 			}
 		}
 	}
@@ -335,5 +364,10 @@
 	&.parsley-error {
 		background-color: #FFEAEA;
 		border-color: #EA3939;
+	}
+
+	@include mq(sm) {
+		padding: 2.4rem 2rem;
+		height: 14.7rem;
 	}
 }
