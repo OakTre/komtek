@@ -1,14 +1,38 @@
 .contacts-intro {
 	margin-bottom: 8rem;
 
+	@include mq(sm) {
+		padding-top: 5.5rem;
+		margin-bottom: 6.5rem;
+	}
+
 	&__heading {
 		margin-bottom: 6.3rem;
+
+		@include mq(sm) {
+			margin-bottom: 5.2rem;
+		}
+	}
+
+	&__legend {
+		@include mq(md) {
+			margin-bottom: 2.5rem;
+		}
+
+		@include mq(sm) {
+			font-size: 2rem;
+			line-height: 2.4rem;
+		}
 	}
 
 	&__heading-info {
 		display: grid;
 		grid-template-columns: 5fr 7fr;
 		column-gap: 20px;
+
+		@include mq(sm) {
+			display: block;
+		}
 	}
 
 	&__heading-info-block {
@@ -18,6 +42,20 @@
 			font-size: 1.6rem;
 			line-height: 1.9rem;
 			color: var(--color-grey);
+
+			@include mq(sm) {
+				font-size: 1.4rem;
+				line-height: 1.6rem;
+				margin-top: .4rem;
+			}
+		}
+
+		@include mq(sm) {
+			margin-bottom: 2.5rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -28,6 +66,11 @@
 		line-height: 4.9rem;
 		letter-spacing: 0.02em;
 		transition: color 200ms;
+
+		@include mq(sm) {
+			font-size: 2.5rem;
+			line-height: 3rem;
+		}
 
 		&:not(._mail):hover {
 			color: var(--color-orange);

@@ -176,5 +176,9 @@
 				}
 			}
 		}
+
+		@include mq(md) {
+			margin-bottom: 4.8rem;
+		}
 	}
 }

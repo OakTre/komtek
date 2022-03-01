@@ -7,6 +7,12 @@
 		gap: 20px;
 	}
 
+	&__heading {
+		@include mq(md) {
+			margin-bottom: 4rem;
+		}
+	}
+
 	&__item {
 		grid-column: 4 span;
 		display: flex;
