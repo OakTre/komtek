@@ -3,24 +3,44 @@
 	padding: 8rem 0 10rem;
 	margin-bottom: 14rem;
 
+	@include mq(sm) {
+		padding: 4rem 0;
+	}
+
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(16, 1fr);
 		column-gap: 20px;
+
+		@include mq(lg) {
+			gap: 10px 0;
+		}
 	}
 
 	&__left-block {
 		grid-column: 4 span;
+
+		@include mq(lg) {
+			grid-column: 16 span;
+		}
 	}
 
 	&__right-block {
 		grid-column: 12 span;
+
+		@include mq(lg) {
+			grid-column: 16 span;
+		}
 	}
 
 	&__heading-wrapper {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 5rem;
+
+		@include mq(sm) {
+			margin-bottom: 3.2rem;
+		}
 	}
 
 	&__heading-text {
@@ -28,6 +48,11 @@
 		max-width: 92.7rem;
 		font-size: 2.7rem;
 		line-height: 3.2rem;
+
+		@include mq(sm) {
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+		}
 	}
 
 	&__heading-count {
@@ -35,12 +60,20 @@
 		font-size: 1.8rem;
 		line-height: 2.2rem;
 		color: var(--color-orange);
+
+		@include mq(md) {
+			display: none;
+		}
 	}
 
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		gap: 20px;
+
+		@include mq(sm) {
+			gap: 6px;
+		}
 	}
 
 	&__item {
@@ -55,6 +88,36 @@
 		&:nth-child(13),
 		&:nth-child(14) {
 			grid-column: 6 span;
+		}
+
+		@include mq(md) {
+			grid-column: 6 span !important;
+			height: 18rem;
+
+			&:nth-child(1),
+			&:nth-child(4),
+			&:nth-child(9),
+			&:nth-child(14) {
+				grid-column: 12 span !important;
+				height: 19rem;
+
+				.products-card__img {
+					width: 32rem;
+					height: 33rem;
+				}
+			}
+		}
+
+		@include mq(md) {
+			&:nth-child(1),
+			&:nth-child(4),
+			&:nth-child(9),
+			&:nth-child(14) {
+				.products-card__img {
+					width: 14.4rem !important;
+					height: 10.5rem !important;
+				}
+			}
 		}
 	}
 }

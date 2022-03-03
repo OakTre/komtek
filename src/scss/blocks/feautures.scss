@@ -3,8 +3,33 @@
 	grid-template-columns: repeat(16, 1fr);
 	column-gap: 20px;
 
+	@include mq(md) {
+		gap: 20px 0;
+	}
+
+	@include mq(sm) {
+		gap: 0;
+	}
+
 	&__item {
 		grid-column: 4 span;
+
+		@include mq(md) {
+			grid-column: 8 span;
+
+			&:nth-child(1) {
+				grid-column: 16 span;
+			}
+		}
+
+		@include mq(sm) {
+			grid-column: 16 span;
+			margin-bottom: 2rem;
+
+			&:nth-child(1) {
+				margin-bottom: 3.7rem;
+			}
+		}
 	}
 
 	&__item-content {
@@ -16,6 +41,15 @@
 			font-size: 1.8rem;
 			line-height: 2.2rem;
 			max-width: 32.8rem;
+
+			@include mq(md) {
+				max-width: 100%;
+			}
+
+			@include mq(sm) {
+				font-size: 1.4rem;
+				line-height: 1.6rem;
+			}
 
 			b {
 				color: var(--color-orange)
@@ -29,5 +63,10 @@
 		font-size: 7.4rem;
 		line-height: 0.8;
 		margin-right: 1.7rem;
+
+		@include mq(sm) {
+			font-size: 5rem;
+			margin-right: 2.4rem;
+		}
 	}
 }
