@@ -1,0 +1,56 @@
+-
+    let arr = [
+        {
+            tag: "ПРОЕКТ",
+            name: "Региональная Лабораторная информационная система",
+            text: ""
+        },
+        {
+            tag: "НОВОСТИ",
+            name: 'Интеграция ВИМИС "ССЗ" и ПК "Здравоохранение" в ЧАО',
+            text: 'РМИС ПК "Здравоохранение" Чукотского автономного округа успешно прошла тестирование и подключена к федеральной Вертикальной интегрированной медицинской информационной системе по профилю "Сердечно-сосудистые заболевания". Интеграция с ВИМИС "ССЗ" позволит региону...'
+        },
+        {
+            tag: "ПРОДУКТ",
+            name: 'Медицинская информационная система',
+            text: ''
+        },
+        {
+            tag: "ПРОДУКТ",
+            name: 'Лабораторная информационная система',
+            text: ''
+        },
+        {
+            tag: "МЕРОПРИЯТИЯ",
+            name: 'Участие в Выставке ИНФОТЕХ 2021',
+            text: 'С 13 по 14 октября 2021 представители ООО «КОМТЕК» приняли участие в XIV Тюменском Цифровом Форуме / Выставке «ИНФОТЕХ 2021», который был организован при поддержке Министерства цифрового развития, связи и массовых коммуникаций Российской Федерации г. Тюмени. Гостям и участникам выставки были продемонстрированы возможности  Медицинской и лабораторной информационных систем...'
+        },
+    ]
+
+
+
+
+main.page-main.main
+    section.search-results
+        .site-container.search-results__container.grid-container
+            .grid-container__block
+                span.section-name2.search-results__section-name-descktop
+                    |   25 результатов
+
+            .grid-container__block
+                form.search-results__form
+                    button.button-reset.search-results__btn
+                        +icon("search")(class="search-results__icon")
+                    button.button-reset.search-results__btn._mobile
+                        |   Поиск
+                    label.search-results__label
+                        input.search-results__input(type="text" name="q")
+
+                ul.search-results__list
+                    for item in arr
+                        li.search-results__item
+                            a(href="/" class="search-results__item-link") 
+                                span.search-results__tag=item.tag
+                                h2.search-results__result-heading=item.name
+                                -if(item.text)
+                                    p.search-results__result-text=item.text
