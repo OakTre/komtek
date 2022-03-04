@@ -112,6 +112,8 @@
 
 	&__block {
 		grid-column: 5 span;
+		display: flex;
+		flex-direction: column;
 
 		@include mq(sm) {
 			grid-column: 10 span;
@@ -351,6 +353,7 @@
 	font-family: var(--main-ff);
 	text-transform: uppercase;
 	height: 23.5rem;
+	resize: none;
 
 	&::placeholder {
 		font-family: var(--main-ff);

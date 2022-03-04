@@ -680,3 +680,33 @@
 .highlight {
 	background: #FDF2E6 !important;
 }
+
+.file-upload {
+	cursor: pointer;
+	margin-left: auto;
+	display: inline-block;
+
+	&__text {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	
+	&__text-icon {
+		width: 2.4rem;
+		height: 2.4rem;
+		fill: var(--color-orange);
+		margin-right: 0.4rem;
+	}
+
+	&__type {
+		display: block;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: var(--color-grey3);
+	}
+}

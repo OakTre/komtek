@@ -2,6 +2,7 @@ import documentReady from "./helpers/documentReady";
 import lazyImages from "./modules/lazyImages";
 import indexSlider from "./modules/indexSlider";
 import teamSlider from "./modules/teamSlider";
+import siteSlider from "./modules/siteSlider";
 import projectsSlider from "./modules/projectsSlider";
 import btnHide from "./modules/btnHide";
 import openMenu from "./modules/openMenu";
@@ -66,6 +67,7 @@ documentReady(() => {
 	contactsMap();
 	chifsSlider();
 	searchResult();
+	siteSlider();
 
 	gsap.registerPlugin(ScrollTrigger);
 

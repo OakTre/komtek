@@ -1,11 +1,16 @@
+-
+	let formtitle = formHeading ? formHeading : "Свяжитесь с нами, если у вас возникли вопросы"
+	let selectName = selectLabel ? selectLabel : "ТЕМА СООБЩЕНИЯ"
+	let textareaLabel = textAreaLabel ? textAreaLabel : "Сообщение"
+
+
 section.question-form.parallax
 	.site-container.question-form__container.grid-container
 		.grid-container__block
 			span.section-name
 				|	Обратная связь
 		.grid-container__block
-			h2.site-first-title.question-form__heading
-				|	Свяжитесь с нами, если у вас возникли вопросы
+			h2.site-first-title.question-form__heading=formtitle
 
 			form.form(action="/" data-need-validation)
 				.form__container
@@ -44,8 +49,7 @@ section.question-form.parallax
 						.select
 							.select__container
 								select(name="place" class="js-custom-select")
-									option(placeholder value="")
-										|	ТЕМА СООБЩЕНИЯ
+									option(placeholder value="")=selectName
 									option(placeholder value="")
 										|	Управление
 									option(placeholder value="")
@@ -53,9 +57,25 @@ section.question-form.parallax
 									option(placeholder value="")
 										|	Использование изделий
 						label.form__label
-							textarea(name="text" class="texaarea" placeholder="Сообщение")
+							textarea(name="text" class="texaarea" placeholder=textareaLabel)
 
+						if file
+							label.form__file-label.file-upload.form__desktop-block
+								input(type="file" class="visually-hidden" name="file")
+								p.file-upload__text 
+									+icon("file")(width="24" height="24" class="file-upload__text-icon")
+									|	ПРИКРЕПИТЬ РЕЗЮМЕ
+								span.file-upload__type 
+									|	PDF, .doc, .docx
 						.form__mobile-block
+							if file
+								label.form__file-label.file-upload
+									input(type="file" class="visually-hidden" name="file")
+									p.file-upload__text 
+										+icon("file")(width="24" height="24" class="file-upload__text-icon")
+										|	ПРИКРЕПИТЬ РЕЗЮМЕ
+									span.file-upload__type 
+										|	PDF, .doc, .docx
 							label.form__agreement
 								input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
 								p

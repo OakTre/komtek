@@ -1,0 +1,36 @@
+-
+    let slider_arr = [
+        {name: "Корпоративный отдых в Крыму", position: "28 Сентябрь 2021"},
+        {name: "Участие в Выставке ИНФОТЕХ 2021", position: "28 Сентябрь 2021"},
+        {name: "Корпоративный отдых в Крыму", position: "28 Сентябрь 2021"},
+        {name: "Корпоративный отдых в Крыму", position: "28 Сентябрь 2021"}
+    ]
+
+section.site-slider_grey-bg
+    .site-container.site-slider__container
+        .site-slider__info
+            h2.site-second-title.site-slider__title
+                |	Мероприятия
+            p.site-slider__info-text
+                |   Комтек является активным участником выставок как федерального, так и регионального значения.
+            .slider-nav.site-slider__slider-nav
+                button.button-reset.slider-nav__btn.js-site-slider-nav-prev
+                    <svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+                        <circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+                    </svg>
+                    +icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
+                button.button-reset.slider-nav__btn.js-site-slider-nav-next
+                    <svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+                        <circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+                    </svg>
+                    +icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
+        .site-slider__slider.swiper
+            .swiper-wrapper
+                for item, index in slider_arr
+                    .site-slider-item.swiper-slide
+                        img.site-slider-item__img(src="img/img.jpg", alt="")
+                        p.site-slider-item__heading=item.name
+                        span.site-slider-item__subheading=item.position
+
