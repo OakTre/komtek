@@ -33,6 +33,7 @@
 
 		@include mq(sm) {
 			padding: 2.2rem 2rem;
+			overflow: auto;
 		}
 	}
 
@@ -410,13 +411,13 @@
 	}
 
 	&__mobile-block {
+		display: none;
 		order: 4;
-		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 18px 0;
 
-		@include mq(lg, min) {
-			display: none;
+		@include mq(lg) {
+			display: grid;
 		}
 	}
 

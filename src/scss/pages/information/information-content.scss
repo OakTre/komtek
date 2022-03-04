@@ -89,6 +89,7 @@
 		line-height: 3rem;
 		transition: color 200ms;
 		padding: 3rem 0;
+		color: var(--color-dark);
 
 		@include mq(sm) {
 			padding: 2.5rem 0;

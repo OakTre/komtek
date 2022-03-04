@@ -14,6 +14,7 @@ import initAccordion from "./modules/initAccordion.js";
 import initTabs from "./modules/initTabs";
 import contactsMap from "./modules/contactsMap";
 import chifsSlider from "./modules/chifsSlider";
+import searchResult from "./modules/searchResult.js";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -64,6 +65,7 @@ documentReady(() => {
 	initTabs();
 	contactsMap();
 	chifsSlider();
+	searchResult();
 
 	gsap.registerPlugin(ScrollTrigger);
 

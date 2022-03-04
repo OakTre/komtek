@@ -44,13 +44,13 @@ main.page-main.main
                     button.button-reset.search-results__btn._mobile
                         |   Поиск
                     label.search-results__label
-                        input.search-results__input(type="text" name="q")
+                        input.search-results__input(type="text" name="q" id="search" data-items="content" value="Информационная") 
 
-                ul.search-results__list
+                ul.search-results__list(data-items-target="content")
                     for item in arr
                         li.search-results__item
                             a(href="/" class="search-results__item-link") 
                                 span.search-results__tag=item.tag
-                                h2.search-results__result-heading=item.name
+                                h2.search-results__result-heading.highlight-element=item.name
                                 -if(item.text)
-                                    p.search-results__result-text=item.text
+                                    p.search-results__result-text.highlight-element=item.text
