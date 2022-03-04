@@ -3378,17 +3378,7 @@ a {
   margin-bottom: 10rem;
 }
 
-.chifs__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-  grid-template-columns: repeat(12,1fr);
-  gap: 20px;
-}
-
 .chifs__item {
-  -ms-grid-column-span: 4;
-  grid-column: 4 span;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5057,6 +5047,47 @@ a {
   .contacts-intro__heading-info-text {
     font-size: 2.5rem;
     line-height: 3rem;
+  }
+
+  .chifs {
+    margin-bottom: 4.8rem;
+  }
+
+  .chifs__item-img {
+    height: 24.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .chifs__name {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: .4rem;
+  }
+
+  .chifs__position {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .chifs__tel {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .chifs__email {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .contacts-map {
+    margin-bottom: 6rem;
+  }
+
+  .contacts-map__map {
+    height: 23.9rem;
+    margin: 0 -16px;
+    padding: 0 16px;
+    width: auto;
   }
 }
 
