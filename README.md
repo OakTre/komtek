@@ -9,7 +9,8 @@
 5. [Контакты](https://oaktre.github.io/komtek/app/contacts.html)
 6. [Результаты поиска](https://oaktre.github.io/komtek/app/search-results.html)
 7. [Команда](https://oaktre.github.io/komtek/app/team.html)
-8. [404](https://oaktre.github.io/komtek/app/404.html)
+8. [Проекты](https://oaktre.github.io/komtek/app/team.html)
+9. [404](https://oaktre.github.io/komtek/app/404.html)
 
 
 

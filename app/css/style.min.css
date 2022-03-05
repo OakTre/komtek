@@ -5445,6 +5445,15 @@ a {
     height: 1.3rem;
   }
 
+  .products-card.mod-project:nth-child(4) .products-card__img {
+    width: 10.5rem!important;
+    height: 8.5rem!important;
+  }
+
+  .products-card.mod-project .products-card__heading {
+    -webkit-line-clamp: 4;
+  }
+
   .question-form._bg-transparent {
     padding: 0 0 6rem;
   }

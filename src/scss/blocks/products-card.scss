@@ -161,6 +161,19 @@
 				width: 20rem;
 				height: 16.3rem;
 			}
+
+			@include mq(sm) {
+				.products-card__img {
+					width: 10.5rem !important;
+					height: 8.5rem !important;
+				}
+			}
+		}
+
+		.products-card__heading {
+			@include mq(sm) {
+				-webkit-line-clamp: 4;
+			}
 		}
 	}
 }
