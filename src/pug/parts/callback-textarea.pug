@@ -2,9 +2,10 @@
 	let formtitle = formHeading ? formHeading : "Свяжитесь с нами, если у вас возникли вопросы"
 	let selectName = selectLabel ? selectLabel : "ТЕМА СООБЩЕНИЯ"
 	let textareaLabel = textAreaLabel ? textAreaLabel : "Сообщение"
+	let bgClass = bgClassForm ? bgClassForm : null
 
 
-section.question-form.parallax
+section.question-form.parallax(class=bgClass)
 	.site-container.question-form__container.grid-container
 		.grid-container__block
 			span.section-name
