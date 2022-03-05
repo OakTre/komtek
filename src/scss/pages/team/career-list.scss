@@ -2,7 +2,170 @@
     padding: 10rem 0;
     background-color: var(--color-dark-blue);
 
+    @include mq(sm) {
+        padding: 4rem 0 2.5rem 0;
+    }
+
     &__heading {
         color: var(--color-white);
+
+        @include mq(md) {
+			margin-bottom: 4rem;
+		}
+    }
+
+    &__vacansy {
+        width: 100%;
+    }
+
+    &__vacansy-head {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column: 20px;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #404669;
+
+        @include mq(sm) {
+            display: none;
+        }
+    }
+
+    &__td {
+        align-self: center;
+    
+        &:nth-child(1) {
+            grid-column: 3 span;
+
+            @include mq(sm) {
+                grid-column: 4 span;
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            grid-column: 2 span;
+        }
+
+        &:nth-child(5) {
+            grid-column: 3 span;
+
+            @include mq(sm) {
+                grid-column: 2 span;
+            }
+        }
+
+        &._flex-el {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__vacansy-heading-text {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: var(--color-grey);
+        text-transform: uppercase;
+        flex-shrink: 0;
+    }
+
+    &__td-text {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--color-white);
+        transition: color 200ms;
+
+        &._bold {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 3rem;
+
+            @include mq(sm) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+
+        @include mq(sm) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &::before {
+                display: block;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.6rem;
+                color: var(--color-grey);
+                margin-bottom: 0.2rem;
+                content: attr(data-text);
+            }
+        }
+    }
+
+    &__td-link {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        text-transform: uppercase;
+        color: var(--color-white);
+        max-width: 11.2rem;
+        padding-left: 3.2rem;
+        background-size: 2.4rem 2.4rem;
+        background-position: center left;
+        background-repeat: no-repeat;
+
+        &._mobile {
+            display: none;
+        }
+
+        @include mq(sm) {
+            display: none;
+
+            &._mobile {
+                display: flex;
+                align-items: center;
+                max-width: 100%;
+                height: 2.4rem;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+
+    &__vacansy-body {
+
+    }
+
+    &__vacansy-row-wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 0 20px;
+
+        &:hover {
+            .career-list__td-text._bold {
+                color: var(--color-orange);
+            }
+        }
+
+        @include mq(sm) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px 0;
+        }
+    }
+
+    &__vacansy-row {
+        display: block;
+        padding: 3rem 0;
+        border-bottom: 1px solid #404669;
+
+        @include mq(sm) {
+            padding: 2.5rem 0;
+
+            &:nth-child(1) {
+                border-top: 1px solid #404669;
+            }
+        }
     }
 }

@@ -4051,6 +4051,116 @@ a {
   color: var(--color-white);
 }
 
+.career-list__vacansy {
+  width: 100%;
+}
+
+.career-list__vacansy-head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12,1fr);
+  -ms-grid-column: 20;
+  grid-column: 20px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #404669;
+}
+
+.career-list__td {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.career-list__td:nth-child(1) {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+}
+
+.career-list__td:nth-child(2),
+.career-list__td:nth-child(3),
+.career-list__td:nth-child(4) {
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+}
+
+.career-list__td:nth-child(5) {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+}
+
+.career-list__td._flex-el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.career-list__vacansy-heading-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--color-grey);
+  text-transform: uppercase;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.career-list__td-text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--color-white);
+  -webkit-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+}
+
+.career-list__td-text._bold {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.career-list__td-link {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  max-width: 11.2rem;
+  padding-left: 3.2rem;
+  background-size: 2.4rem 2.4rem;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.career-list__td-link._mobile {
+  display: none;
+}
+
+.career-list__vacansy-row-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12,1fr);
+  gap: 0 20px;
+}
+
+.career-list__vacansy-row-wrapper:hover .career-list__td-text._bold {
+  color: var(--color-orange);
+}
+
+.career-list__vacansy-row {
+  display: block;
+  padding: 3rem 0;
+  border-bottom: 1px solid #404669;
+}
+
 @media screen and (min-width:767px) {
   .button:hover {
     color: var(--color-white);
@@ -4520,6 +4630,15 @@ a {
     max-width: 100%;
   }
 
+  .site-slider_grey-bg {
+    padding: 6rem 0;
+  }
+
+  .site-slider__info-text {
+    margin-bottom: 4rem;
+    max-width: 100%;
+  }
+
   .site-slider__info {
     -ms-grid-column-span: 16;
     grid-column: 16 span;
@@ -4572,6 +4691,15 @@ a {
 
   .our-team_grey-bg {
     margin-bottom: 6rem;
+  }
+
+  .our-team {
+    padding: 4rem 0 6rem;
+  }
+
+  .our-team__info-text {
+    margin-bottom: 4rem;
+    max-width: 100%;
   }
 
   .our-team__info {
@@ -4824,6 +4952,26 @@ a {
   .contacts-map__switch {
     margin-bottom: 4.8rem;
   }
+
+  .team-intro {
+    margin-bottom: 0;
+  }
+
+  .team-lead {
+    margin-bottom: 3rem;
+  }
+
+  .team-lead__section-name {
+    margin-bottom: 3rem;
+  }
+
+  .team-lead__bio {
+    display: block;
+  }
+
+  .career-list__heading {
+    margin-bottom: 4rem;
+  }
 }
 
 @media screen and (max-width:767px) {
@@ -4888,6 +5036,10 @@ a {
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.8rem;
+  }
+
+  .file-upload__type {
+    padding-left: 2.7rem;
   }
 
   html {
@@ -5268,12 +5420,35 @@ a {
     margin-bottom: 4rem;
   }
 
+  .site-slider_grey-bg {
+    padding: 4rem 0;
+  }
+
   .site-slider {
     padding: 4rem 0 6rem;
   }
 
   .site-slider__info .section-name {
     margin-bottom: .5rem;
+  }
+
+  .site-slider__title {
+    margin-bottom: 2rem;
+  }
+
+  .site-slider-item {
+    height: 27.8rem;
+  }
+
+  .site-slider-item__heading {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .site-slider-item__subheading {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   .hero__slider-img {
@@ -5334,10 +5509,6 @@ a {
     position: relative;
     padding-top: 5.6rem;
     padding-bottom: 5.8rem;
-  }
-
-  .our-team {
-    padding: 4rem 0 6rem;
   }
 
   .our-team__info .section-name {
@@ -5818,6 +5989,124 @@ a {
 
   .search-results__item-link {
     padding: 1.5rem 0;
+  }
+
+  .team-intro {
+    padding-top: 5.5rem;
+  }
+
+  .team-lead {
+    margin-bottom: 0;
+  }
+
+  .team-lead__name {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .01em;
+    margin-bottom: 1.6rem;
+  }
+
+  .team-lead__bio-block:nth-child(1) {
+    margin-bottom: 3rem;
+  }
+
+  .team-lead__bio-block:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .team-lead__legend {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .team-lead__text {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .team-lead__img {
+    height: 43.5rem;
+    width: 33.5rem;
+    margin: 0 auto;
+  }
+
+  .career-list {
+    padding: 4rem 0 2.5rem;
+  }
+
+  .career-list__vacansy-head {
+    display: none;
+  }
+
+  .career-list__td:nth-child(1) {
+    -ms-grid-column-span: 4;
+    grid-column: 4 span;
+  }
+
+  .career-list__td:nth-child(5) {
+    -ms-grid-column-span: 2;
+    grid-column: 2 span;
+  }
+
+  .career-list__td-text._bold {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .career-list__td-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .career-list__td-text::before {
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: var(--color-grey);
+    margin-bottom: .2rem;
+    content: attr(data-text);
+  }
+
+  .career-list__td-link {
+    display: none;
+  }
+
+  .career-list__td-link._mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 100%;
+    height: 2.4rem;
+    margin-top: 2.5rem;
+  }
+
+  .career-list__vacansy-row-wrapper {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px 0;
+  }
+
+  .career-list__vacansy-row {
+    padding: 2.5rem 0;
+  }
+
+  .career-list__vacansy-row:nth-child(1) {
+    border-top: 1px solid #404669;
   }
 }
 

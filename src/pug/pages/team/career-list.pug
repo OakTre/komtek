@@ -1,6 +1,75 @@
+-
+    let career_list = [
+        {
+            name: "Разработчик",
+            exp: "1-3 года",
+            city: "Офис в Казани",
+            time: "Полная",
+            price: "от 40 000 руб."
+        },
+        {
+            name: "Менеджер",
+            exp: "Без опыта",
+            city: "Офис в Уфе",
+            time: "Удаленная",
+            price: "от 35 000 руб."
+        },
+        {
+            name: "Разработчик",
+            exp: "1-3 года",
+            city: "Офис в Казани",
+            time: "Частичная",
+            price: "от 80 000 руб."
+        },
+        {
+            name: "Дизайнер",
+            exp: "от 3 лет",
+            city: "Офис в Уфе",
+            time: "Полная",
+            price: "от 60 000 руб."
+        }
+    ]
+
+
 section.career-list
     .site-container.career-list__container.grid-container
         .grid-container__block
             h2.career-list__heading.site-second-title
                 |   Вакансии
         .grid-container__block
+            .career-list__vacansy
+                .career-list__vacansy-head
+                    .career-list__vacansy-td.career-list__td
+                        span.career-list__vacansy-heading-text 
+                            |   ВАКАНСИЯ
+                    .career-list__vacansy-td.career-list__td
+                        span.career-list__vacansy-heading-text 
+                            |   Опыт
+                    .career-list__vacansy-td.career-list__td
+                        span.career-list__vacansy-heading-text 
+                            |   ГОРОД
+                    .career-list__vacansy-td.career-list__td
+                        span.career-list__vacansy-heading-text 
+                            |   ЗАНЯТОСТЬ
+                    .career-list__vacansy-td.career-list__td
+                        span.career-list__vacansy-heading-text 
+                            |   Уровень з/п
+                .career-list__vacansy-body
+                    for item in career_list
+                        a.career-list__vacansy-row(href="/")
+                            .career-list__vacansy-row-wrapper
+                                .career-list__td
+                                    span.career-list__td-text._bold=item.name
+                                .career-list__td
+                                    span.career-list__td-text(data-text="Опыт")=item.exp
+                                .career-list__td
+                                    span.career-list__td-text(data-text="Город")=item.city
+                                .career-list__td
+                                    span.career-list__td-text(data-text="ЗАНЯТОСТЬ")=item.time
+                                .career-list__td._flex-el
+                                    span.career-list__td-text(data-text="УРОВЕНЬ З/П")=item.price
+                                    span.career-list__td-link(style="background-image: url(img/hh.png)")
+                                        |   СМОТРЕТЬ ВАКАНСИЮ 
+                            span.career-list__td-link._mobile(style="background-image: url(img/hh.png)")
+                                        |   СМОТРЕТЬ ВАКАНСИЮ 
+                        
