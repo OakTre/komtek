@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="resourses/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="resourses/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resourses/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="resourses/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <title>Продукты | KOMTEK</title>
+    <link rel="stylesheet" href="./css/vendor.min.css?v=0.0.2.0">
+    <link rel="stylesheet" href="./css/style.min.css?v=0.0.2.0">
+  </head>
+  <body>
+    <div class="preloader"><svg class="preloader__image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
+</svg>
+    </div>
+    <div class="menu js-menu" style="background-image: url(img/menu-bg.svg)">
+      <div class="site-container menu__container"><a class="logo menu__logo" href="/"><img class="logo__img" src="img/logo-white.svg" alt="Логотип"></a>
+        <div class="menu__top-block">
+          <div class="menu__top-block-item"><span class="menu__legend">	Меню</span></div>
+          <div class="menu__top-block-item">
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Главная</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Наши проекты</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">О компании</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Продукты</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Команда</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="/">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="menu__contacts">
+              <p class="menu__contacts-heading">	Россия, 600000, г. Москва ул.&nbsp;Светлого Будущего, 3</p><span class="menu__contacts-small-legend">	ПН-ПТ 08:00 - 22:00</span><a class="menu__contacts-heading _link" href="tel:+78007750797">	8 800 775 07 97</a><span class="menu__contacts-small-legend">	Бесплатно по России</span><a class="menu__contacts-heading _link" href="mailto:komtek@gmail.ru">	komtek@gmail.ru</a><span class="menu__contacts-small-legend">	по всем вопросам</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu__md-block">
+          <div class="menu__md-block-item"><span class="menu__legend">	Поиск</span></div>
+          <div class="menu__md-block-item">
+            <form class="menu__search-form">
+              <svg class="icon icon-search menu__search-form-icon" width="35" height="35">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              <input class="menu__search-form-input" type="text" name="q" placeholder="Что хотите найти?">
+              <button class="menu__search-form-btn button-reset">	ПОИСК</button>
+            </form>
+          </div>
+        </div>
+        <div class="menu__bottom-block">
+          <div class="menu__bottom-block-item"><span class="menu__legend">	Популярные продукты</span></div>
+          <div class="menu__bottom-block-item">
+            <ul class="menu__fav-list">
+              <li class="menu__fav-item"><a class="menu__fav-item-link" href="">
+                  <p>	Лабораторная информационная система, как&nbsp;часть МИС</p>
+                  <svg class="icon icon-arrow-right menu__fav-item-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+              <li class="menu__fav-item"><a class="menu__fav-item-link" href="">
+                  <p>	Вертикально-интегрированная медицинская информационная система</p>
+                  <svg class="icon icon-arrow-right menu__fav-item-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+              <li class="menu__fav-item"><a class="menu__fav-item-link" href="">
+                  <p>	Информационная система Диспансеризация</p>
+                  <svg class="icon icon-arrow-right menu__fav-item-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu__mobile-block">
+          <div class="menu__mobile-block-item">
+            <p class="menu__contacts-heading">	Россия, 600000, г. Москва ул.&nbsp;Светлого Будущего, 3</p><span class="menu__contacts-small-legend">	ПН-ПТ 08:00 - 22:00</span>
+          </div>
+          <div class="menu__mobile-block-item"><a class="menu__contacts-heading _link" href="tel:+78007750797">	8 800 775 07 97</a><span class="menu__contacts-small-legend">	Бесплатно по России</span><a class="menu__contacts-heading _link" href="mailto:komtek@gmail.ru">	komtek@gmail.ru</a><span class="menu__contacts-small-legend">	по всем вопросам</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="site-container header__container"><a class="logo header__logo" href="/"><img class="logo__img" src="img/logo-black.svg" alt="Логотип"></a>
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="/">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Команда</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Наши проекты</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Продукты</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Контакты</a></li>
+            </ul>
+          </nav><a class="button-reset header__btn-tel" href="tel:+7"> 
+            <svg class="icon icon-tel header__btn-tel-icon" width="26" height="26">
+              <use xlink:href="img/sprite.svg#tel"></use>
+            </svg></a>
+          <button class="button-reset button-burger header__btn-burger js-open-menu"><span></span><span></span></button>
+          <button class="button-reset button-search header__btn-search js-open-menu">
+            <svg class="icon icon-search button-search__icon" width="30" height="30">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <div class="header__links tel"><a class="tel__link" href="tel:+78007750797">8 800 775 07 97</a><span class="tel__text">Бесплатно по России</span></div>
+        </div>
+      </header>
+      <main class="page-main main">
+        <section class="detail-intro">
+          <div class="site-container detail-intro__container"> 
+            <div class="breadcrumbs__container detail-intro__breadcrumbs">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="/">Главная</a></div><span class="breadcrumbs__arrow">&mdash;</span>
+                <div class="breadcrumbs__item">Продукты</div>
+              </div>
+            </div>
+            <h1 class="detail-intro__heading site-first-title">  Медицинская информационная система </h1><span class="detail-intro__tags">
+                 Иммунизация • МИАЦ ХМАО, ДЗ ЧАО </span>
+            <p class="detail-intro__text">
+                 Предназначена для автоматизации деятельности всех этапов лечебного процесса медицинской организации.</p>
+            <button class="button button-reset detail-intro__btn">
+                 Заказать</button><img class="detail-intro__img" src="img/detail1.svg" alt="">
+          </div>
+        </section>
+        <section class="modules">
+          <div class="site-container modules__container parallax">
+            <h2 class="modules__heading">
+                 Модули в&nbsp;комплекте</h2>
+            <ul class="modules__content">
+              <li class="modules__content-item">
+                <div class="modules__content-item-info"> 
+                  <div class="modules__content-item-block"><span class="modules__content-item-legend">
+                         МОДУЛЬ</span><span class="modules__content-item-heading">
+                         АРМ Лаборатория</span></div>
+                  <div class="modules__content-item-block"> 
+                    <div class="modules__content-text"><span class="modules__content-item-legend">
+                           ОПИСАНИЕ</span>
+                      <p>
+                           В АРМ Лаборатории производится сбор, обработка и архивация сведений по лабораторным исследованиям. Направления на лабораторные исследования могут поступать в ЛИС из внешних систем, либо создаваться вручную. Сотрудник лаборатории производит лабораторные исследования вручную или посредством лабораторного оборудования (анализаторов), и вносит результаты в систему. </p>
+                    </div>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="modules__content-body drop-menu js-drop-menu"><span class="modules__content-item-legend">
+                             Функции модуля</span>
+                        <div class="modules__content-body-list"> 
+                          <p>
+                               Настройка рабочего пространства АРМ Лаборатории: анализы, тесты, услуги, анализаторы, шаблоны, журналы.</p>
+                          <p>
+                               Настройка подключенного к системе лабораторного оборудования (анализаторов)</p>
+                          <p>
+                               Настройка референтных значений для автоматической интерпритации анализов</p>
+                          <p>
+                               Глобальные настройки ЛИС</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="button-reset modules__content-item-link js-drop-menu-btn"><span class="_is-shown">  ПОКАЗАТЬ ФУНКЦИИ</span><span class="_is-hidden">
+                           СКРЫТЬ ФУНКЦИИ </span></button>
+                  </div>
+                </div>
+              </li>
+              <li class="modules__content-item">
+                <div class="modules__content-item-info"> 
+                  <div class="modules__content-item-block"><span class="modules__content-item-legend">
+                         АРМ Анализы</span><span class="modules__content-item-heading">
+                         АРМ Лаборатория</span></div>
+                  <div class="modules__content-item-block"> 
+                    <div class="modules__content-text"><span class="modules__content-item-legend">
+                           ОПИСАНИЕ</span>
+                      <p>
+                           В АРМ Анализы производятся глобальные настройки ЛИС, которые распространяются на все рабочие места системы:</p>
+                      <ul> 
+                        <li>настройка необходимого для конктретной лаборатории переченя анализов тестов и платных услуг;</li>
+                        <li>настройка подключенного к системе лабораторного оборудования (анализаторов), расходные материалы;</li>
+                        <li>настройка печатных форм: напралений, бланков результатов, протоколы, журналов и отчетных форм;</li>
+                        <li>настройка автоматической нумерации проб в зависимости настройки ЭЦП.</li>
+                      </ul>
+                    </div>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="modules__content-body drop-menu js-drop-menu"><span class="modules__content-item-legend">
+                             Функции модуля</span>
+                        <div class="modules__content-body-list"> 
+                          <p>
+                               Настройка рабочего пространства АРМ Лаборатории: анализы, тесты, услуги, анализаторы, шаблоны, журналы.</p>
+                          <p>
+                               Настройка подключенного к системе лабораторного оборудования (анализаторов)</p>
+                          <p>
+                               Настройка референтных значений для автоматической интерпритации анализов</p>
+                          <p>
+                               Глобальные настройки ЛИС</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="button-reset modules__content-item-link js-drop-menu-btn"><span class="_is-shown">  ПОКАЗАТЬ ФУНКЦИИ</span><span class="_is-hidden">
+                           СКРЫТЬ ФУНКЦИИ </span></button>
+                  </div>
+                </div>
+              </li>
+              <li class="modules__content-item">
+                <div class="modules__content-item-info"> 
+                  <div class="modules__content-item-block"><span class="modules__content-item-legend">
+                         АРМ Администратора</span><span class="modules__content-item-heading">
+                         АРМ Лаборатория</span></div>
+                  <div class="modules__content-item-block"> 
+                    <div class="modules__content-text"><span class="modules__content-item-legend">
+                           ОПИСАНИЕ</span>
+                      <p>
+                          В АРМ Администратора формируется справочник сотрудников лаборатории с учетом их функционального доступа к различным типам операций в Системе. в данном модуле также доступна настройка печатных форм и ЭЦП.</p>
+                    </div>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="modules__content-body drop-menu js-drop-menu"><span class="modules__content-item-legend">
+                             Функции модуля</span>
+                        <div class="modules__content-body-list"> 
+                          <p>
+                               Настройка рабочего пространства АРМ Лаборатории: анализы, тесты, услуги, анализаторы, шаблоны, журналы.</p>
+                          <p>
+                               Настройка подключенного к системе лабораторного оборудования (анализаторов)</p>
+                          <p>
+                               Настройка референтных значений для автоматической интерпритации анализов</p>
+                          <p>
+                               Глобальные настройки ЛИС</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="button-reset modules__content-item-link js-drop-menu-btn"><span class="_is-shown">  ПОКАЗАТЬ ФУНКЦИИ</span><span class="_is-hidden">
+                           СКРЫТЬ ФУНКЦИИ </span></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="other-products">
+          <div class="site-container other-products__container grid-container parallax">
+            <div class="grid-container__block"><span class="section-name">
+                   Наши другие продукты</span></div>
+            <div class="grid-container__block">
+              <p class="other-products__heading">
+                   Благодаря нашим опыту и знаниям, <b>разрабатываем уникальные продукты</b>, исходя от требований конкретной организации</p>
+              <div class="other-products__list"> <a class="products-card other-products__list-item" href="/"><span class="products-card__feauture">	иммунизация</span><span class="products-card__heading">	Диспанцеризация пациентов</span><span class="products-card__tags">	Иммунизация • МИАЦ ХМАО, ДЗ ЧАО </span><img class="products-card__img" src="img/card-img1.png" alt="">
+                  <div class="products-card__arrow">
+                    <svg class="icon icon-arrow-right products-card__arrow-icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div></a><a class="products-card other-products__list-item" href="/"><span class="products-card__feauture">	иммунизация</span><span class="products-card__heading">	Региональная регистратура</span><span class="products-card__tags">	Иммунизация • МИАЦ ХМАО, ДЗ ЧАО </span><img class="products-card__img" src="img/card-img2.png" alt="">
+                  <div class="products-card__arrow">
+                    <svg class="icon icon-arrow-right products-card__arrow-icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div></a><a class="products-card other-products__list-item" href="/"><span class="products-card__feauture">	иммунизация</span><span class="products-card__heading">	Медицинская информационная система</span><span class="products-card__tags">	Иммунизация • МИАЦ ХМАО, ДЗ ЧАО </span><img class="products-card__img" src="img/card-img3.png" alt="">
+                  <div class="products-card__arrow">
+                    <svg class="icon icon-arrow-right products-card__arrow-icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="question-form parallax _bg-transparent">
+          <div class="site-container question-form__container grid-container">
+            <div class="grid-container__block"><span class="section-name">	Обратная связь</span></div>
+            <div class="grid-container__block">
+              <h2 class="site-first-title question-form__heading">Свяжитесь с нами, если у вас возникли вопросы</h2>
+              <form class="form" action="/" data-need-validation>
+                <div class="form__container">
+                  <div class="form__block">
+                    <label class="form__label">
+                      <input class="input" type="text" name="name" data-parsley-required><span class="input-heading">	Ваше имя</span>
+                      <svg class="icon icon-ok input-ok" width="19" height="16">
+                        <use xlink:href="img/sprite.svg#ok"></use>
+                      </svg>
+                    </label>
+                    <label class="form__label">
+                      <input class="input js-phone-mask" type="tel" name="tel" data-parsley-required data-parsley-phone><span class="input-heading">	Ваш телефон</span>
+                      <svg class="icon icon-ok input-ok" width="19" height="16">
+                        <use xlink:href="img/sprite.svg#ok"></use>
+                      </svg>
+                    </label>
+                    <label class="form__label">
+                      <input class="input" type="email" name="email" data-parsley-required><span class="input-heading">	E-mail</span>
+                      <svg class="icon icon-ok input-ok" width="19" height="16">
+                        <use xlink:href="img/sprite.svg#ok"></use>
+                      </svg>
+                    </label>
+                    <label class="form__label">
+                      <input class="input" type="text" name="company-name" data-parsley-required><span class="input-heading">	НАЗВАНИЕ ОРГАНИЗАЦИИ</span>
+                      <svg class="icon icon-ok input-ok" width="19" height="16">
+                        <use xlink:href="img/sprite.svg#ok"></use>
+                      </svg>
+                    </label>
+                    <div class="form__desktop-block">
+                      <label class="form__agreement">
+                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
+                        <p>	Я согласен на обработку<a href="/">	персональных данных</a></p>
+                      </label>
+                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
+                    </div>
+                  </div>
+                  <div class="form__block">
+                    <div class="select">
+                      <div class="select__container">
+                        <select class="js-custom-select" name="place">
+                          <option placeholder value="">ТЕМА СООБЩЕНИЯ</option>
+                          <option placeholder value="">	Управление</option>
+                          <option placeholder value="">	Учет пациентов</option>
+                          <option placeholder value="">	Использование изделий</option>
+                        </select>
+                      </div>
+                    </div>
+                    <label class="form__label">
+                      <textarea class="texaarea" name="text" placeholder="Сообщение"></textarea>
+                    </label>
+                    <div class="form__mobile-block">
+                      <label class="form__agreement">
+                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
+                        <p>	Я согласен на обработку<a href="/">	персональных данных</a></p>
+                      </label>
+                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top-block">
+          <div class="site-container">
+            <div class="footer__top-block-wrapper"><a class="logo footer__logo" href="/"><img class="logo__img" src="img/logo-white.svg" alt="Логотип"></a></div>
+            <div class="footer__top-block-info">
+              <div class="_block footer__content-text">
+                <p>	Будем рады обсудить проект для вашей организации</p>
+              </div>
+              <div class="_block">
+                <div class="tel footer__tel"><a class="tel__link" href="tel:+78007750797">8 800 775 07 97</a><span class="tel__text">Бесплатно по России</span></div>
+              </div>
+              <div class="_block"><a class="footer__mail-link" href="mailto:"> komtek@gmail.ru</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom-block">
+          <div class="site-container">
+            <div class="footer__bottom-block-content">
+              <div class="_block"><span class="footer__legend">Меню</span>
+                <ul class="footer__nav">
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Главная</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">О компании</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Команда</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Наши проекты</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Продукты</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="_block"><span class="footer__legend">Информация об организации</span><span class="footer__feautures">ООО “Переезд”</span><span class="footer__feautures">ИНН 0000000000</span><span class="footer__feautures">ОГРН 0000000000</span></div>
+              <div class="_block"><span class="footer__legend">Адрес</span><span class="footer__feautures">Россия, 600000, г.&nbsp;Москва ул.&nbsp;Светлого Будущего, 3</span><span class="footer__feautures _fw400">Пн-пт 08:00-22:00</span></div>
+            </div>
+            <div class="footer__bottom-block-content-copyright">
+              <div class="_block">
+                <p>	2021 © Комтек</p>
+              </div>
+              <div class="_block"><a href="">	Политика конфиденциальности</a></div>
+              <div class="_block"><a class="markweber" href="/">	Создание сайта<img src="img/MarkWeber.svg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="btn-top-container">
+        <div class="site-container">
+          <button class="button-reset btn-top"><span class="_icon-wrap">
+              <svg class="icon icon-arrow-top footer__btn-top-icon" width="27" height="27">
+                <use xlink:href="img/sprite.svg#arrow-top"></use>
+              </svg></span><span class="_name">наврех</span></button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js?v=0.0.2.0"></script>
+</html>
