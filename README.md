@@ -11,7 +11,8 @@
 7. [Команда](https://oaktre.github.io/komtek/app/team.html)
 8. [Проекты](https://oaktre.github.io/komtek/app/projects.html)
 9. [Детальная Продукты](https://oaktre.github.io/komtek/app/product-detail.html)
-10. [404](https://oaktre.github.io/komtek/app/404.html)
+10. [Детальная Проекта](https://oaktre.github.io/komtek/app/projects-detail.html)
+11. [404](https://oaktre.github.io/komtek/app/404.html)
 
 
 
