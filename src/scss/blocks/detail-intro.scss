@@ -57,6 +57,12 @@
         width: 63rem;
         height: 59.5rem;
 
+        &._type2 {
+            top: 0;
+            width: 43rem;
+            height: 34.5rem;
+        }
+
         @include mq(md) {
             top: auto;
             right: 0;

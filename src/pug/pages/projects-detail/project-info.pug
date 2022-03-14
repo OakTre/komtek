@@ -1,0 +1,81 @@
+-
+    let row_arr = [
+        {
+            name: "Севастопольская областная поликлиника №34",
+            text: "ул. Тимерязева, 22"
+        },
+        {
+            name: "Первый реабелитационный центр",
+            text: "ул. Сухого, 22/3, корпус Б"
+        },
+        {
+            name: "Европейская поликлиника имени Шварца",
+            text: "ул. Шварца Купоросского, 45/1"
+        },
+        {
+            name: "Европейская поликлиника имени Шварца",
+            text: "ул. Шварца Купоросского, 45/1"
+        },
+    ]
+
+
+section.project-info
+    .site-container.project-info__container
+        .project-info__section.grid-container
+            .grid-container__block
+                span.project-info__section-name
+                    |   Общие сведения
+            .grid-container__block.project-info__section-item
+                .project-info__common-list 
+                    .project-info__common-item
+                        span.project-info__common-num 
+                            |   2018
+                        p.project-info__common-text 
+                            |   год
+                            br
+                            |   внедрения
+                    .project-info__common-item
+                        span.project-info__common-num 
+                            |   11
+                        p.project-info__common-text 
+                            |  мед. учреждений
+                            br
+                            |   участвовали
+                    .project-info__common-item
+                        .project-info__marker-icon-wrapper
+                            +icon("marker")(width="28" height="28" class="project-info__marker-icon")
+                        .project-info__location-wrapper
+                            span.project-info__location
+                                |   Севастополь
+                            span.project-info__caption
+                                |   Регион внедрения
+        .project-info__section.grid-container
+            .grid-container__block
+                span.project-info__section-name
+                    |   Список мед. учреждений
+            .grid-container__block.project-info__section-item
+                table.project-info__table
+                    for item in row_arr
+                        tr.project-info__row
+                            td.project-info__item=item.name
+                            td.project-info__item=item.text
+                button.project-info__table-btn.button-reset 
+                    span._all
+                        |   Весь список
+                    span._hide
+                        |   Скрыть
+        .project-info__section.grid-container
+            .grid-container__block
+                span.project-info__section-name
+                    |   Задачи
+            .grid-container__block.project-info__section-item
+                .project-info__tasks
+                    span.project-info__tasks-legend.project-info__legend 
+                        |   Какие задачи мы решали:
+                    ul 
+                        li автоматизация приема направлений на исследований;
+                        li автоматизация внесения, утверждения, выдачи  результатов исследований;
+                        li получение результатов с лабораторного оборудования в автоматическом режиме;
+                        li реализация передачи результатов исследований в региональную лабораторную информационную систему и другие медицинские информационные системы;
+                        li  устранение необходимости работы с журналами и отчетностью на бумажных носителях;
+                        li автоматическое формирование отчетности по лаборатории; электронное хранение и доступность истории исследований в реальном времени.

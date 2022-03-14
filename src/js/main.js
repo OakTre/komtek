@@ -16,6 +16,7 @@ import initTabs from "./modules/initTabs";
 import contactsMap from "./modules/contactsMap";
 import chifsSlider from "./modules/chifsSlider";
 import searchResult from "./modules/searchResult.js";
+import showListProjects from "./modules/showListProjects.js";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -68,6 +69,7 @@ documentReady(() => {
 	chifsSlider();
 	searchResult();
 	siteSlider();
+	showListProjects();
 
 	gsap.registerPlugin(ScrollTrigger);
 
