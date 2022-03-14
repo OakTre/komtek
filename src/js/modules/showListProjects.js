@@ -2,6 +2,8 @@ export default () => {
     const btn = document.querySelector(".project-info__table-btn");
     const container = document.querySelector(".project-info__table");
 
+    if (!btn) return;
+
     btn.addEventListener("click", (e)=> {
         let self = e.target;
 

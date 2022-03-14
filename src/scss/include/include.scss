@@ -429,9 +429,11 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 200ms, visibility 200ms;
+	pointer-events: none;
 
 	.btn-top {
 		margin-left: auto;
+		pointer-events: auto;
 	}
 
 	&.is-active {

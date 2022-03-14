@@ -57,9 +57,9 @@ section.contacts-map#contacts-map-host.parallax
 							|	КОНТАКТЫ
 				for item in city_arr
 					li.contacts-map__list-row.js-offices-item(data-coord=item.coords)
-						.contacts-map__item
+						.contacts-map__item(data-text="ГОРОД")
 							span.contacts-map__item-text-bold.js-city=item.city
-						.contacts-map__item
+						.contacts-map__item(data-text="Адрес")
 							span.contacts-map__item-text.js-address
 								|	ул. Тимерязева, 22
 							span.contacts-map__item-text-small.js-time
@@ -70,7 +70,7 @@ section.contacts-map#contacts-map-host.parallax
 									|	8 800 775 07 97
 								a.contacts-map__item-text-small.js-email(href="mailto:ufa@komtek.ru")
 									|	ufa@komtek.ru
-							.contacts-map__item-icon-wrapper
+							.contacts-map__item-icon-wrapper(data-text="НА КАРТЕ")
 								+icon("vector")(width="12" height="14" class="contacts-map__item-icon")
 
 script(src="https://api-maps.yandex.ru/2.1/?apikey=b0b15954-57af-4901-b78c-0ad5bd94cda8&lang=ru_RU")

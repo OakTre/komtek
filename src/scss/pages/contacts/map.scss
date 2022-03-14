@@ -23,6 +23,10 @@
 		column-gap: 20px;
 		padding-bottom: 2rem;
 		border-bottom: 1px solid #EEEEFA;
+
+		@include mq(sm) {
+			display: none;
+		}
 	}
 
 	&__list-row {
@@ -36,6 +40,41 @@
 	&__item {
 		grid-column: 4 span;
 		align-self: center;
+		
+		@include mq(sm) {
+			grid-column: 6 span;
+			align-self: stretch;
+
+			&:last-child {
+				grid-column: 12 span;
+				display: grid;
+				grid-template-columns: 6fr 6fr;
+				column-gap: 20px;
+				margin-top: 2.5rem;
+
+				&::before {
+					display: none;
+				}
+
+				.div {
+					order: 1;
+				}
+			}
+		}
+
+		&::before {
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.6rem;
+			text-transform: uppercase;
+			color: var(--color-grey3);
+			display: none;
+			content: attr(data-text);
+
+			@include mq(sm) {
+				display: block;
+			}
+		}
 
 		&:last-child {
 			display: flex;
@@ -55,6 +94,11 @@
 		font-weight: 700;
 		font-size: 2rem;
 		line-height: 3rem;
+
+		@include mq(sm) {
+			font-size: 1.4rem;
+			line-height: 2.1rem;
+		}
 	}
 
 	&__item-text {
@@ -64,12 +108,22 @@
 		font-size: 1.6rem;
 		line-height: 2.2rem;
 		letter-spacing: 0.02em;
+
+		@include mq(sm) {
+			font-size: 1.4rem;
+			line-height: 2.1rem;
+		}
 	}
 
 	&__item-text-small {
 		font-size: 1.6rem;
 		line-height: 2rem;
 		color: var(--color-grey);
+
+		@include mq(sm) {
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
 	}
 
 	a.contacts-map__item-text {
@@ -85,6 +139,7 @@
 	}
 
 	&__item-icon-wrapper {
+		position: relative;
 		width: 3rem;
 		height: 3rem;
 		background-color: var(--color-purple-light);
@@ -92,6 +147,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: calc(100% + 0.8rem);
+			transform: translateY(-50%);
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.6rem;
+			text-transform: uppercase;
+			white-space: nowrap;
+			content: attr(data-text);
+		}
 	}
 
 	&__item-icon {
