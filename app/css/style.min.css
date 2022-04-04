@@ -1649,7 +1649,7 @@ a {
   color: #ea3939;
 }
 
-.form__agreement~.parsley-errors-list {
+.form__agreement ~ .parsley-errors-list {
   display: none;
 }
 
@@ -1744,7 +1744,7 @@ a {
   background-color: var(--color-purple-light);
 }
 
-.input:focus~.input-heading {
+.input:focus ~ .input-heading {
   top: 1.2rem;
   font-size: .9rem;
   line-height: 1.6rem;
@@ -1755,7 +1755,7 @@ a {
   border-color: #ea3939;
 }
 
-.input.parsley-error~.input-ok {
+.input.parsley-error ~ .input-ok {
   opacity: 0;
 }
 
@@ -1794,12 +1794,12 @@ a {
   opacity: 1;
 }
 
-.input-agreement:checked~p::before {
+.input-agreement:checked ~ p::before {
   background-color: vaR(--color-orange);
   border-color: var(--color-white);
 }
 
-.input-agreement:checked~p::after {
+.input-agreement:checked ~ p::after {
   opacity: 1;
 }
 
@@ -3948,15 +3948,15 @@ a {
   color: var(--color-grey);
 }
 
-.contacts-map__switch input:checked~.switch__container::before {
+.contacts-map__switch input:checked ~ .switch__container::before {
   left: 1.8rem;
 }
 
-.contacts-map__switch input:checked~.switch__name._left {
+.contacts-map__switch input:checked ~ .switch__name._left {
   color: var(--color-dark);
 }
 
-.contacts-map__switch input:checked~.switch__name._right {
+.contacts-map__switch input:checked ~ .switch__name._right {
   color: var(--color-orange);
 }
 
@@ -7125,4 +7125,3 @@ a {
     font-size: 8px;
   }
 }
-/*# sourceMappingURL=style.min.css.map */
