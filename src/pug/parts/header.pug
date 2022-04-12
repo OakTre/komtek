@@ -10,12 +10,12 @@ header.header
 					li.nav__item
 						a.nav__link(href="/")=item
 
-		a.button-reset.header__btn-tel(href="tel:+7") 
+		a.button-reset.header__btn-tel(href="tel:+7")
 			+icon('tel')(width="26" height="26" class="header__btn-tel-icon")
 
 		button.button-reset.button-burger.header__btn-burger.js-open-menu
-			span
-			span
+			+icon("hamburger-menu")(class="button-burger__icon" width="65" height="65")
+			+icon("hamburger-menu-close")(class="button-burger__icon _closed" width="65" height="65")
 		button.button-reset.button-search.header__btn-search.js-open-menu
 			+icon("search")(width="30" height="30" class="button-search__icon")
 		.header__links.tel

@@ -40,7 +40,7 @@
 	&__item {
 		grid-column: 4 span;
 		align-self: center;
-		
+
 		@include mq(sm) {
 			grid-column: 6 span;
 			align-self: stretch;
@@ -147,6 +147,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		cursor: pointer;
 
 		&::before {
 			position: absolute;

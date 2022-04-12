@@ -52,7 +52,7 @@
 			grid-template-columns: repeat(4, 1fr);
 			gap: 18px 0;
 		}
-		
+
 
 		&-item {
 			&:nth-child(1) {
@@ -202,10 +202,14 @@
 		&-item {
 			&:nth-child(1) {
 				grid-column: 4 span;
+				min-width: 0;
+				overflow: hidden;
 			}
 
 			&:nth-child(2) {
 				grid-column: 12 span;
+				min-width: 0;
+				overflow: hidden;
 			}
 
 			@include mq(lg) {
@@ -227,6 +231,9 @@
 
 			&::-webkit-scrollbar {
 				display: none;
+				-webkit-appearance: none;
+				width: 0;
+				height: 0;
 			}
 		}
 	}
@@ -254,7 +261,7 @@
 		height: 100%;
 
 		@include mq(sm) {
-			max-width: 24.1rem;	
+			max-width: 24.1rem;
 		}
 
 		p {
@@ -315,7 +322,7 @@
 
 			@include mq(lg) {
 				grid-column: 16 span !important;
-	
+
 				&:nth-child(1) {
 					display: none;
 				}
@@ -385,7 +392,7 @@
 		color: var(--color-orange);
 		cursor: pointer;
 
-		
+
 		@include mq(sm) {
 			font-size: 1rem;
 			line-height: 2rem;

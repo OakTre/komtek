@@ -5,6 +5,10 @@
 		margin-bottom: 4.8rem;
 	}
 
+	.grid-container__block {
+		min-width: 0;
+	}
+
 	&__container {
 	}
 
@@ -92,5 +96,12 @@
 		&:hover {
 			color: var(--color-orange);
 		}
+	}
+}
+
+.chifs-slider {
+	&__wrapper {
+		min-width: 0;
+		width: 100%;
 	}
 }

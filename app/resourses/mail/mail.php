@@ -1,1 +1,2 @@
-<!-- mail.php -->
+<?php
+	echo "Hello";

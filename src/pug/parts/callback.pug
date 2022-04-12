@@ -1,5 +1,20 @@
-section.callback.parallax
-	.site-container.callback__container
+section.callback.js-callback-container.parallax
+	.site-container.callback__container.callback__success-container
+		.callback__left-block
+			span.section-name
+				|	Обратная связь
+		.callback__right-block.callback__success
+			h2.callback__title.callback__success-title
+				|	Спасибо за обращение.
+			p.callback__success-text
+				|	Мы свяжемся с Вами
+				br
+				|	в течении 1 часа
+			a.callback__success-btn.button.button_secondary(href="/")
+				|	Наши проекты
+			img(src="img/done-img.svg", alt="Спасибо за обращение" class="callback__success-img")
+
+	.site-container.callback__container.callback__form-container
 		.callback__left-block
 			span.section-name
 				|	Обратная связь
@@ -14,7 +29,7 @@ section.callback.parallax
 					span
 						|	пользователей продукции КОМТЕК
 			.callback__form
-				form.form(action="/" data-need-validation)
+				form.form(action="/resourses/mail/mail.php" enctype="multipart/form-data" data-need-validation)
 					.select
 						.select__container
 							select(name="place" class="js-custom-select")

@@ -31,7 +31,7 @@ export class ContactsMap {
 		this.myMap = new ymaps.Map(this.mapElem, {
 			center: center,
 			controls: [],
-			zoom: 15
+			zoom: 12
 		}, {
 			searchControlProvider: 'yandex#search'
 		});

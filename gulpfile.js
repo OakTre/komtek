@@ -155,6 +155,7 @@ const toWebp = () => {
 
 const watchFiles = () => {
 	browserSync.init({
+		notify: false,
 		server: {
 			baseDir: "app"
 		}

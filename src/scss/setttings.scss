@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 html {
 	font-size: 10px;
 	line-height: 1.4;

@@ -19,7 +19,7 @@
 <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
 </svg>
     </div>
-    <div class="menu js-menu" style="background-image: url(img/menu-bg.svg)">
+    <div class="menu js-menu fix-block" style="background-image: url(img/menu-bg.svg)">
       <div class="site-container menu__container">
         <a class="logo menu__logo" href="/">
           <img class="logo__img" src="img/logo-white.svg" alt="Логотип">
@@ -147,14 +147,18 @@
               </li>
             </ul>
           </nav>
-          <a class="button-reset header__btn-tel" href="tel:+7"> 
+          <a class="button-reset header__btn-tel" href="tel:+7">
             <svg class="icon icon-tel header__btn-tel-icon" width="26" height="26">
               <use xlink:href="img/sprite.svg#tel"></use>
             </svg>
           </a>
           <button class="button-reset button-burger header__btn-burger js-open-menu">
-            <span></span>
-            <span></span>
+            <svg class="icon icon-hamburger-menu button-burger__icon" width="65" height="65">
+              <use xlink:href="img/sprite.svg#hamburger-menu"></use>
+            </svg>
+            <svg class="icon icon-hamburger-menu-close button-burger__icon _closed" width="65" height="65">
+              <use xlink:href="img/sprite.svg#hamburger-menu-close"></use>
+            </svg>
           </button>
           <button class="button-reset button-search header__btn-search js-open-menu">
             <svg class="icon icon-search button-search__icon" width="30" height="30">
@@ -175,7 +179,7 @@
                 <div class="breadcrumbs__item">
                   <a class="breadcrumbs__item-link" href="/">Главная</a>
                 </div>
-                <span class="breadcrumbs__arrow">&mdash;</span>
+                <span class="breadcrumbs__arrow"></span>
                 <div class="breadcrumbs__item">Продукты</div>
               </div>
             </div>
@@ -376,8 +380,19 @@
             </div>
           </div>
         </section>
-        <section class="callback parallax">
-          <div class="site-container callback__container">
+        <section class="callback js-callback-container parallax">
+          <div class="site-container callback__container callback__success-container">
+            <div class="callback__left-block">
+              <span class="section-name">	Обратная связь</span>
+            </div>
+            <div class="callback__right-block callback__success">
+              <h2 class="callback__title callback__success-title">	Спасибо за обращение.</h2>
+              <p class="callback__success-text">	Мы свяжемся с Вами<br>	в течении 1 часа</p>
+              <a class="callback__success-btn button button_secondary" href="/">	Наши проекты</a>
+              <img class="callback__success-img" src="img/done-img.svg" alt="Спасибо за обращение">
+            </div>
+          </div>
+          <div class="site-container callback__container callback__form-container">
             <div class="callback__left-block">
               <span class="section-name">	Обратная связь</span>
             </div>
@@ -390,7 +405,7 @@
                 </div>
               </div>
               <div class="callback__form">
-                <form class="form" action="/" data-need-validation>
+                <form class="form" action="/resourses/mail/mail.php" enctype="multipart/form-data" data-need-validation>
                   <div class="select">
                     <div class="select__container">
                       <select class="js-custom-select" name="place">
@@ -528,4 +543,5 @@
     </div>
   </body>
   <script src="js/main.js?v=0.0.2.7"></script>
+  <script src="resourses/js/backend.js?v=0.0.2.7"></script>
 </html>

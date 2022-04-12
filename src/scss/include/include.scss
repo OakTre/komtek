@@ -123,6 +123,21 @@
 				transform: rotate(-32deg);
 			}
 		}
+
+		.button-burger__icon {
+			display: none;
+
+			&._closed {
+				display: block;
+			}
+		}
+	}
+
+	&__icon {
+		&._closed {
+			display: none;
+			fill: var(--color-white);
+		}
 	}
 }
 
@@ -697,7 +712,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 	}
-	
+
 	&__text-icon {
 		width: 2.4rem;
 		height: 2.4rem;

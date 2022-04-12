@@ -20,7 +20,12 @@
 	}
 
 	&__arrow {
+		flex-shrink: 0;
+		width: 20px;
+		height: 1px;
+		background-color: var(--color-grey3);
 		padding: 0 0.5rem;
+		margin: 0 0.5rem;
 		color: var(--color-grey3);
 	}
 

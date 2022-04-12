@@ -1,6 +1,8 @@
 import gsap from "gsap";
 
 export default () => {
+	const fixBlocks = document.querySelectorAll('.fix-block');
+
 	function disableScroll() {
 		let pagePosition = window.scrollY;
 		lockPadding();
@@ -23,10 +25,16 @@ export default () => {
 
 	function lockPadding() {
 		let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+		fixBlocks.forEach((el) => {
+			el.style.paddingRight = paddingOffset;
+		});
 		document.body.style.paddingRight = paddingOffset;
 	}
 
 	function unlockPadding() {
+		fixBlocks.forEach((el) => {
+			el.style.paddingRight = '0px';
+		});
 		document.body.style.paddingRight = '0px';
 	}
 

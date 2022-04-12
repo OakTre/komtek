@@ -5,15 +5,29 @@
 	let bgClass = bgClassForm ? bgClassForm : null
 
 
-section.question-form.parallax(class=bgClass)
-	.site-container.question-form__container.grid-container
+section.question-form.js-callback-container.parallax(class=bgClass)
+	.site-container.callback__container.callback__success-container
+		.callback__left-block
+			span.section-name
+				|	Обратная связь
+		.callback__right-block.callback__success
+			h2.callback__title.callback__success-title
+				|	Спасибо за обращение.
+			p.callback__success-text
+				|	Мы свяжемся с Вами
+				br
+				|	в течении 1 часа
+			a.callback__success-btn.button.button_secondary(href="/")
+				|	Наши проекты
+			img(src="img/done-img.svg", alt="Спасибо за обращение" class="callback__success-img")
+	.site-container.question-form__container.grid-container.callback__form-container
 		.grid-container__block
 			span.section-name
 				|	Обратная связь
 		.grid-container__block
 			h2.site-first-title.question-form__heading=formtitle
 
-			form.form(action="/" data-need-validation)
+			form.form(action="resourses/mail/mail.php" enctype="multipart/form-data" data-need-validation)
 				.form__container
 					.form__block
 						label.form__label
@@ -63,19 +77,19 @@ section.question-form.parallax(class=bgClass)
 						if file
 							label.form__file-label.file-upload.form__desktop-block
 								input(type="file" class="visually-hidden" name="file")
-								p.file-upload__text 
+								p.file-upload__text
 									+icon("file")(width="24" height="24" class="file-upload__text-icon")
 									|	ПРИКРЕПИТЬ РЕЗЮМЕ
-								span.file-upload__type 
+								span.file-upload__type
 									|	PDF, .doc, .docx
 						.form__mobile-block
 							if file
 								label.form__file-label.file-upload
 									input(type="file" class="visually-hidden" name="file")
-									p.file-upload__text 
+									p.file-upload__text
 										+icon("file")(width="24" height="24" class="file-upload__text-icon")
 										|	ПРИКРЕПИТЬ РЕЗЮМЕ
-									span.file-upload__type 
+									span.file-upload__type
 										|	PDF, .doc, .docx
 							label.form__agreement
 								input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)

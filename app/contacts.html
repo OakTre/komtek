@@ -19,7 +19,7 @@
 <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
 </svg>
     </div>
-    <div class="menu js-menu" style="background-image: url(img/menu-bg.svg)">
+    <div class="menu js-menu fix-block" style="background-image: url(img/menu-bg.svg)">
       <div class="site-container menu__container">
         <a class="logo menu__logo" href="/">
           <img class="logo__img" src="img/logo-white.svg" alt="Логотип">
@@ -147,14 +147,18 @@
               </li>
             </ul>
           </nav>
-          <a class="button-reset header__btn-tel" href="tel:+7"> 
+          <a class="button-reset header__btn-tel" href="tel:+7">
             <svg class="icon icon-tel header__btn-tel-icon" width="26" height="26">
               <use xlink:href="img/sprite.svg#tel"></use>
             </svg>
           </a>
           <button class="button-reset button-burger header__btn-burger js-open-menu">
-            <span></span>
-            <span></span>
+            <svg class="icon icon-hamburger-menu button-burger__icon" width="65" height="65">
+              <use xlink:href="img/sprite.svg#hamburger-menu"></use>
+            </svg>
+            <svg class="icon icon-hamburger-menu-close button-burger__icon _closed" width="65" height="65">
+              <use xlink:href="img/sprite.svg#hamburger-menu-close"></use>
+            </svg>
           </button>
           <button class="button-reset button-search header__btn-search js-open-menu">
             <svg class="icon icon-search button-search__icon" width="30" height="30">
@@ -175,7 +179,7 @@
                 <div class="breadcrumbs__item">
                   <a class="breadcrumbs__item-link" href="/">Главная</a>
                 </div>
-                <span class="breadcrumbs__arrow">&mdash;</span>
+                <span class="breadcrumbs__arrow"></span>
                 <div class="breadcrumbs__item">Контакты</div>
               </div>
             </div>
@@ -201,29 +205,31 @@
             <div class="grid-container__block">
               <h2 class="site-second-title chifs__heading">	Руководители</h2>
             </div>
-            <div class="grid-container__block"> 
-              <div class="swiper chifs__container chifs-slider">
-                <div class="swiper-wrapper">
-                  <div class="chifs__item swiper-slide">
-                    <img class="chifs__item-img" src="img/chifs/img1.jpg" alt="">
-                    <span class="chifs__name">	Александр Чернышов</span>
-                    <span class="chifs__position">	Коммерческий директор</span>
-                    <a class="chifs__tel" href="tel:+78007750797">	8 800 775 07 97</a>
-                    <a class="chifs__email" href="mailto:seo@komtek.ru">	seo@komtek.ru</a>
-                  </div>
-                  <div class="chifs__item swiper-slide">
-                    <img class="chifs__item-img" src="img/chifs/img1.jpg" alt="">
-                    <span class="chifs__name">	Александр Чернышов</span>
-                    <span class="chifs__position">	Коммерческий директор</span>
-                    <a class="chifs__tel" href="tel:+78007750797">	8 800 775 07 97</a>
-                    <a class="chifs__email" href="mailto:seo@komtek.ru">	seo@komtek.ru</a>
-                  </div>
-                  <div class="chifs__item swiper-slide">
-                    <img class="chifs__item-img" src="img/chifs/img1.jpg" alt="">
-                    <span class="chifs__name">	Александр Чернышов</span>
-                    <span class="chifs__position">	Коммерческий директор</span>
-                    <a class="chifs__tel" href="tel:+78007750797">	8 800 775 07 97</a>
-                    <a class="chifs__email" href="mailto:seo@komtek.ru">	seo@komtek.ru</a>
+            <div class="grid-container__block">
+              <div class="chifs-slider__wrapper">
+                <div class="swiper chifs__container chifs-slider">
+                  <div class="swiper-wrapper">
+                    <div class="chifs__item swiper-slide">
+                      <img class="chifs__item-img" src="img/chifs/img1.jpg" alt="">
+                      <span class="chifs__name">	Александр Чернышов</span>
+                      <span class="chifs__position">	Коммерческий директор</span>
+                      <a class="chifs__tel" href="tel:+78007750797">	8 800 775 07 97</a>
+                      <a class="chifs__email" href="mailto:seo@komtek.ru">	seo@komtek.ru</a>
+                    </div>
+                    <div class="chifs__item swiper-slide">
+                      <img class="chifs__item-img" src="img/chifs/img1.jpg" alt="">
+                      <span class="chifs__name">	Александр Чернышов</span>
+                      <span class="chifs__position">	Коммерческий директор</span>
+                      <a class="chifs__tel" href="tel:+78007750797">	8 800 775 07 97</a>
+                      <a class="chifs__email" href="mailto:seo@komtek.ru">	seo@komtek.ru</a>
+                    </div>
+                    <div class="chifs__item swiper-slide">
+                      <img class="chifs__item-img" src="img/chifs/img1.jpg" alt="">
+                      <span class="chifs__name">	Александр Чернышов</span>
+                      <span class="chifs__position">	Коммерческий директор</span>
+                      <a class="chifs__tel" href="tel:+78007750797">	8 800 775 07 97</a>
+                      <a class="chifs__email" href="mailto:seo@komtek.ru">	seo@komtek.ru</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -268,11 +274,11 @@
                       <a class="contacts-map__item-text js-phone" href="tel:+78007750797">	8 800 775 07 97</a>
                       <a class="contacts-map__item-text-small js-email" href="mailto:ufa@komtek.ru">	ufa@komtek.ru</a>
                     </div>
-                    <div class="contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
+                    <button class="button-reset contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
                       <svg class="icon icon-vector contacts-map__item-icon" width="12" height="14">
                         <use xlink:href="img/sprite.svg#vector"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </li>
                 <li class="contacts-map__list-row js-offices-item" data-coord="[55.669747, 37.532143]">
@@ -288,11 +294,11 @@
                       <a class="contacts-map__item-text js-phone" href="tel:+78007750797">	8 800 775 07 97</a>
                       <a class="contacts-map__item-text-small js-email" href="mailto:ufa@komtek.ru">	ufa@komtek.ru</a>
                     </div>
-                    <div class="contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
+                    <button class="button-reset contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
                       <svg class="icon icon-vector contacts-map__item-icon" width="12" height="14">
                         <use xlink:href="img/sprite.svg#vector"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </li>
                 <li class="contacts-map__list-row js-offices-item" data-coord="[53.353380, 83.718331]">
@@ -308,11 +314,11 @@
                       <a class="contacts-map__item-text js-phone" href="tel:+78007750797">	8 800 775 07 97</a>
                       <a class="contacts-map__item-text-small js-email" href="mailto:ufa@komtek.ru">	ufa@komtek.ru</a>
                     </div>
-                    <div class="contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
+                    <button class="button-reset contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
                       <svg class="icon icon-vector contacts-map__item-icon" width="12" height="14">
                         <use xlink:href="img/sprite.svg#vector"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </li>
                 <li class="contacts-map__list-row js-offices-item" data-coord="[60.934042, 76.560648]">
@@ -328,11 +334,11 @@
                       <a class="contacts-map__item-text js-phone" href="tel:+78007750797">	8 800 775 07 97</a>
                       <a class="contacts-map__item-text-small js-email" href="mailto:ufa@komtek.ru">	ufa@komtek.ru</a>
                     </div>
-                    <div class="contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
+                    <button class="button-reset contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
                       <svg class="icon icon-vector contacts-map__item-icon" width="12" height="14">
                         <use xlink:href="img/sprite.svg#vector"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </li>
                 <li class="contacts-map__list-row js-offices-item" data-coord="[57.172654, 65.486735]">
@@ -348,11 +354,11 @@
                       <a class="contacts-map__item-text js-phone" href="tel:+78007750797">	8 800 775 07 97</a>
                       <a class="contacts-map__item-text-small js-email" href="mailto:ufa@komtek.ru">	ufa@komtek.ru</a>
                     </div>
-                    <div class="contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
+                    <button class="button-reset contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
                       <svg class="icon icon-vector contacts-map__item-icon" width="12" height="14">
                         <use xlink:href="img/sprite.svg#vector"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </li>
                 <li class="contacts-map__list-row js-offices-item" data-coord="[44.601528, 33.484873]">
@@ -368,11 +374,11 @@
                       <a class="contacts-map__item-text js-phone" href="tel:+78007750797">	8 800 775 07 97</a>
                       <a class="contacts-map__item-text-small js-email" href="mailto:ufa@komtek.ru">	ufa@komtek.ru</a>
                     </div>
-                    <div class="contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
+                    <button class="button-reset contacts-map__item-icon-wrapper" data-text="НА КАРТЕ">
                       <svg class="icon icon-vector contacts-map__item-icon" width="12" height="14">
                         <use xlink:href="img/sprite.svg#vector"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </li>
               </ul>
@@ -380,14 +386,25 @@
           </div>
         </section>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=b0b15954-57af-4901-b78c-0ad5bd94cda8&amp;lang=ru_RU"></script>
-        <section class="question-form parallax">
-          <div class="site-container question-form__container grid-container">
+        <section class="question-form js-callback-container parallax">
+          <div class="site-container callback__container callback__success-container">
+            <div class="callback__left-block">
+              <span class="section-name">	Обратная связь</span>
+            </div>
+            <div class="callback__right-block callback__success">
+              <h2 class="callback__title callback__success-title">	Спасибо за обращение.</h2>
+              <p class="callback__success-text">	Мы свяжемся с Вами<br>	в течении 1 часа</p>
+              <a class="callback__success-btn button button_secondary" href="/">	Наши проекты</a>
+              <img class="callback__success-img" src="img/done-img.svg" alt="Спасибо за обращение">
+            </div>
+          </div>
+          <div class="site-container question-form__container grid-container callback__form-container">
             <div class="grid-container__block">
               <span class="section-name">	Обратная связь</span>
             </div>
             <div class="grid-container__block">
               <h2 class="site-first-title question-form__heading">Свяжитесь с нами, если у вас возникли вопросы</h2>
-              <form class="form" action="/" data-need-validation>
+              <form class="form" action="resourses/mail/mail.php" enctype="multipart/form-data" data-need-validation>
                 <div class="form__container">
                   <div class="form__block">
                     <label class="form__label">
@@ -551,4 +568,5 @@
     </div>
   </body>
   <script src="js/main.js?v=0.0.2.7"></script>
+  <script src="resourses/js/backend.js?v=0.0.2.7"></script>
 </html>
