@@ -1,18 +1,24 @@
 section.team-lead
-    .site-container.team-lead__container.grid-container
-        .grid-container__block
-            p.team-lead__name 
-                |   Григорий Анатольевич Чернухин
-            span.team-lead__section-name.section-name2 
-                |   Учредитель компании
-        .grid-container__block
-            .team-lead__bio
-                .team-lead__bio-block
-                    img.team-lead__img(src="img/team-lead/team-lead.jpg", alt="")
-                .team-lead__bio-block
-                    span.team-lead__legend 
-                        |   Краткая биография
-                    p.team-lead__text 
-                        |   Поступил на работу в компанию через три месяца после ее основания в 1992 году на должность разработчика. Руководил производством, был архитектором ПО и проект-менеджером. С 1999 года генеральный директор компании.
-                    button.team-lead__btn.button-reset 
-                        |   Читать полностью
+	.site-container.team-lead__container.grid-container
+		.grid-container__block
+			p.team-lead__name
+				|   Григорий Анатольевич Чернухин
+			span.team-lead__section-name.section-name2
+				|   Учредитель компании
+		.grid-container__block
+			.team-lead__bio
+				.team-lead__bio-block
+					img.team-lead__img.lazy(data-src="img/team-lead/team-lead.jpg" src="#" alt="")
+				.team-lead__bio-block
+					span.team-lead__legend
+						|   Краткая биография
+					.team-lead__text-wrapper
+						p.team-lead__text
+							|   Поступил на работу в компанию через три месяца после ее основания в 1992 году на должность разработчика. Руководил производством, был архитектором ПО и проект-менеджером. С 1999 года генеральный директор компании.
+							|   Поступил на работу в компанию через три месяца после ее основания в 1992 году на должность разработчика. Руководил производством, был архитектором ПО и проект-менеджером. С 1999 года генеральный директор компании.
+							|   Поступил на работу в компанию через три месяца после ее основания в 1992 году на должность разработчика. Руководил производством, был архитектором ПО и проект-менеджером. С 1999 года генеральный директор компании.
+					button.team-lead__btn.button-reset
+						span._show
+							|   Читать полностью
+						span._hide
+							|	Скрыть

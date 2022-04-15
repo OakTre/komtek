@@ -1,6 +1,6 @@
 .team-lead {
     margin-bottom: 12.7rem;
-    
+
     @include mq(md) {
         margin-bottom: 3rem;
     }
@@ -54,7 +54,7 @@
             grid-column: 7 span;
             padding-left: 4.6rem;
 
-            
+
             @include mq(sm) {
                 padding-left: 0;
             }
@@ -76,10 +76,25 @@
         }
     }
 
+	&__text-wrapper {
+		max-height: 12.8rem;
+		overflow: hidden;
+		margin-bottom: 2rem;
+		transition: max-height 200ms;
+
+		&.is-active {
+			max-height: 100%;
+		}
+	}
+
     &__text {
         font-size: 2rem;
         line-height: 3.2rem;
         margin-bottom: 2rem;
+
+		&:nth-last-of-type(1) {
+			margin-bottom: 0;
+		}
 
         @include mq(sm) {
             font-size: 1.4rem;
@@ -93,6 +108,20 @@
         line-height: 2.2rem;
         color: var(--color-orange);
         cursor: pointer;
+
+		&.is-active {
+			._hide {
+				display: inline;
+			}
+
+			._show {
+				display: none;
+			}
+		}
+
+		._hide {
+			display: none;
+		}
     }
 
     &__img {

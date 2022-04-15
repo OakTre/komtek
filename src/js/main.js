@@ -71,6 +71,15 @@ documentReady(() => {
 	siteSlider();
 	showListProjects();
 
+	const showBtn = document.querySelector(".team-lead__btn");
+
+	if (showBtn) {
+		showBtn.addEventListener("click", ()=>{
+			document.querySelector(".team-lead__text-wrapper").classList.toggle("is-active");
+			showBtn.classList.toggle("is-active");
+		});
+	}
+
 	gsap.registerPlugin(ScrollTrigger);
 
 	gsap.set(".header__container", { y: -50, autoAlpha: 0 });

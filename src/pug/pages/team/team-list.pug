@@ -25,7 +25,7 @@ section.our-team.parallax(data-depth="0.20")
                 for item, index in team_arr
                     .our-team-item.swiper-slide
                         .our-team-item__img-wrap
-                            img(src=`img/our-team/person${index}.jpg`, alt=item.name class="our-team-item__img")
+                            img(data-src=`img/our-team/person${index}.jpg`, src="#" alt=item.name class="our-team-item__img lazy")
                         .our-team-item__bottom
                             span.our-team-item__name=item.name
                             span.our-team-item__position=item.position

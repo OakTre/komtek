@@ -30,7 +30,7 @@ section.site-slider_grey-bg
             .swiper-wrapper
                 for item, index in slider_arr
                     .site-slider-item.swiper-slide
-                        img.site-slider-item__img(src="img/img.jpg", alt="")
+                        img.site-slider-item__img.lazy(data-src="img/img.jpg", src="#" alt="")
                         p.site-slider-item__heading=item.name
                         span.site-slider-item__subheading=item.position
 
