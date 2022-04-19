@@ -94,6 +94,7 @@ export default () => {
 
 	openMenuBtns.forEach((btn) => {
 		btn.addEventListener("click", () => {
+			document.querySelector(".header__btn-tel").classList.toggle("is-active");
 
 			switch (flag) {
 				case false:

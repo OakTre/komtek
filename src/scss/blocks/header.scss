@@ -68,6 +68,14 @@
 		@include mq(lg, min) {
 			display: none;
 		}
+
+		&.is-active {
+			position: relative;
+			z-index: 12;
+			.header__btn-tel-icon {
+				fill: var(--color-white);
+			}
+		}
 	}
 
 	&__btn-tel-icon {
