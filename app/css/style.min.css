@@ -3872,6 +3872,7 @@ a {
   column-gap: 20px;
   padding: 2.2rem 0 1.8rem;
   border-bottom: 1px solid #eeeefa;
+  cursor: pointer;
 }
 
 .contacts-map__item {
@@ -3901,6 +3902,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-right: 6rem;
 }
 
 .contacts-map__smal-legend {
@@ -6856,6 +6858,10 @@ a {
 
   .contacts-map__item::before {
     display: block;
+  }
+
+  .contacts-map__item:last-child {
+    padding-right: 0;
   }
 
   .contacts-map__item-text-bold {

@@ -13,6 +13,8 @@ export class ContactsMap {
 	checkboxPartner;
 	notFound;
 	mapListElem;
+	switcher;
+	list;
 
 	constructor(hostElem) {
 		this.initMap = this.initMap.bind(this);
@@ -21,6 +23,8 @@ export class ContactsMap {
 		this.mapElem = this.hostElem.querySelector('.js-map');
 		this.officesElems = this.hostElem.querySelectorAll('.js-offices-item');
 		this.mapListElem = this.hostElem.querySelector('.js-map-list');
+		this.switcher = this.hostElem.querySelector('.js-switch');
+		this.list = this.hostElem.querySelector('.js-map-list');
 
 		ymaps.ready(this.initMap);
 	}
@@ -55,13 +59,14 @@ export class ContactsMap {
 
 			this.addGeoMark(newItem);
 
-			// officeElem.onclick = () => {
-			// 	this.myMap.setCenter(newItem.coords, 16);
-			// 	if (this.inputSearch) {
-			// 		this.inputSearch.value = newItem.address + newItem.city;
-			// 		this.onInput();
-			// 	}
-			// }
+			officeElem.onclick = (e) => {
+				this.myMap.setCenter(newItem.coords, 16);
+
+				this.switcher.checked = false;
+
+				this.mapElem.classList.add("mod-show");
+				this.list.classList.remove("mod-show");
+			}
 		})
 
 		this.setZoom();
