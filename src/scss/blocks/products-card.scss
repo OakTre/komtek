@@ -45,6 +45,10 @@
 		font-size: 2.4rem;
 		line-height: 2.9rem;
 		max-width: 38rem;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
 
 		b {
 			font-size: 1.8rem;

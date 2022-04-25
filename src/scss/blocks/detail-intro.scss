@@ -52,15 +52,16 @@
 
     &__img {
         position: absolute;
-        top: -10rem;
+        top: 0;
         right: 4rem;
-        width: 63rem;
-        height: 59.5rem;
+        width: auto;
+        height: 43rem;
+		object-fit: contain;
 
         &._type2 {
             top: 0;
-            width: 43rem;
-            height: 34.5rem;
+			height: 33rem;
+            width: auto;
         }
 
         @include mq(md) {

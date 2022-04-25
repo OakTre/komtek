@@ -41,7 +41,7 @@
 			color: rgba($color: #fff, $alpha: 0.1);
 			counter-increment: num;
 			grid-column: 4 span;
-			content: "0"counter(num);
+			content: "0" counter(num);
 		}
 
 		@include mq(md) {
@@ -331,7 +331,7 @@
 		.products-card__img {
 			width: 14.2rem;
 			height: 12.1rem;
-            
+
             @include mq(sm) {
                 width: 9.2rem;
                 height: 9.1rem;
@@ -344,7 +344,7 @@
 			&:nth-child(1) {
 				grid-column: 12 span;
 			}
-	
+
 			&:nth-child(2),
 			&:nth-child(3) {
 				grid-column: 6 span;
