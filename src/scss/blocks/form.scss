@@ -170,6 +170,10 @@
 		}
 	}
 
+	&[name=name] {
+		text-transform: capitalize;
+	}
+
 	@include mq(sm) {
 		padding-left: 2rem;
 	}
