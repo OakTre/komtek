@@ -16,7 +16,7 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 
 	@include mq(custom, min, 2100) {
-		font-size: 14px;
+		font-size: 11px;
 	}
 
 	@include mq(custom, max, 1536) {

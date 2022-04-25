@@ -79,15 +79,31 @@
 	&__item {
 		grid-column: 4 span;
 
+		.products-card__img {
+			width: 13rem;
+			height: 11rem;
+		}
+
+
 		&:nth-child(1),
 		&:nth-child(4),
 		&:nth-child(9) {
 			grid-column: 8 span;
+
+			.products-card__img {
+				width: 30rem;
+				height: 20rem;
+			}
 		}
 
 		&:nth-child(13),
 		&:nth-child(14) {
 			grid-column: 6 span;
+
+			.products-card__img {
+				width: 25rem;
+				height: 16rem;
+			}
 		}
 
 		@include mq(md) {
@@ -108,6 +124,10 @@
 
 		@include mq(sm) {
 			height: 18rem;
+			.products-card__img {
+				width: 8.4rem !important;
+				height: 6.9rem !important;
+			}
 
 			&:nth-child(1),
 			&:nth-child(4),

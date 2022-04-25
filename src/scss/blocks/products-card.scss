@@ -85,6 +85,7 @@
 		position: absolute;
 		bottom: 2rem;
 		right: 2.4rem;
+		object-fit: contain;
 
 		@include mq(custom, max, 1536) {
 			width: 16rem;
