@@ -45,6 +45,12 @@
 		line-height: 3.8rem;
 		transition: color 200ms;
 
+		&.is-active {
+			&::before {
+				transform: translateX(0);
+			}
+		}
+
 		&:hover {
 			&::before {
 				transform: translateX(0);

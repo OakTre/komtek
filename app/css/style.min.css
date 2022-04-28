@@ -94,6 +94,7 @@
   transition: color .2s;
 }
 
+.nav__link.is-active::before,
 .nav__link:hover::before {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -4925,6 +4926,15 @@ a {
   .button:hover::before {
     width: 55rem;
     height: 55rem;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  .form__button:hover::before {
+    width: 255rem;
+    height: 255rem;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
