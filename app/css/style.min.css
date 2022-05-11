@@ -2891,6 +2891,8 @@ a {
   position: absolute;
   right: 3rem;
   bottom: 3rem;
+  width: 17rem;
+  height: auto;
   -webkit-transition: -webkit-transform .2s;
   transition: transform .2s;
   -o-transition: transform .2s;

@@ -188,6 +188,8 @@
 			position: absolute;
 			right: 3rem;
 			bottom: 3rem;
+			width: 17rem;
+			height: auto;
 			transition: transform 200ms;
 
 			@include mq(custom, max, 1480) {
