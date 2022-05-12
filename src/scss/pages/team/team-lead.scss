@@ -92,6 +92,14 @@
         line-height: 3.2rem;
         margin-bottom: 2rem;
 
+		p {
+			margin-bottom: 1rem;
+
+			&:nth-last-of-type(1) {
+				margin-bottom: 0;
+			}
+		}
+
 		&:nth-last-of-type(1) {
 			margin-bottom: 0;
 		}
