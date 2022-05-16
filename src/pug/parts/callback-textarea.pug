@@ -75,11 +75,12 @@ section.question-form.js-callback-container.parallax(class=bgClass)
 							textarea(name="text" class="texaarea" placeholder=textareaLabel)
 
 						if file
-							label.form__file-label.file-upload.form__desktop-block
+							label.form__file-label.file-upload.form__desktop-block.js-file-upload
 								input(type="file" class="visually-hidden" name="file")
 								p.file-upload__text
 									+icon("file")(width="24" height="24" class="file-upload__text-icon")
-									|	ПРИКРЕПИТЬ РЕЗЮМЕ
+									span.js-file-upload-text
+										|	ПРИКРЕПИТЬ РЕЗЮМЕ
 								span.file-upload__type
 									|	PDF, .doc, .docx
 						.form__mobile-block

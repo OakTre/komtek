@@ -17,6 +17,7 @@ import contactsMap from "./modules/contactsMap";
 import chifsSlider from "./modules/chifsSlider";
 import searchResult from "./modules/searchResult.js";
 import showListProjects from "./modules/showListProjects.js";
+import fileUpload from './modules/fileUpload.js'
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -70,6 +71,7 @@ documentReady(() => {
 	searchResult();
 	siteSlider();
 	showListProjects();
+	fileUpload();
 
 	const showBtn = document.querySelector(".team-lead__btn");
 
