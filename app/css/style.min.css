@@ -863,6 +863,15 @@ a {
   flex-grow: 1;
 }
 
+.js-form-block.is-hidden,
+.js-success-block.is-hidden {
+  display: none!important;
+}
+
+.js-success-block.is-active {
+  display: block!important;
+}
+
 .header {
   padding-top: 2.4rem;
 }

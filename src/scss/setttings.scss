@@ -107,3 +107,16 @@ a {
 .page-main {
 	flex-grow: 1;
 }
+
+.js-success-block,
+.js-form-block {
+	&.is-hidden {
+		display: none !important;
+	}
+}
+
+.js-success-block {
+	&.is-active {
+		display: block !important;
+	}
+}

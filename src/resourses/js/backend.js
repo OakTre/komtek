@@ -25,9 +25,9 @@ function sendRequest(method, url, body = null) {
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	const forms = Array.from(document.querySelectorAll("form"));
-	const succesContainer = document.querySelector(".callback__success-container");
-	const formContainer = document.querySelector(".callback__form-container");
-	const callbackSection = document.querySelector(".js-callback-container");
+	const succesContainer = document.querySelector(".js-success-block");
+	const formContainer = document.querySelector(".js-form-block");
+	const callbackSection = document.querySelector(".js-container");
 
 	forms.forEach(form=>{
 		form.addEventListener("submit", (e)=>{
