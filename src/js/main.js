@@ -17,7 +17,9 @@ import contactsMap from "./modules/contactsMap";
 import chifsSlider from "./modules/chifsSlider";
 import searchResult from "./modules/searchResult.js";
 import showListProjects from "./modules/showListProjects.js";
-import fileUpload from './modules/fileUpload.js'
+import fileUpload from './modules/fileUpload.js';
+import initModal from './modules/initModal.js';
+import modalSlider from './modules/modalSlider.js';
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -72,6 +74,8 @@ documentReady(() => {
 	siteSlider();
 	showListProjects();
 	fileUpload();
+	initModal();
+	modalSlider();
 
 	const showBtn = document.querySelector(".team-lead__btn");
 
