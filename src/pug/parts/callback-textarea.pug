@@ -19,7 +19,7 @@ section.question-form.js-callback-container.parallax(class=bgClass)
 				|	в течении 1 часа
 			a.callback__success-btn.button.button_secondary(href="/")
 				|	Наши проекты
-			img(src="img/done-img.svg", alt="Спасибо за обращение" class="callback__success-img")
+			img(src="img/done-img.svg" alt="Спасибо за обращение" class="callback__success-img")
 	.site-container.question-form__container.grid-container.callback__form-container
 		.grid-container__block
 			span.section-name
@@ -50,15 +50,6 @@ section.question-form.js-callback-container.parallax(class=bgClass)
 							span.input-heading
 								|	НАЗВАНИЕ ОРГАНИЗАЦИИ
 							+icon("ok")(width="19" height="16" class="input-ok")
-						.form__desktop-block
-							label.form__agreement
-								input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
-								p
-									|	Я согласен на обработку
-									a(href="/")
-										|	персональных данных
-							button.button-reset.form__button.button.button_secondary
-								|	 Отправить заявку
 
 					.form__block
 						.select
@@ -74,24 +65,8 @@ section.question-form.js-callback-container.parallax(class=bgClass)
 						label.form__label
 							textarea(name="text" class="texaarea" placeholder=textareaLabel)
 
-						if file
-							label.form__file-label.file-upload.form__desktop-block.js-file-upload
-								input(type="file" class="visually-hidden" name="file")
-								p.file-upload__text
-									+icon("file")(width="24" height="24" class="file-upload__text-icon")
-									span.js-file-upload-text
-										|	ПРИКРЕПИТЬ РЕЗЮМЕ
-								span.file-upload__type
-									|	PDF, .doc, .docx
-						.form__mobile-block
-							if file
-								label.form__file-label.file-upload
-									input(type="file" class="visually-hidden" name="file")
-									p.file-upload__text
-										+icon("file")(width="24" height="24" class="file-upload__text-icon")
-										|	ПРИКРЕПИТЬ РЕЗЮМЕ
-									span.file-upload__type
-										|	PDF, .doc, .docx
+					.form__block
+						.form__block-mobile-wrapper
 							label.form__agreement
 								input(type="checkbox" class="visually-hidden" class="input-agreement" name="agreement" data-parsley-required)
 								p
@@ -100,4 +75,11 @@ section.question-form.js-callback-container.parallax(class=bgClass)
 										|	персональных данных
 							button.button-reset.form__button.button.button_secondary
 								|	 Отправить заявку
-
+						.form__block-mobile-wrapper
+							label.form__file-label.file-upload
+								input(type="file" class="visually-hidden" name="file")
+								p.file-upload__text
+									+icon("file")(width="24" height="24" class="file-upload__text-icon")
+									|	ПРИКРЕПИТЬ РЕЗЮМЕ
+								span.file-upload__type
+									|	PDF, .doc, .docx

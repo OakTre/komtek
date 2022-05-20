@@ -508,15 +508,6 @@
                         <use xlink:href="img/sprite.svg#ok"></use>
                       </svg>
                     </label>
-                    <div class="form__desktop-block">
-                      <label class="form__agreement">
-                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
-                        <p>	Я согласен на обработку
-                          <a href="/">	персональных данных</a>
-                        </p>
-                      </label>
-                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
-                    </div>
                   </div>
                   <div class="form__block">
                     <div class="select">
@@ -532,17 +523,18 @@
                     <label class="form__label">
                       <textarea class="texaarea" name="text" placeholder="ПАРУ СЛОВ О СЕБЕ"></textarea>
                     </label>
-                    <label class="form__file-label file-upload form__desktop-block js-file-upload">
-                      <input class="visually-hidden" type="file" name="file">
-                      <p class="file-upload__text">
-                        <svg class="icon icon-file file-upload__text-icon" width="24" height="24">
-                          <use xlink:href="img/sprite.svg#file"></use>
-                        </svg>
-                        <span class="js-file-upload-text">	ПРИКРЕПИТЬ РЕЗЮМЕ</span>
-                      </p>
-                      <span class="file-upload__type">	PDF, .doc, .docx</span>
-                    </label>
-                    <div class="form__mobile-block">
+                  </div>
+                  <div class="form__block">
+                    <div class="form__block-mobile-wrapper">
+                      <label class="form__agreement">
+                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
+                        <p>	Я согласен на обработку
+                          <a href="/">	персональных данных</a>
+                        </p>
+                      </label>
+                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
+                    </div>
+                    <div class="form__block-mobile-wrapper">
                       <label class="form__file-label file-upload">
                         <input class="visually-hidden" type="file" name="file">
                         <p class="file-upload__text">
@@ -552,13 +544,6 @@
                         </p>
                         <span class="file-upload__type">	PDF, .doc, .docx</span>
                       </label>
-                      <label class="form__agreement">
-                        <input class="visually-hidden input-agreement" type="checkbox" name="agreement" data-parsley-required>
-                        <p>	Я согласен на обработку
-                          <a href="/">	персональных данных</a>
-                        </p>
-                      </label>
-                      <button class="button-reset form__button button button_secondary">	 Отправить заявку</button>
                     </div>
                   </div>
                 </div>
