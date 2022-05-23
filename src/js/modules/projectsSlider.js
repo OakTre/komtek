@@ -20,6 +20,7 @@ export default () => {
 			320: {
 			  slidesPerView: 1,
 			  spaceBetween: 10,
+			  autoHeight: true,
 			},
 			769: {
 				slidesPerView: "auto",
