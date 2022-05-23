@@ -9,8 +9,8 @@ export default () => {
 			slidesPerView: 1.3,
 			spaceBetween: 20,
 			navigation: {
-				nextEl: '.js-modal-slider-nav-next',
-				prevEl: '.js-modal-slider-nav-prev',
+				nextEl: slider.querySelector('.js-modal-slider-nav-next'),
+				prevEl: slider.querySelector('.js-modal-slider-nav-prev'),
 			},
 		});
 	});
