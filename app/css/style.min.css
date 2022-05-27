@@ -2179,6 +2179,8 @@ a {
 }
 
 .products-card__heading {
+  position: relative;
+  z-index: 2;
   display: block;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -3526,8 +3528,8 @@ a {
 }
 
 .base-products__item .products-card__img {
-  width: 13rem;
-  height: 11rem;
+  width: 17rem;
+  height: auto;
 }
 
 .base-products__item:nth-child(1),
@@ -6920,8 +6922,8 @@ a {
   }
 
   .base-products__item .products-card__img {
-    width: 8.4rem!important;
-    height: 6.9rem!important;
+    width: 9.4rem!important;
+    height: auto!important;
   }
 
   .base-products__item:nth-child(1),
@@ -6936,7 +6938,7 @@ a {
   .base-products__item:nth-child(4) .products-card__img,
   .base-products__item:nth-child(9) .products-card__img {
     width: 14.4rem!important;
-    height: 10.5rem!important;
+    height: auto!important;
   }
 
   .base-products__item.mod-project:last-child {

@@ -38,6 +38,8 @@
 	}
 
 	&__heading {
+		position: relative;
+		z-index: 2;
 		display: block;
 		margin-top: 2rem;
 		margin-bottom: 2rem;

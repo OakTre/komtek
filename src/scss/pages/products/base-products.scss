@@ -80,8 +80,8 @@
 		grid-column: 4 span;
 
 		.products-card__img {
-			width: 13rem;
-			height: 11rem;
+			width: 17rem;
+			height: auto;
 		}
 
 
@@ -125,8 +125,8 @@
 		@include mq(sm) {
 			height: 18rem;
 			.products-card__img {
-				width: 8.4rem !important;
-				height: 6.9rem !important;
+				width: 9.4rem !important;
+				height: auto !important;
 			}
 
 			&:nth-child(1),
@@ -137,7 +137,7 @@
 
 				.products-card__img {
 					width: 14.4rem !important;
-					height: 10.5rem !important;
+					height: auto !important;
 				}
 			}
 
