@@ -1,14 +1,16 @@
 section.detail-intro
-    .site-container.detail-intro__container 
-        +breadcrumbs([['Главная', "/"], ['Продукты']])(class="detail-intro__breadcrumbs")
-        h1.detail-intro__heading.site-first-title
-            |   Медицинская информационная система 
-        span.detail-intro__tags 
-            |   Иммунизация • МИАЦ ХМАО, ДЗ ЧАО 
-        p.detail-intro__text 
-            |   Предназначена для автоматизации деятельности всех этапов лечебного процесса медицинской организации.
-        
-        button.button.button-reset.detail-intro__btn 
-            |   Заказать
+	.site-container.detail-intro__container
+		+breadcrumbs([['Главная', "/"], ['Продукты']])(class="detail-intro__breadcrumbs")
+		h1.detail-intro__heading.site-first-title
+			|   Медицинская информационная система
+		span.detail-intro__tags
+			|   Иммунизация • МИАЦ ХМАО, ДЗ ЧАО
+		p.detail-intro__text
+			|   Предназначена для автоматизации деятельности всех этапов лечебного процесса медицинской организации.
+		.detail-intro__btn-wrapper
+			button.button.button_secondary.button-reset.detail-intro__btn
+				|   Заказать
+			a.button.detail-intro__link(href="" download)
+				|   Презентация
 
-        img(src="img/detail1.svg", alt="" class="detail-intro__img")
+		img(src="img/detail1.svg" alt="" class="detail-intro__img")
