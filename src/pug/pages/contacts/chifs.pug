@@ -3,12 +3,25 @@ section.chifs.js-block
 		.grid-container__block
 			h2.site-second-title.chifs__heading
 				|	Руководители
+			.slider-nav
+				button.button-reset.slider-nav__btn.js-chif-slider-nav-prev
+					<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+					</svg>
+					+icon("arrow-left")(class="slider-nav__btn-icon" width="20" height="20")
+				button.button-reset.slider-nav__btn.js-chif-slider-nav-next
+					<svg class="slider-nav__circle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle class="progress" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+						<circle class="progress" opacity="0.1" cx="22" cy="22" r="21.5" stroke="#2D3040"/>
+					</svg>
+					+icon("arrow-right")(class="slider-nav__btn-icon" width="20" height="20")
 		.grid-container__block
 			.chifs-slider__wrapper
 				.swiper.chifs__container.chifs-slider
 					.swiper-wrapper
 						.chifs__item.swiper-slide
-							img.chifs__item-img.lazy(data-src="img/chifs/img1.jpg", src="#" alt="")
+							img.chifs__item-img.lazy(data-src="img/chifs/img1.jpg" src="#" alt="")
 							span.chifs__name
 								|	Александр Чернышов
 							span.chifs__position
@@ -18,17 +31,7 @@ section.chifs.js-block
 							a.chifs__email(href="mailto:seo@komtek.ru")
 								|	seo@komtek.ru
 						.chifs__item.swiper-slide
-							img.chifs__item-img.lazy(data-src="img/chifs/img1.jpg", src="#" alt="")
-							span.chifs__name
-								|	Александр Чернышов
-							span.chifs__position
-								|	Коммерческий директор
-							a.chifs__tel(href="tel:+78007750797")
-								|	8 800 775 07 97
-							a.chifs__email(href="mailto:seo@komtek.ru")
-								|	seo@komtek.ru
-						.chifs__item.swiper-slide
-							img.chifs__item-img.lazy(data-src="img/chifs/img1.jpg", src="#" alt="")
+							img.chifs__item-img.lazy(data-src="img/chifs/img1.jpg" src="#" alt="")
 							span.chifs__name
 								|	Александр Чернышов
 							span.chifs__position

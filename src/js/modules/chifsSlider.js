@@ -1,4 +1,6 @@
-import { Swiper } from 'swiper';
+import { Swiper, Navigation } from 'swiper';
+
+Swiper.use([Navigation]);
 
 export default () => {
 	const chifsSlider = document.querySelector(".chifs-slider");
@@ -7,6 +9,10 @@ export default () => {
 	let sliderChief = new Swiper(chifsSlider, {
 		slidesPerView: 1.2,
         spaceBetween: 10,
+		navigation: {
+			nextEl: '.js-chif-slider-nav-next',
+			prevEl: '.js-chif-slider-nav-prev',
+		},
 		breakpoints: {
 			// when window width is >= 320px
 			320: {

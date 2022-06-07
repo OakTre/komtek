@@ -7,6 +7,18 @@
 
 	.grid-container__block {
 		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.slider-nav {
+			margin-top: auto;
+			margin-bottom: 2rem;
+
+			.swiper-button-lock {
+				display: none;
+			}
+		}
 	}
 
 	&__container {
@@ -29,6 +41,7 @@
 		height: 39.2rem;
 		display: block;
 		object-fit: cover;
+		object-position: top;
 		margin-bottom: 1.6rem;
 		border-radius: 1.5rem;
 
